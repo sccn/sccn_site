@@ -12,7 +12,19 @@ ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 
 
+def _baked_prefix() -> str:
+    """URL prefix baked into dist for GitHub Pages (see .baseurl / build_site)."""
+    state = DIST / ".baseurl"
+    prefix = state.read_text(encoding="utf-8").strip().strip("/") if state.exists() else ""
+    return f"/{prefix}" if prefix else ""
+
+
+BASEURL = _baked_prefix()
+
+
 def internal_exists(url: str) -> bool:
+    if BASEURL and (url == BASEURL or url.startswith(BASEURL + "/")):
+        url = url[len(BASEURL):] or "/"
     if should_ignore(url):
         return True
     parsed = urlparse(url)

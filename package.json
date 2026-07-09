@@ -8,8 +8,8 @@
     "pubmed": "python3 scripts/fetch_pubmed.py --authors data/pubmed/authors.yml --out data/publications/pubmed.bib",
     "publications": "python3 scripts/bibtex_to_publications.py --bib data/publications/sccn_publications.bib --out src/data/publications.json",
     "build": "python3 scripts/build_site.py",
-    "dev": "python3 -m http.server 8173 --directory dist",
-    "preview": "python3 -m http.server 8173 --directory dist",
+    "dev": "python3 scripts/serve.py 8173",
+    "preview": "python3 scripts/serve.py 8173",
     "check-links": "python3 scripts/check_links.py"
   }
 }

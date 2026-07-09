@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import sys
 from datetime import date
 from html import escape
 from pathlib import Path
@@ -586,6 +587,26 @@ def main() -> None:
     write_page("/news/", render_redirect("/news-events/"))
     (DIST / "search-index.json").write_text(json.dumps(search_index, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Built {len(pages)} pages and {len(redirects) + 1} redirects into {DIST}")
+    apply_baseurl()
+
+
+def apply_baseurl() -> None:
+    """Bake the GitHub Pages URL prefix from <site>/.baseurl into dist.
+
+    The prefix (e.g. "/sccn_site2" for https://arnodelorme.github.io/sccn_site2/)
+    lives in .baseurl next to package.json; edit that file and rebuild to
+    change it, or empty it to serve at a domain root. Rewriting is done by
+    the shared repo tool, which records the baked state in dist/.baseurl.
+    """
+    conf = ROOT / ".baseurl"
+    prefix = conf.read_text(encoding="utf-8").strip() if conf.exists() else ""
+    if not prefix.strip("/"):
+        return
+    sys.path.insert(0, str(ROOT.parent))
+    from tools.bake_prefix import bake
+
+    changed = bake(DIST, prefix)
+    print(f"Baked URL prefix {prefix} into {changed} files")
 
 
 if __name__ == "__main__":

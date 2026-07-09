@@ -1,6 +1,11 @@
 const qs = (selector, scope = document) => scope.querySelector(selector);
 const qsa = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
 
+// Site URL prefix (e.g. "/sccn_site2" on GitHub Pages project hosting),
+// derived from this script's own src so it works baked or unbaked.
+const BASE = (qs('script[src$="assets-site.js"]')?.getAttribute("src") || "")
+  .replace(/\/assets-site\.js$/, "");
+
 function setupNavigation() {
   const navToggle = qs("[data-nav-toggle]");
   const nav = qs("[data-primary-nav]");
@@ -88,7 +93,7 @@ async function setupSearchPage() {
 
   let index = [];
   try {
-    const response = await fetch("/search-index.json", { cache: "no-store" });
+    const response = await fetch(`${BASE}/search-index.json`, { cache: "no-store" });
     index = await response.json();
   } catch {
     results.innerHTML = "<p>Search index is unavailable.</p>";
@@ -119,7 +124,7 @@ async function setupSearchPage() {
     results.innerHTML = matches
       .map(({ item }) => `
         <article class="legacy-card">
-          <h3><a href="${item.url}">${item.title}</a></h3>
+          <h3><a href="${BASE}${item.url}">${item.title}</a></h3>
           <p>${item.excerpt}</p>
         </article>
       `)
@@ -129,7 +134,7 @@ async function setupSearchPage() {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = input.value.trim();
-    const url = query ? `/search/?q=${encodeURIComponent(query)}` : "/search/";
+    const url = query ? `${BASE}/search/?q=${encodeURIComponent(query)}` : `${BASE}/search/`;
     window.history.replaceState({}, "", url);
     render(query);
   });
