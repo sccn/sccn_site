@@ -9,12 +9,18 @@ stubs, `search-index.json`), and `public/` is copied through verbatim
 
 ```bash
 npm run build      # python3 scripts/build_site.py  → dist/
-npm run preview    # python3 scripts/serve.py 8173  → http://127.0.0.1:8173/
+npm run preview    # python3 scripts/serve.py 8173  → http://127.0.0.1:8173/sccn_site2/
 npm run check-links
 ```
 
 Publish the contents of `dist/` — it is self-contained (redirects are
-meta-refresh stubs, no server logic required).
+meta-refresh stubs, no server logic required). The repository includes
+`.github/workflows/pages.yml`, which builds `dist/` and deploys that directory
+as the GitHub Pages artifact.
+
+For GitHub Pages, set **Settings → Pages → Build and deployment → Source** to
+**GitHub Actions**. If the source is left as "Deploy from a branch / root",
+GitHub Pages will render this README instead of the generated site.
 
 ## GitHub Pages URL prefix
 
@@ -25,8 +31,8 @@ meta-refresh redirect in `dist/`.
 
 - The prefix lives in **`.baseurl`** (one line, next to `package.json`).
   Edit it and rebuild to change it; empty it to serve at a domain root.
-- Rewriting is done by the shared `../tools/bake_prefix.py` as the final
-  build step; the baked state is recorded in `dist/.baseurl`.
+- Rewriting is done by `scripts/build_site.py` as the final build step; the
+  baked state is recorded in `dist/.baseurl`.
 - `src/scripts/site.js` derives the prefix at runtime from its own
   `<script src>` (search fetch, result links, and query URLs), so the JS
   never needs rebaking.
@@ -35,6 +41,8 @@ meta-refresh redirect in `dist/`.
   `index.html` return 404 (no listings).
 - `public/.nojekyll` is copied into `dist/` so Pages skips Jekyll
   processing (which would drop underscore-prefixed files).
+- Do not publish `public/` directly. It is only the static asset input copied
+  into `dist/`, and it intentionally does not contain the generated site index.
 
 **Note:** there is no login gating in this build — anything in `dist/` is
 public once published.

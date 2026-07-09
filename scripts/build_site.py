@@ -4,7 +4,6 @@ from __future__ import annotations
 import json
 import re
 import shutil
-import sys
 from datetime import date
 from html import escape
 from pathlib import Path
@@ -15,6 +14,40 @@ ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 PUBLIC = ROOT / "public"
 DATA = ROOT / "src/data"
+STATE_FILE = ".baseurl"
+
+
+def normalize_baseurl(prefix: str) -> str:
+    """Return '' for domain-root hosting, otherwise '/repo-name'."""
+    prefix = prefix.strip().strip("/")
+    return f"/{prefix}" if prefix else ""
+
+
+def rebase_urls(data: bytes, old: bytes, new: bytes) -> bytes:
+    """Move root-absolute HTML URL attributes from one prefix to another."""
+    pattern = re.compile(
+        rb'(?<![-\w])((?:href|src|action)="|content="\d+;\s*url=)'
+        + re.escape(old)
+        + rb'(/(?!/))'
+    )
+    return pattern.sub(lambda match: match.group(1) + new + match.group(2), data)
+
+
+def bake_baseurl(site_dir: Path, prefix: str) -> int:
+    """Bake the configured Pages prefix into generated HTML files."""
+    state_path = site_dir / STATE_FILE
+    old = normalize_baseurl(state_path.read_text().strip() if state_path.exists() else "")
+    new = normalize_baseurl(prefix)
+    changed = 0
+    if old != new:
+        for path in sorted(site_dir.rglob("*.html")):
+            data = path.read_bytes()
+            out = rebase_urls(data, old.encode(), new.encode())
+            if out != data:
+                path.write_bytes(out)
+                changed += 1
+    state_path.write_text(f"{new}\n", encoding="utf-8")
+    return changed
 
 
 def load_json(name: str, default=None):
@@ -585,8 +618,9 @@ def main() -> None:
     for source, target in redirects.items():
         write_page(source, render_redirect(target))
     write_page("/news/", render_redirect("/news-events/"))
+    write_page("/public/", render_redirect("/"))
     (DIST / "search-index.json").write_text(json.dumps(search_index, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"Built {len(pages)} pages and {len(redirects) + 1} redirects into {DIST}")
+    print(f"Built {len(pages)} pages and {len(redirects) + 2} redirects into {DIST}")
     apply_baseurl()
 
 
@@ -596,16 +630,13 @@ def apply_baseurl() -> None:
     The prefix (e.g. "/sccn_site2" for https://arnodelorme.github.io/sccn_site2/)
     lives in .baseurl next to package.json; edit that file and rebuild to
     change it, or empty it to serve at a domain root. Rewriting is done by
-    the shared repo tool, which records the baked state in dist/.baseurl.
+    this script, which records the baked state in dist/.baseurl.
     """
     conf = ROOT / ".baseurl"
     prefix = conf.read_text(encoding="utf-8").strip() if conf.exists() else ""
     if not prefix.strip("/"):
         return
-    sys.path.insert(0, str(ROOT.parent))
-    from tools.bake_prefix import bake
-
-    changed = bake(DIST, prefix)
+    changed = bake_baseurl(DIST, prefix)
     print(f"Baked URL prefix {prefix} into {changed} files")
 
 
