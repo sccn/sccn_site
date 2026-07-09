@@ -10,7 +10,7 @@ stubs, `search-index.json`), and `public/` is copied through verbatim
 ```bash
 npm run build      # python3 scripts/build_site.py  → dist/
 npm run preview    # python3 scripts/serve.py 8173  → http://127.0.0.1:8173/sccn_site2/
-npm run check-links
+npm run check-links 
 ```
 
 Publish the contents of `dist/` — it is self-contained (redirects are
