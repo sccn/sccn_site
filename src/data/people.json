@@ -1,0 +1,352 @@
+[
+  {
+    "group": "Directors",
+    "people": [
+      {
+        "name": "Tzyy-Ping Jung",
+        "role": "Research Scientist (emeritus) & Director, Adj. Professor of Biomedical Engineering, UCSD",
+        "profile": "https://sccn.ucsd.edu/%7Ejung/",
+        "email": "",
+        "image": "/people/images/jung-2011.jpg",
+        "alt": "Tzyy-Ping Jung",
+        "interests": [
+          "Analysis and interpretation of neural activity measured by EEG, MEG and fMRI associated with human cognition, awareness and perception.",
+          "Brain-computer interface and interaction",
+          "Development of mobile wireless EEG and BCI systems that feature dry EEG sensor arrays and integrated data and signal processing hardware and software to obtain non-invasive, high spatial and temporal resolution, recording and interpretation of brain activity in unconstrained, freely-moving human subjects within operational environments."
+        ],
+        "notes": [
+          "Research Scientist (emeritus) & Director, Adj. Professor of Biomedical Engineering, UCSD"
+        ]
+      },
+      {
+        "name": "Arnaud Delorme",
+        "role": "Research Scientist & Co-Director",
+        "profile": "https://sccn.ucsd.edu/~arno/",
+        "email": "",
+        "image": "/people/images/arno.png",
+        "alt": "Arnaud Delorme",
+        "interests": [
+          "Continued development of the EEGLAB software for EEG single-trial analysis and independent component analysis.",
+          "EEG data mining using super-computers in large sets of data comprising thousands of subjects.",
+          "Brain dynamics associated with mind wandering and its relationship to the default network.",
+          "Neural correlates of meditation andother transcendental experiences in different traditions."
+        ],
+        "notes": [
+          "Research Scientist & Co-Director"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Emeritus",
+    "people": [
+      {
+        "name": "Scott Makeig",
+        "role": "Research Scientist (emeritus)",
+        "profile": "https://sccn.ucsd.edu/~scott/",
+        "email": "",
+        "image": "/people/images/scott-png",
+        "alt": "Scott Makeig",
+        "interests": [
+          "Analysis and modeling of human cognitive event-related brain dynamics as captured by high-dimensional EEG, MEG and other imaging modalities now including body motion capture."
+        ],
+        "notes": [
+          "Research Scientist (emeritus)"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Research Scientists",
+    "people": [
+      {
+        "name": "Mateusz Gola",
+        "role": "Visiting Scholar: 2014–2016; Project Scientist: 2016–present",
+        "profile": "http://scholar.google.com/citations?user=ShCXqKgAAAAJ&hl=pl",
+        "email": "",
+        "image": "/people/images/mgola.jpg",
+        "alt": "Mateusz Gola",
+        "interests": [
+          "Brain mechanisms of motivation, reward, and conditioning",
+          "Neural basis of behavioral addictions (especially compulsive sexual behaviors and problematic pornography use)",
+          "Neural and psychological mechanisms of substance use disorders",
+          "Basic mechanisms of Transcranial Magnetic Stimulation (TMS) effects on brain activity Use of TMS and EEG for addiction treatment",
+          "Development of more effective methods for addiction treatment"
+        ],
+        "notes": [
+          "Visiting Scholar: 2014–2016; Project Scientist: 2016–present"
+        ]
+      },
+      {
+        "name": "Ying Wu",
+        "role": "",
+        "profile": "http://insight.ucsd.edu",
+        "email": "",
+        "image": "/people/images/ywu.png",
+        "alt": "Ying Wu",
+        "interests": [
+          "Semantic processing",
+          "EEG brain dynamics and learning",
+          "Second language acquisition",
+          "Discourse analysis and pragmatics",
+          "Social neuroscience"
+        ],
+        "notes": []
+      },
+      {
+        "name": "Seyed (Yahya) Shirazi",
+        "role": "Assistant Research Scientist",
+        "profile": "http://neuromechanist.github.io",
+        "email": "",
+        "image": "/people/images/yahya.jpg",
+        "alt": "Seyed (Yahya) Shirazi",
+        "interests": [
+          "Biosignal processing, Blind source separation",
+          "Mobile Brain/Body Imaging (MoBI)",
+          "Motor control and rehabilitation"
+        ],
+        "notes": [
+          "Assistant Research Scientist",
+          "2022"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Project Scientists & Postdoctoral Fellows",
+    "people": [
+      {
+        "name": "Julie Onton",
+        "role": "",
+        "profile": "https://sccn.ucsd.edu/~julie",
+        "email": "",
+        "image": "/people/images/julie.jpg",
+        "alt": "Julie Onton",
+        "interests": [
+          "EEG Neuroimaging",
+          "EEG-Based Feedback"
+        ],
+        "notes": []
+      }
+    ]
+  },
+  {
+    "group": "Technical Staff",
+    "people": [
+      {
+        "name": "Nicole Wells",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/nicole-wells.jpg",
+        "alt": "Nicole Wells",
+        "interests": [],
+        "notes": [
+          "2015–present"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Visiting Scholars",
+    "people": [
+      {
+        "name": "Ming-Hsin (Megan) Cheng",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Ming-Hsin (Megan) Cheng",
+        "interests": [],
+        "notes": [
+          "2025–present"
+        ]
+      },
+      {
+        "name": "Suh-Yeon Dong",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Suh-Yeon Dong",
+        "interests": [],
+        "notes": [
+          "2025–present"
+        ]
+      },
+      {
+        "name": "Carlos Mugruza",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Carlos Mugruza",
+        "interests": [],
+        "notes": [
+          "2026–present"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Visiting Graduate Students",
+    "people": [
+      {
+        "name": "Seoyeon Lim",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Seoyeon Lim",
+        "interests": [],
+        "notes": [
+          "2025–present"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Staff Volunteers",
+    "people": [
+      {
+        "name": "Kuntal Kokate",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Kuntal Kokate",
+        "interests": [],
+        "notes": [
+          "2025"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Graduate Student Volunteers",
+    "people": [
+      {
+        "name": "Enrique Carrillosulub",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Enrique Carrillosulub",
+        "interests": [],
+        "notes": [
+          "2021–present"
+        ]
+      },
+      {
+        "name": "April Lin",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "April Lin",
+        "interests": [
+          "Neurodegenerative disorders",
+          "Motion data analysis"
+        ],
+        "notes": [
+          "2022–present"
+        ]
+      },
+      {
+        "name": "Haoyin (Winnie) Xu",
+        "role": "",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Haoyin (Winnie) Xu",
+        "interests": [],
+        "notes": [
+          "2020–present"
+        ]
+      },
+      {
+        "name": "Yuhong Zhang",
+        "role": "Visiting Graduate Student: 2023",
+        "profile": "",
+        "email": "",
+        "image": "/people/images/generic.jpg",
+        "alt": "Yuhong Zhang",
+        "interests": [],
+        "notes": [
+          "Visiting Graduate Student: 2023",
+          "Graduate Student: 2025–present"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Administrative Staff",
+    "people": [
+      {
+        "name": "Cory Davis",
+        "role": "",
+        "profile": "",
+        "email": "cwdavis@ucsd.edu",
+        "image": "/people/images/coreen-davis.jpg",
+        "alt": "Coreen Davis",
+        "interests": [],
+        "notes": [
+          "Management Services Officer cwdavis@ucsd.edu"
+        ]
+      },
+      {
+        "name": "Robert Buffington",
+        "role": "System Administrator",
+        "profile": "https://sccn.ucsd.edu/~buff/",
+        "email": "rbuffington@ucsd.edu",
+        "image": "/people/images/buff.jpg",
+        "alt": "Robert Buffington",
+        "interests": [],
+        "notes": [
+          "System Administrator",
+          "rbuffington@ucsd.edu",
+          "2004–present"
+        ]
+      },
+      {
+        "name": "Xandra Dvornikova",
+        "role": "Research Administrator",
+        "profile": "",
+        "email": "xdvornikova@ucsd.edu",
+        "image": "/people/images/xandra%20dvornikova.jpg",
+        "alt": "Xandra Dvornikova",
+        "interests": [],
+        "notes": [
+          "Research Administrator",
+          "xdvornikova@ucsd.edu"
+        ]
+      },
+      {
+        "name": "Khushbu Gokalgandhi",
+        "role": "Senior Research Administrator",
+        "profile": "",
+        "email": "kgokalgandhi@ucsd.edu",
+        "image": "/people/images/khushbu-gokalgandhi-75x100.jpg",
+        "alt": "Robert Buffington",
+        "interests": [],
+        "notes": [
+          "Senior Research Administrator",
+          "kgokalgandhi@ucsd.edu"
+        ]
+      },
+      {
+        "name": "Rachel Weistrop",
+        "role": "Digital Communications Specialist INC Webmaster",
+        "profile": "",
+        "email": "rweistrop@ucsd.edu",
+        "image": "/people/images/Rachel3.jpg",
+        "alt": "Rachel Weistrop",
+        "interests": [],
+        "notes": [
+          "Digital Communications Specialist INC Webmaster",
+          "rweistrop@ucsd.edu"
+        ]
+      }
+    ]
+  }
+]

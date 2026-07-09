@@ -1,0 +1,2037 @@
+[
+  {
+    "group": "Faculty",
+    "people": [
+      {
+        "name": "Ken Kreutz-Delgado",
+        "image": "/people/images/kreutz-delgado.png",
+        "text": "Ken Kreutz-Delgado Professor of Electrical & Computer Engineering, UCSD Research Interest The development of sensor-based intelligent learning systems that can function in unstructured, nonstationary environments and has on-going research activities in the areas of statistical signal processing; statistical learning theory and pattern recognition; adaptive sensory-motor control; nonlinear dynamics and multibody systems theory.",
+        "html": "<img src=\"/people/images/kreutz-delgado.png\" alt=\"Ken Kreutz-Delgado\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"http://dsp.ucsd.edu/~kreutz/\">Ken Kreutz-Delgado</a></h3>\n                      <p>Professor of Electrical &amp; Computer Engineering, UCSD</p>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>The development of sensor-based intelligent learning systems that   can function in unstructured, nonstationary environments and has on-going   research activities in the areas of statistical signal processing; statistical   learning theory and pattern recognition; adaptive sensory-motor control;   nonlinear dynamics and multibody systems theory.</li>\n                      </ul>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Project Scientists",
+    "people": [
+      {
+        "name": "Zeynep Akalin Acar",
+        "image": "/people/images/zeynep.png",
+        "text": "Zeynep Akalin Acar Research Interest Numerical Methods in Bioelectromagnetism Development of Neuroelectromagnetic forward head modeling toolbox EEG/MEG/ECoG source localization",
+        "html": "<img src=\"/people/images/zeynep.png\" alt=\"Zeynep Akalin Acar\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~zeynep\">Zeynep Akalin Acar</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li> Numerical Methods  in Bioelectromagnetism</li>\n                        <li> Development of Neuroelectromagnetic forward head modeling toolbox</li>\n                        <li> EEG/MEG/ECoG source localization</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Jeng-Ren Duann",
+        "image": "/people/images/duann.jpg",
+        "text": "Jeng-Ren Duann Research Interest fMRI Basics Most current analysis methods for fMRI data assume a priori knowledge of the time course of the hemodynamic response (HR) to experimental stimuli or events in brain areas of interest. In addition, they typically assume homogeneity of both the HR and the non-HR \"noise\" signals, both across brain regions and across similar experimental events. When HRs vary unpredictably, from area to area or from trial to trial, an alternative approach is needed. Here, we use infomax Independent Component Analysis (ICA) to detect and visualize variations in single-trial HRs in event-related fMRI data. SCCN Position(s) Post-doc: 2003–2004; Assistant Project Scientist: 2004–2010; Associate Project Scientist: 2010–present Current Position Director, Biomedical Engineering Research and Development Center, China Medical University, Taichung, Taiwan 404 Associate Professor, Graduate Institute of Clinical Medical Sciecne, China Medical University, Taichung, Taiwan 404",
+        "html": "<img src=\"/people/images/duann.jpg\" alt=\"Jeng-Ren Duann\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/%7Eduann/\">Jeng-Ren Duann</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>fMRI Basics<br>\n                          Most current analysis   methods for fMRI data assume <em>a priori</em> knowledge of the time course of the   hemodynamic response (HR) to experimental stimuli or events in brain areas of   interest. In addition, they typically assume homogeneity of both the HR and the   non-HR \"noise\" signals, both across brain regions and across similar   experimental events. When HRs vary unpredictably, from area to area or from   trial to trial, an alternative approach is needed. Here, we use infomax   Independent Component Analysis (ICA) to detect and visualize variations in   single-trial HRs in event-related fMRI data.</li>\n                      </ul>\n                      <h4>SCCN Position(s)</h4>\n                      <p>Post-doc: 2003–2004;  Assistant Project Scientist: 2004–2010;  Associate Project Scientist: 2010–present</p>\n                      <h4>Current Position</h4>\n                      <p>Director, Biomedical  Engineering Research and Development Center, China Medical University, Taichung,  Taiwan 404<br>\n                        Associate Professor, Graduate Institute of Clinical Medical  Sciecne, China Medical University, Taichung, Taiwan 404 </p>\n                    "
+      },
+      {
+        "name": "Klaus Gramann",
+        "image": "/people/images/klaus-gramann.jpg",
+        "text": "Klaus Gramann Research Interest Mobile Brain Imaging Spatial Navigation Visual Attention Position Postdoc/Project Scientist: 2001–2009",
+        "html": "<img src=\"/people/images/klaus-gramann.jpg\" alt=\"Klaus Gramann\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~klaus\">Klaus Gramann</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Mobile Brain Imaging</li>\n                        <li>Spatial Navigation</li>\n                        <li>Visual Attention</li>\n                      </ul>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Postdoc/Project Scientist: 2001–2009</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Ruey-Song Huang",
+        "image": "/people/images/rshuang.png",
+        "text": "Ruey-Song Huang Research Interest Topographical mapping (retinotopy, tonotopy, somatotopy, multisensory maps) of cortical areas using fMRI Multisensory representation of space in multiple reference frames; multisensory attention, interaction, and integration Neural basis of metaphorical abstraction of space and time Multimodal neuroimaging (EEG/fMRI/NIRS) of sensorimotor functions Brain dynamics (EEG/fMRI) during sustained-attention tasks (driving); alertness monitoring EEG-based brain computer interface (BCI) Development of MR-compatible devices SCCN position(s) PhD student: 2000–2006; Post-doc: 2006–2010 Current position Assistant Project Scientist, Institute for Neural Computation, UCSD: 2020–2025",
+        "html": "<img src=\"/people/images/rshuang.png\" alt=\"Ruey-Song Huang\" class=\"float-md-right ml-md-3\">\n                      <a href=\"https://sccn.ucsd.edu/~rshuang\">\n                      <h3>Ruey-Song  Huang</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Topographical mapping (retinotopy, tonotopy, somatotopy, multisensory maps) of cortical areas using fMRI </li>\n                        <li>Multisensory representation of space in multiple reference frames; multisensory attention, interaction, and integration</li>\n                        <li>Neural basis of metaphorical abstraction of space and time</li>\n                        <li>Multimodal neuroimaging (EEG/fMRI/NIRS) of sensorimotor functions </li>\n                        <li>Brain dynamics (EEG/fMRI) during sustained-attention tasks (driving); alertness monitoring </li>\n                        <li>EEG-based brain computer interface (BCI) </li>\n                        <li>Development of MR-compatible devices</li>\n                      </ul>\n                      <h4>SCCN position(s)</h4>\n                      <p>PhD student: 2000–2006; Post-doc: 2006–2010</p>\n                      <h4>Current position</h4>\n                      <p>Assistant Project Scientist, Institute for Neural Computation, UCSD: 2020–2025</p>\n                    "
+      },
+      {
+        "name": "John Iversen",
+        "image": "/people/images/iversen.jpg",
+        "text": "John Iversen Research Scientist Research Interest Neural basis of auditory perception Dynamics of sensory-motor interactions Musical rhythm perception and production Rehabilitation of movement disorders using music The role of music in brain and behavioral development SCCN Position(s) Associate Director 2023–2024",
+        "html": "<img src=\"/people/images/iversen.jpg\" alt=\"John Iversen\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~jiversen/\">John Iversen</a></h3>\n                      <p>Research Scientist</p>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Neural  basis of auditory perception</li>\n                        <li> Dynamics of sensory-motor interactions</li>\n                        <li> Musical rhythm perception and production</li>\n                        <li> Rehabilitation of movement disorders using music</li>\n                        <li> The role of music in brain and behavioral development</li>\n                      </ul>\n                      <h4>SCCN Position(s)</h4>\n                      <p>Associate Director 2023–2024</p>\n                    "
+      },
+      {
+        "name": "Dr. Junhua Li",
+        "image": "/people/images/generic.jpg",
+        "text": "Dr. Junhua Li Current position Research Scientist, Laboratory for Advanced Brain Signal Processing, Brain Science Institute, RIKEN, Wako, Saitama, Japan 2011–2012",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Dr. Junhua Li</h3>\n                      <h4>Current position</h4>\n                      <p>Research Scientist, Laboratory for Advanced Brain Signal Processing,  Brain Science Institute, RIKEN, Wako, Saitama, Japan</p>\n                      <p>2011–2012</p>\n                    "
+      },
+      {
+        "name": "Dr. Chun-Ling Lin",
+        "image": "/people/images/chun-ling-lin.jpg",
+        "text": "Dr. Chun-Ling Lin SCCN position(s) Visiting PhD student: 2010–2011 Current position Assistant Professor, Department of Electrical Engineering, Ming Chi University of Technology, Taipei, Taiwan",
+        "html": "<img src=\"/people/images/chun-ling-lin.jpg\" alt=\"Dr. Chun-Ling Lin\" class=\"float-md-right ml-md-3\">\n                      <h3>Dr. Chun-Ling Lin</h3>\n                      <h4>SCCN position(s)</h4>\n                      <p>Visiting PhD student: 2010–2011</p>\n                      <h4>Current position</h4>\n                      <p>Assistant Professor, Department of Electrical Engineering, Ming  Chi University of Technology, Taipei, Taiwan</p>\n                    "
+      },
+      {
+        "name": "Dr. Yuan-Pin Lin",
+        "image": "/people/images/yplin.jpg",
+        "text": "Dr. Yuan-Pin Lin Research Interest Analysis and modeling of emotion perception and music appreciation Affective brain-computer interface Mobile SSVEP-based brain-computer interface 2009–2010 Visiting PhD student Post-doctoral fellow, Institute for Neural Computation, UCSD",
+        "html": "<img src=\"/people/images/yplin.jpg\" alt=\"Yuan-Pin Lin\" class=\"float-md-right ml-md-3\">\n                      <a href=\"https://sites.google.com/site/yplin0115/\">\n                      <h3>Dr. Yuan-Pin Lin</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul type=\"square\">\n                        <li>Analysis and modeling of emotion perception and music appreciation</li>\n                        <li>Affective brain-computer interface</li>\n                        <li>Mobile SSVEP-based brain-computer interface </li>\n                      </ul>\n                      <p>2009–2010 Visiting PhD student</p>\n                      <p>Post-doctoral fellow, Institute for Neural Computation, UCSD</p>\n                    "
+      },
+      {
+        "name": "Masaki Nakanishi",
+        "image": "/people/images/masaki.jpg",
+        "text": "Masaki Nakanishi Research Interest High-speed brain computer interfaces 2014–2024",
+        "html": "<img src=\"/people/images/masaki.jpg\" alt=\"Masaki Nakanishi\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~masaki\">Masaki Nakanishi</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>High-speed brain computer interfaces</li>\n                      </ul>\n                      <p>2014–2024</p>\n                    "
+      },
+      {
+        "name": "Jason Palmer",
+        "image": "/people/images/jason.png",
+        "text": "Jason Palmer Research Interest Understanding and characterizing the alpha and theta rhythms using statistical signal processing, dynamical systems, and computational neuroscience methods. General information theoretic properties of independence and mutual information based transformations for large sensor arrays, with application to EEG and speech, image and video coding. Development of the AMICA program for large scale adaptive parallel ICA. Development of VLSI implentation of convolutive ICA with adaptive linear process mixture model sources.",
+        "html": "<img src=\"/people/images/jason.png\" alt=\"Jason Palmer\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~jason\">Jason Palmer</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Understanding and characterizing the alpha and theta rhythms using   statistical signal processing, dynamical systems, and computational neuroscience   methods.</li>\n                        <li>General information theoretic properties of independence and mutual   information based transformations for large sensor arrays,\n                          with application   to EEG and speech, image and video coding.</li>\n                        <li>Development of the AMICA program for large scale adaptive parallel ICA.</li>\n                        <li>Development of VLSI implentation of convolutive ICA with adaptive linear   process mixture model sources.</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Makoto Miyakoshi",
+        "image": "/people/images/makoto.png",
+        "text": "Makoto Miyakoshi Research Interest EEG data mining Statistical methods Software development on MATLAB Experimental psychology and cognitive science",
+        "html": "<img src=\"/people/images/makoto.png\" alt=\"Makoto Miyakoshi\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"http://researchmap.jp/read0147913/?lang=english\">Makoto Miyakoshi</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG data mining</li>\n                        <li>Statistical methods</li>\n                        <li>Software development on MATLAB</li>\n                        <li>Experimental psychology and cognitive science</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Ramesh Rajagopalan",
+        "image": "/people/images/ramesh-rajagopalan.jpg",
+        "text": "Ramesh Rajagopalan Research Interest Wearable sensing and IoT enabled systems for mobile and pervasive health care. Applications include diagnosis, monitoring, and management of neurological disorders such as Parkinson's disease, sleep disorders, and chronic illnesses Wireless communications and networks with specific focus on 5G wireless systems Data mining, machine learning, and signal processing for health care. 2019–2020 Project Scientist 2016–2018 Visiting Scholar",
+        "html": "<img src=\"/people/images/ramesh-rajagopalan.jpg\" alt=\"Ramesh Rajagopalan\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~ramesh/\">Ramesh Rajagopalan</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Wearable sensing and IoT enabled systems for mobile and pervasive health care. Applications include diagnosis, monitoring, and management of neurological disorders such as Parkinson's disease, sleep disorders, and chronic illnesses</li>\n                        <li>Wireless communications and networks with specific focus on 5G wireless systems</li>\n                        <li>Data mining, machine learning, and signal processing for health care.</li>\n                      </ul>\n                      <p>2019–2020 Project Scientist</p>\n                      <p>2016–2018 Visiting Scholar</p>\n                    "
+      },
+      {
+        "name": "Yijun Wang",
+        "image": "/people/images/yijun-wang.jpg",
+        "text": "Yijun Wang Research Interest EEG Based Brain-Computer Interfaces Multimodal Neuroimaging Mobile Brain Imaging SCCN position(s) Post-doc: 2008–2012 Assistant Project Scientist: 2012–2017",
+        "html": "<img src=\"/people/images/yijun-wang.jpg\" alt=\"Yijun Wang\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~yijun\">Yijun Wang</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG Based Brain-Computer Interfaces</li>\n                        <li>Multimodal Neuroimaging</li>\n                        <li>Mobile Brain Imaging </li>\n                      </ul>\n                      <h4>SCCN position(s)</h4>\n                      <p>Post-doc: 2008–2012</p>\n                      <p>Assistant Project Scientist: 2012–2017</p>\n                    "
+      },
+      {
+        "name": "Marissa Westerfield",
+        "image": "/people/images/marissa.jpg",
+        "text": "Marissa Westerfield Associate Project Scientist Research Interest EEG and MoBI neuroimaging Autism and aging research",
+        "html": "<img src=\"/people/images/marissa.jpg\" alt=\"Marissa Westerfield\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~marissa\">Marissa Westerfield</a></h3>\n                      <p>Associate Project Scientist</p>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG and MoBI neuroimaging</li>\n                        <li>Autism and aging research</li>\n                      </ul>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Postdoctoral Fellows",
+    "people": [
+      {
+        "name": "Tarik Bel-Bahar",
+        "image": "/people/images/tarik.jpg",
+        "text": "Tarik Bel-Bahar Research Interest Neuropsychological process models of emotion, personality, social cognition, and psychopathology. Modeling intra-individual and inter-individual neuropsychological dynamics Brain and motion dynamics during embodied dyadic interaction, cooperation, and games Brain dynamics during perception and processing of emotion in faces and sounds Real world applications such as augmentation of cognitive/social/learning technologies, detection/tracking of psychopathology/wellness, and socio-emotional robotics/AI Models of meditation/contemplation/prayer and group/collective/ritual behavior.",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/tarik.jpg\" alt=\"Tarik Bel-Bahar\">\n                      <h3>Tarik Bel-Bahar</h3>\n                      <h4>Research Interest</h4>\n                      <ul type=\"disc\">\n                        <li>Neuropsychological process models of emotion,       personality, social cognition, and psychopathology. Modeling       intra-individual and inter-individual neuropsychological dynamics</li>\n                        <li>Brain and motion dynamics during embodied dyadic       interaction, cooperation, and games</li>\n                        <li>Brain dynamics during perception and processing of       emotion in faces and sounds</li>\n                        <li>Real world applications such as augmentation of       cognitive/social/learning technologies, detection/tracking of psychopathology/wellness, and socio-emotional robotics/AI</li>\n                        <li>Models of  meditation/contemplation/prayer and group/collective/ritual behavior.</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Özgür Yiğit Balkan",
+        "image": "/people/images/ozgur.png",
+        "text": "Özgür Yiğit Balkan Research Interest Sparse Signal Decomposition Machine Learning",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/ozgur.png\" alt=\"Özgür Yiğit Balkan\">\n                      <h3>Özgür Yiğit Balkan</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Sparse Signal  Decomposition</li>\n                        <li> Machine Learning </li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Frederic Broccard",
+        "image": "/people/images/generic.jpg",
+        "text": "Frederic Broccard Research Interest EEG Hyperscanning Cognitive Ethology Artificial Cognitive Systems Neuromorphic Engineering Mobile Brain Imaging",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Frederic Broccard</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG Hyperscanning</li>\n                        <li> Cognitive Ethology</li>\n                        <li> Artificial Cognitive Systems</li>\n                        <li> Neuromorphic Engineering</li>\n                        <li> Mobile Brain Imaging</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Clemens Brunner",
+        "image": "/people/images/clemens.jpg",
+        "text": "Clemens Brunner Research Interest Brain-computer interfaces Application of time series models to biosignals Machine learning, preprocessing, and feature extraction methods for BCIs Software development for biosignal analysis tools",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/clemens.jpg\" alt=\"Clemens Brunner\">\n                      <h3>Clemens Brunner</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain-computer interfaces</li>\n                        <li>Application of time series models to biosignals</li>\n                        <li>Machine learning, preprocessing, and feature extraction  methods for BCIs</li>\n                        <li> Software development for biosignal analysis tools</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Cheng Cao",
+        "image": "/people/images/cheng.jpg",
+        "text": "Cheng Cao Research Interest",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/cheng.jpg\" alt=\"Cheng Cao\">\n                      <h3>Cheng Cao</h3>\n                      <h4>Research Interest</h4>\n                    "
+      },
+      {
+        "name": "Deepa Gupta",
+        "image": "/people/images/deepa.jpg",
+        "text": "Deepa Gupta 2022",
+        "html": "<img src=\"/people/images/deepa.jpg\" alt=\"Deepa Gupta\" class=\"float-md-right ml-md-3\">\n                      <h3>Deepa Gupta</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Hyeonseok Kim",
+        "image": "/people/images/generic.jpg",
+        "text": "Hyeonseok Kim 2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hyeonseok Kim</h3>\n                      <p>2021</p>\n                    "
+      },
+      {
+        "name": "Leon Lange",
+        "image": "/people/images/generic.jpg",
+        "text": "Leon Lange 2021–2025",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Leon Lange</h3>\n                      <p>2021–2025</p>\n                    "
+      },
+      {
+        "name": "Yu Liao",
+        "image": "/people/images/yuli.png",
+        "text": "Yu Liao Research Interest Cognitive development Mother child social interaction Expectation & reward processing Development of intention attribution",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/yuli.png\" alt=\"Yu Liao\">\n                      <h3>Yu Liao</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Cognitive  development</li>\n                        <li> Mother child social interaction</li>\n                        <li> Expectation &amp; reward processing</li>\n                        <li> Development of intention attribution</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Francesco Marini",
+        "image": "/people/images/francesco-marini.jpg",
+        "text": "Francesco Marini Research Interest Visual cognitive neuroscience Attention and distraction-filtering Working memory Multisensory integration EEG brain dynamics Position Visiting Scholar: 2017–2020 Postdoctoral Fellow: 2018–2019 Staff Volunteer: 2021–2022",
+        "html": "<img src=\"/people/images/francesco-marini.jpg\" alt=\"Francesco Marini\" class=\"float-md-right ml-md-3\">\n                      <h3>Francesco Marini</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Visual cognitive neuroscience</li>\n                        <li>Attention and  distraction-filtering</li>\n                        <li>Working memory</li>\n                        <li>Multisensory integration</li>\n                        <li>EEG brain dynamics</li>\n                      </ul>\n                      <h4>Position</h4>\n                      <p>Visiting Scholar: 2017–2020</p>\n                      <p>Postdoctoral Fellow: 2018–2019</p>\n                      <p>Staff Volunteer: 2021–2022</p>\n                    "
+      },
+      {
+        "name": "Grainne McLoughlin",
+        "image": "/people/images/grainne.jpg",
+        "text": "Grainne McLoughlin Research Interest Cognitive control Attention Attention Deficit Hyperactivity Disorder Autism Spectrum Disorders Genetic and environmental influences on brain function Twin modelling 2013–2014",
+        "html": "<img src=\"/people/images/grainne.jpg\" alt=\"Grainne McLoughlin\" class=\"float-md-right ml-md-3\">\n                      <h3>Grainne McLoughlin</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Cognitive control</li>\n                        <li>Attention</li>\n                        <li>Attention Deficit Hyperactivity Disorder</li>\n                        <li>Autism Spectrum Disorders</li>\n                        <li>Genetic and environmental influences on brain function</li>\n                        <li>Twin modelling                </li>\n                      </ul>\n                      <p>2013–2014 </p>\n                    "
+      },
+      {
+        "name": "Benjamin Shih",
+        "image": "/people/images/generic.jpg",
+        "text": "Benjamin Shih Research Interest Adaptive tutoring / training systems Algorithmic alternatives to human-centric data processing Machine learning methods that incorporate background knowledge to produce interpretable models",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Benjamin Shih</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Adaptive tutoring / training systems </li>\n                        <li> Algorithmic alternatives to human-centric data  processing Machine learning methods that incorporate background knowledge to  produce interpretable models</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Johanna Wagner",
+        "image": "/people/images/johanna-wagner.jpg",
+        "text": "Johanna Wagner Research Interest Brain-Computer Interaction Neurorehabilitation Mobile Brain Imaging Neural control of movement timing Functional roles of Oscillations in sensorimotor processing 2014–2021",
+        "html": "<img src=\"/people/images/johanna-wagner.jpg\" alt=\"Johanna Wagner\" class=\"float-md-right ml-md-3\">\n                      <h3>Johanna Wagner</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain-Computer Interaction</li>\n                        <li> Neurorehabilitation</li>\n                        <li> Mobile Brain Imaging</li>\n                        <li> Neural control of movement timing </li>\n                        <li> Functional roles of Oscillations in sensorimotor  processing</li>\n                      </ul>\n                      <p>2014–2021</p>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Technical Staff",
+    "people": [
+      {
+        "name": "Rita Beransky",
+        "image": "/people/images/rita.jpg",
+        "text": "Rita Beransky Position Staff Research Associate",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/rita.jpg\" alt=\"Rita Beransky\">\n                      <h3>Rita Beransky</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Staff Research Associate</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Susana Brugues",
+        "image": "/people/images/generic.jpg",
+        "text": "Susana Brugues 2018–2019",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Susana Brugues</h3>\n                      <p>2018–2019</p>\n                    "
+      },
+      {
+        "name": "Ramon Martinez Cancino",
+        "image": "/people/images/generic.jpg",
+        "text": "Ramon Martinez Cancino 2016–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Ramon Martinez Cancino</h3>\n                      <p>2016–2020</p>\n                    "
+      },
+      {
+        "name": "Melissa Caswell",
+        "image": "/people/images/melissa.jpg",
+        "text": "Melissa Caswell",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/melissa.jpg\" alt=\"Melissa Caswell\">\n                      <h3>Melissa Caswell</h3>\n                    "
+      },
+      {
+        "name": "Yi Chen",
+        "image": "/people/images/yi.jpg",
+        "text": "Yi Chen 2011",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/yi.jpg\" alt=\"Yi Chen\">\n                      <h3>Yi Chen</h3>\n                      <p>2011</p>\n                    "
+      },
+      {
+        "name": "Yuzi Chu",
+        "image": "/people/images/yuzi-chu.jpg",
+        "text": "Yuzi Chu Research Interest Digital media technologies Mixed realities Interactive games for empowering narratives and educational experiences 2023",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/yuzi-chu.jpg\" alt=\"Yuzi Chu\">\n                      <h3><a href=\"https://chuyuzi4284.wixsite.com/my-site/about-2\">Yuzi Chu</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Digital media technologies</li>\n                        <li>Mixed realities</li>\n                        <li>Interactive games for empowering narratives and educational experiences</li>\n                      </ul>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Jess Cramer",
+        "image": "/people/images/jess-cramer.jpg",
+        "text": "Jess Cramer 2020",
+        "html": "<img src=\"/people/images/jess-cramer.jpg\" alt=\"Jess Cramer\" class=\"float-md-right ml-md-3\">\n                      <h3>Jess Cramer</h3>\n                      <p>2020</p>\n                    "
+      },
+      {
+        "name": "Marisa Evans",
+        "image": "/people/images/generic.jpg",
+        "text": "Marisa Evans",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Marisa Evans</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Toby Fernsler",
+        "image": "/people/images/toby-fernsler.jpg",
+        "text": "Toby Fernsler Position Programmer/Analyst 2005–2007",
+        "html": "<img src=\"/people/images/toby-fernsler.jpg\" alt=\"Toby Fernsler\" class=\"float-md-right ml-md-3\">\n                      <h3>Toby Fernsler</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Programmer/Analyst 2005–2007</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Alejandro Ojeda Gonzalez",
+        "image": "/people/images/alejandro.jpg",
+        "text": "Alejandro Ojeda Gonzalez Position Programmer Analyst",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/alejandro.jpg\" alt=\"Alejandro Ojeda Gonzalez\">\n                      <h3>Alejandro Ojeda Gonzalez</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Programmer Analyst</li>\n                      </ul>\n                      <p></p>\n                    "
+      },
+      {
+        "name": "Matthew Grivich",
+        "image": "/people/images/mgrivich.jpg",
+        "text": "Matthew Grivich",
+        "html": "<img src=\"/people/images/mgrivich.jpg\" alt=\"Matthew Grivich\" class=\"float-md-right ml-md-3\">\n                      <h3>Matthew Grivich</h3>\n                    "
+      },
+      {
+        "name": "Adriana Luz Guerra",
+        "image": "/people/images/adriana.jpg",
+        "text": "Adriana Luz Guerra",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/adriana.jpg\" alt=\"Adriana Luz Guerra\">\n                      <h3>Adriana Luz Guerra</h3>\n                    "
+      },
+      {
+        "name": "Jessica Hsi",
+        "image": "/people/images/generic.jpg",
+        "text": "Jessica Hsi",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jessica Hsi</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Sydney Kessler",
+        "image": "/people/images/sydney.jpg",
+        "text": "Sydney Kessler Position Staff Volunteer 2019–2020 Staff Research Associate 2020",
+        "html": "<img src=\"/people/images/sydney.jpg\" alt=\"Sydney Kessler\" class=\"float-md-right ml-md-3\">\n                      <h3>Sydney Kessler</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Staff Volunteer 2019–2020</li>\n                        <li>Staff Research Associate 2020</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Christian Kothe",
+        "image": "/people/images/christian.jpg",
+        "text": "Christian Kothe",
+        "html": "<img src=\"/people/images/christian.jpg\" alt=\"Christian Kothe\" class=\"float-md-right ml-md-3\">\n                      <h3>Christian Kothe</h3>\n                    "
+      },
+      {
+        "name": "Clement Lee",
+        "image": "/people/images/clement-lee.jpg",
+        "text": "Clement Lee 2017–2021",
+        "html": "<img src=\"/people/images/clement-lee.jpg\" alt=\"Clement Lee\" class=\"float-md-right ml-md-3\">\n                      <h3>Clement Lee</h3>\n                      <p>2017–2021</p>\n                    "
+      },
+      {
+        "name": "Josh Levin",
+        "image": "/people/images/generic.jpg",
+        "text": "Josh Levin",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Josh Levin</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Jessica Li",
+        "image": "/people/images/jessica.jpg",
+        "text": "Jessica Li 2023",
+        "html": "<img src=\"/people/images/jessica.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jessica Li</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Clarissa Lock",
+        "image": "/people/images/clarissa.jpg",
+        "text": "Clarissa Lock Position Staff Research Associate",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/clarissa.jpg\" alt=\"Clarissa Lock\">\n                      <h3>Clarissa Lock</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Staff Research Associate</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Derrick Lock",
+        "image": "/people/images/dlock.jpg",
+        "text": "Derrick Lock",
+        "html": "<img src=\"/people/images/dlock.jpg\" alt=\"Derrick Lock\" class=\"float-md-right ml-md-3\">\n                      <h3>Derrick Lock</h3>\n                    "
+      },
+      {
+        "name": "Ryan Low",
+        "image": "/people/images/generic.jpg",
+        "text": "Ryan Low Position Staff Research Associate",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Ryan Low</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Staff Research Associate</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Nikita Lowell",
+        "image": "/people/images/nikita.jpg",
+        "text": "Nikita Lowell 2013–2014",
+        "html": "<img src=\"/people/images/nikita.jpg\" alt=\"Nikita Lowell\" class=\"float-md-right ml-md-3\">\n                      <h3>Nikita Lowell</h3>\n                      <p>2013–2014</p>\n                    "
+      },
+      {
+        "name": "Susie Lunardi",
+        "image": "/people/images/generic.jpg",
+        "text": "Susie Lunardi",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Susie Lunardi</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "David Medine",
+        "image": "/people/images/david-medine.jpg",
+        "text": "David Medine 2014–2016",
+        "html": "<img src=\"/people/images/david-medine.jpg\" alt=\"David Medine\" class=\"float-md-right ml-md-3\">\n                      <h3>David Medine</h3>\n                      <p>2014–2016</p>\n                    "
+      },
+      {
+        "name": "Liana Pakingan",
+        "image": "/people/images/generic.jpg",
+        "text": "Liana Pakingan 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Liana Pakingan</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Miryam Palomino",
+        "image": "/people/images/miryam-palomino.jpg",
+        "text": "Miryam Palomino 2018–2019",
+        "html": "<img src=\"/people/images/miryam-palomino.jpg\" alt=\"Miryam Palomino\" class=\"float-md-right ml-md-3\">\n                      <h3>Miryam Palomino</h3>\n                      <p>2018–2019</p>\n                    "
+      },
+      {
+        "name": "Cooper Roddey",
+        "image": "/people/images/generic.jpg",
+        "text": "Cooper Roddey Position Scientific Research Associate 2003–2004",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Cooper Roddey</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Scientific Research Associate 2003–2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Annalisa Salazar",
+        "image": "/people/images/generic.jpg",
+        "text": "Annalisa Salazar 2020, 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Annalisa Salazar</h3>\n                      <p>2020, 2023–2024</p>\n                    "
+      },
+      {
+        "name": "Devapratim Sarma",
+        "image": "/people/images/dev.jpg",
+        "text": "Devapratim Sarma",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/dev.jpg\" alt=\"Devapratim Sarma\">\n                      <h3>Devapratim Sarma</h3>\n                    "
+      },
+      {
+        "name": "Jeff Schmitz",
+        "image": "/people/images/jeff.jpg",
+        "text": "Jeff Schmitz Position Programmer/Analyst",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/jeff.jpg\" alt=\"Jeff Schmitz\">\n                      <h3>Jeff Schmitz</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Programmer/Analyst</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Hilit Serby",
+        "image": "/people/images/generic.jpg",
+        "text": "Hilit Serby Position System Programmer 2004–2006",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hilit Serby</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>System Programmer 2004–2006</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Nima Bigdely Shamlo",
+        "image": "/people/images/nima.png",
+        "text": "Nima Bigdely Shamlo Research Interest Brain Computer Interface Machine Learning Artificial Life Visualization",
+        "html": "<img src=\"/people/images/nima.png\" alt=\"Nima Bigdely Shamlo\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~nima\">Nima Bigdely Shamlo</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain Computer Interface</li>\n                        <li>Machine Learning</li>\n                        <li>Artificial Life</li>\n                        <li>Visualization</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Bradley Stone",
+        "image": "/people/images/generic.jpg",
+        "text": "Bradley Stone Position Staff Research Associate 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Bradley Stone</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Staff Research Associate 2015–2016</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Jenny Stowe Kim",
+        "image": "/people/images/generic.jpg",
+        "text": "Jenny Stowe Kim Position Laboratory Assistant 2004–2006",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jenny Stowe Kim</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Laboratory Assistant 2004–2006</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Dung (Young) Truong",
+        "image": "/people/images/generic.jpg",
+        "text": "Dung (Young) Truong 2019–present",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Dung (Young) Truong</h3>\n                      <p>2019–present</p>\n                    "
+      },
+      {
+        "name": "Evren Tumer",
+        "image": "/people/images/evren.jpg",
+        "text": "Evren Tumer Position Senior Development Engineer",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/evren.jpg\" alt=\"Evren Tumer\">\n                      <h3>Evren Tumer</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Senior Development Engineer</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Andre Vankov",
+        "image": "/people/images/andrey.jpg",
+        "text": "Andre Vankov Position Senior Development Engineer",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/andrey.jpg\" alt=\"Andre Vankov\">\n                      <h3>Andre Vankov</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Senior Development Engineer</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Yu-Te Wang",
+        "image": "/people/images/yute.png",
+        "text": "Yu-Te Wang Research Interest Development of mobile wireless EEG and BCI systems.",
+        "html": "<img src=\"/people/images/yute.png\" alt=\"Yu-Te Wang\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://sccn.ucsd.edu/~yute\">Yu-Te Wang</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Development of mobile wireless EEG and BCI systems.</li>\n                      </ul>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Graduate Student Researchers",
+    "people": [
+      {
+        "name": "Sheng-Hsiou (Shawn) Hsu",
+        "image": "/people/images/generic.jpg",
+        "text": "Sheng-Hsiou (Shawn) Hsu",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Sheng-Hsiou (Shawn) Hsu</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Chieh Hsu",
+        "image": "/people/images/chiehhsu.jpg",
+        "text": "Chieh Hsu Research Interest Brain computer interface EEG analysis 2020–2021",
+        "html": "<img src=\"/people/images/chiehhsu.jpg\" alt=\"Chieh Hsu\" class=\"float-md-right ml-md-3\">\n                      <h3>Chieh Hsu</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain computer interface</li>\n                        <li>EEG analysis</li>\n                      </ul>\n                      <p>2020–2021</p>\n                    "
+      },
+      {
+        "name": "Nicholas Rosseinsky",
+        "image": "/people/images/generic.jpg",
+        "text": "Nicholas Rosseinsky Position Graduate Student, Computational Neurobiology 2003–2007",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Nicholas Rosseinsky</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Graduate Student, Computational Neurobiology 2003–2007</li>\n                      </ul>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Visiting Scholars",
+    "people": [
+      {
+        "name": "Jörn Anemüller",
+        "image": "/people/images/jörn%20anemüller.jpg",
+        "text": "Jörn Anemüller Position Visiting Postdoctoral Fellow: 2002–2004",
+        "html": "<img src=\"/people/images/j%C3%B6rn%20anem%C3%BCller.jpg\" alt=\"Jörn Anemüller\" class=\"float-md-right ml-md-3\">\n                      <h3>Jörn Anemüller</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdoctoral Fellow: 2002–2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Fiorenzo Artoni",
+        "image": "/people/images/fiorenzo.jpg",
+        "text": "Fiorenzo Artoni Research Interest Developing a Mobile Brain Imaging Lab with the aim of post-stroke (lower limb in particular) rehabilitation. EEG and Gait analysis. Tactile perception and nerve stimulation: EEG neural correlates to perception Development of RELICA, a toolbox for the analysis of reliability of independent components, and the correspondent dipole fitting. Study of the performance and the ways to optimize our best GPU/CPU-based ICA algorithms. Studying the best approaches to standardize the way EEG pre-processing should be performed Background in Control Engineering, Biomedical Engineering 2014",
+        "html": "<img src=\"/people/images/fiorenzo.jpg\" alt=\"Fiorenzo Artoni\" class=\"float-md-right ml-md-3\">\n                      <h3>Fiorenzo Artoni</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Developing a Mobile Brain Imaging Lab with the aim of post-stroke (lower limb in particular) rehabilitation. EEG and Gait analysis. </li>\n                        <li>Tactile perception and nerve stimulation: EEG neural correlates to perception </li>\n                        <li>Development of RELICA, a toolbox for the analysis of reliability of independent components, and the correspondent dipole fitting. Study of the performance and the ways to optimize our best GPU/CPU-based ICA algorithms. </li>\n                        <li>Studying the best approaches to standardize the way EEG pre-processing should be performed </li>\n                        <li>Background in Control Engineering, Biomedical Engineering</li>\n                      </ul>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Pan Baizhou",
+        "image": "/people/images/generic.jpg",
+        "text": "Pan Baizhou 2019",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Pan Baizhou</h3>\n                      <p>2019</p>\n                    "
+      },
+      {
+        "name": "Timotheus Berg",
+        "image": "/people/images/generic.jpg",
+        "text": "Timotheus Berg 2021–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Timotheus Berg</h3>\n                      <p>2021–2022</p>\n                    "
+      },
+      {
+        "name": "Stefan Berti",
+        "image": "/people/images/stefan-berti,jpg",
+        "text": "Stefan Berti Position Visiting Research Fellow 2004",
+        "html": "<img src=\"/people/images/stefan-berti,jpg\" alt=\"Stefan Berti\" class=\"float-md-right ml-md-3\">\n                      <h3>Stefan Berti</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Research Fellow 2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Jonas Bronstrup",
+        "image": "/people/images/generic.jpg",
+        "text": "Jonas Bronstrup",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jonas Bronstrup</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Pablo Burgos",
+        "image": "/people/images/generic.jpg",
+        "text": "Pablo Burgos 2013",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Pablo Burgos</h3>\n                      <p>2013</p>\n                    "
+      },
+      {
+        "name": "Niko Busch",
+        "image": "/people/images/generic.jpg",
+        "text": "Niko Busch Position Visiting Postdoctoral Fellow: 2004",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Niko Busch</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdoctoral Fellow: 2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Dan Callan",
+        "image": "/people/images/dan-callan.jpg",
+        "text": "Dan Callan 2013–2019",
+        "html": "<img src=\"/people/images/dan-callan.jpg\" alt=\"Dan Callan\" class=\"float-md-right ml-md-3\">\n                      <h3>Dan Callan</h3>\n                      <p>2013–2019</p>\n                    "
+      },
+      {
+        "name": "Vinicio Changoluisa",
+        "image": "/people/images/generic.jpg",
+        "text": "Vinicio Changoluisa 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Vinicio Changoluisa</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Aisha Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "Aisha Chen 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Aisha Chen</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Li-Fen Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "Li-Fen Chen",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Li-Fen Chen</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Yong-Sheng Chen",
+        "image": "/people/images/yschen.jpg",
+        "text": "Yong-Sheng Chen Research Interest EEG/MEG source estimation Morphometric analysis of brain structure using MRI 2013–2014",
+        "html": "<img src=\"/people/images/yschen.jpg\" alt=\"Yong-Sheng Chen\" class=\"float-md-right ml-md-3\">\n                      <h3>Yong-Sheng Chen</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG/MEG  source estimation</li>\n                        <li>Morphometric analysis of brain structure using MRI</li>\n                      </ul>\n                      <p>2013–2014</p>\n                    "
+      },
+      {
+        "name": "Shih-Kuen Cheng",
+        "image": "/people/images/generic.jpg",
+        "text": "Shih-Kuen Cheng 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shih-Kuen Cheng</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Dr. Chun-Hsiang Chuang",
+        "image": "/people/images/chun-hsiang-chuang.jpg",
+        "text": "Dr. Chun-Hsiang Chuang 2012–2013 Current position Post-doctoral fellow, Brain Research Center, National Chiao Tung University, Hsinchu, Taiwan",
+        "html": "<img src=\"/people/images/chun-hsiang-chuang.jpg\" alt=\"Dr. Chun-Hsiang Chuang\" class=\"float-md-right ml-md-3\">\n                      <h3>Dr. Chun-Hsiang Chuang</h3>\n                      <p>2012–2013</p>\n                      <h4>Current position</h4>\n                      <p>Post-doctoral fellow, Brain Research Center, National Chiao  Tung University, Hsinchu, Taiwan </p>\n                    "
+      },
+      {
+        "name": "Gabriela Cruz",
+        "image": "/people/images/gcruz.jpg",
+        "text": "Gabriela Cruz Research Interest Use of technology to help brain injured individuals to engage successfully in daily activities. Rehabilitation of memory and executive functions. Neural correlates of memory and executive functions. EEG neuroimaging and rehabilitation. 2012–2013",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/gcruz.jpg\" alt=\"Gabriela Cruz\">\n                      <h3>Gabriela Cruz</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Use of technology to help brain injured individuals to engage  successfully in daily activities.</li>\n                        <li> Rehabilitation of memory and executive functions.</li>\n                        <li> Neural correlates of memory and executive functions.</li>\n                        <li> EEG neuroimaging and rehabilitation.</li>\n                      </ul>\n                      <p>2012–2013</p>\n                    "
+      },
+      {
+        "name": "Stefan Debener",
+        "image": "/people/images/stefan-debener.jpg",
+        "text": "Stefan Debener Position Visiting Postdoctoral Fellow: 2003–2004",
+        "html": "<img src=\"/people/images/stefan-debener.jpg\" alt=\"Stefan Debener\" class=\"float-md-right ml-md-3\">\n                      <h3>Stefan Debener</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdoctoral Fellow: 2003–2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Bas de Kruif",
+        "image": "/people/images/generic.jpg",
+        "text": "Bas de Kruif Position Visiting Postdoctoral Fellow: 2006",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Bas de Kruif</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdoctoral Fellow: 2006</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Monique Denissen",
+        "image": "/people/images/generic.jpg",
+        "text": "Monique Denissen 2021-2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Monique Denissen</h3>\n                      <p>2021-2022</p>\n                    "
+      },
+      {
+        "name": "Deniz Duman",
+        "image": "/people/images/generic.jpg",
+        "text": "Deniz Duman 2019",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Deniz Duman</h3>\n                      <p>2019</p>\n                    "
+      },
+      {
+        "name": "Alper Erdogan",
+        "image": "/people/images/alper-erdogan.jpg",
+        "text": "Alper Erdogan 2014–2015",
+        "html": "<img src=\"/people/images/alper-erdogan.jpg\" alt=\"Alper Erdogan\" class=\"float-md-right ml-md-3\">\n                      <h3>Alper Erdogan</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Shang Feng",
+        "image": "/people/images/generic.jpg",
+        "text": "Shang Feng 2015–2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shang Feng</h3>\n                      <p>2015–2017</p>\n                    "
+      },
+      {
+        "name": "Luca Finelli",
+        "image": "/people/images/generic.jpg",
+        "text": "Luca Finelli Position Visiting Postdoctoral Fellow: 2001–2002",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Luca Finelli</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdoctoral Fellow: 2001–2002</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Arthur Flexer",
+        "image": "/people/images/generic.jpg",
+        "text": "Arthur Flexer Position Visiting Postdoctoral Fellow: 2003–2004",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Arthur Flexer</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdoctoral Fellow: 2003–2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "André Fonseca",
+        "image": "/people/images/generic.jpg",
+        "text": "André Fonseca 2016–2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>André Fonseca</h3>\n                      <p>2016–2017</p>\n                    "
+      },
+      {
+        "name": "Lukas Gehrke",
+        "image": "/people/images/lukas-gehrke.jpg",
+        "text": "Lukas Gehrke 2016–2017",
+        "html": "<img src=\"/people/images/lukas-gehrke.jpg\" alt=\"Lukas Gehrke\" class=\"float-md-right ml-md-3\">\n                      <h3>Lukas Gehrke</h3>\n                      <p>2016–2017</p>\n                    "
+      },
+      {
+        "name": "Klaus Gramann",
+        "image": "/people/images/klaus-gramann.jpg",
+        "text": "Klaus Gramann Position Postdoc/Project Scientist: 2001–2009 Visiting Postdoctoral Fellow: 2006",
+        "html": "<img src=\"/people/images/klaus-gramann.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Klaus Gramann</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Postdoc/Project Scientist: 2001–2009</li>\n                        <li>Visiting Postdoctoral Fellow: 2006</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Allen Gruber",
+        "image": "/people/images/allen-gruber.jpg",
+        "text": "Allen Gruber Position Asst. Clinical Prof. of Neuroscience 2007–2008",
+        "html": "<img src=\"/people/images/allen-gruber.jpg\" alt=\"Allen Gruber\" class=\"float-md-right ml-md-3\">\n                      <h3>Allen Gruber</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Asst. Clinical Prof. of Neuroscience 2007–2008</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Linbi Hong",
+        "image": "/people/images/linbihong.jpg",
+        "text": "Linbi Hong 2014",
+        "html": "<img src=\"/people/images/linbihong.jpg\" alt=\"Linbi Hong\" class=\"float-md-right ml-md-3\">\n                      <h3>Linbi Hong</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Jia-Lien Hsu",
+        "image": "/people/images/generic.jpg",
+        "text": "Jia-Lien Hsu Position Clinical Research Fellow 2004–2005",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jia-Lien Hsu</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Clinical Research Fellow 2004–2005</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Yan-Cheng (Bill) Hsu",
+        "image": "/people/images/generic.jpg",
+        "text": "Yan-Cheng (Bill) Hsu 2022–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yan-Cheng (Bill) Hsu</h3>\n                      <p>2022–2024</p>\n                    "
+      },
+      {
+        "name": "Chih-Sheng (Tommy) Huang",
+        "image": "/people/images/tommy-huang.jpg",
+        "text": "Chih-Sheng (Tommy) Huang Research Interest EEG-based Sleep Stage Classification Supervised and Unsupervised Machine Learning Multiple Classification System Information flow 2013–2014",
+        "html": "<img src=\"/people/images/tommy-huang.jpg\" alt=\"Chih-Sheng (Tommy) Huang\" class=\"float-md-right ml-md-3\">\n                      <h3>Chih-Sheng (Tommy) Huang</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG-based Sleep Stage Classification</li>\n                        <li>Supervised and Unsupervised Machine Learning</li>\n                        <li>Multiple Classification System</li>\n                        <li>Information flow</li>\n                      </ul>\n                      <p>2013–2014</p>\n                    "
+      },
+      {
+        "name": "Yu-Chieh Huang",
+        "image": "/people/images/generic.jpg",
+        "text": "Yu-Chieh Huang 2013–2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yu-Chieh Huang</h3>\n                      <p>2013–2014</p>\n                    "
+      },
+      {
+        "name": "Mareike Hülsemann",
+        "image": "/people/images/generic.jpg",
+        "text": "Mareike Hülsemann 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Mareike Hülsemann</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Poyuan Jeng",
+        "image": "/people/images/generic.jpg",
+        "text": "Poyuan Jeng 2018–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Poyuan Jeng</h3>\n                      <p>2018–2020</p>\n                    "
+      },
+      {
+        "name": "Wei-De Jeng",
+        "image": "/people/images/generic.jpg",
+        "text": "Wei-De Jeng 2014–2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Wei-De Jeng</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Evelyn Jungnickel",
+        "image": "/people/images/generic.jpg",
+        "text": "Evelyn Jungnickel 2014–2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Evelyn Jungnickel</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Hiroyuki Kambara",
+        "image": "/people/images/hiroyuki-kambara.jpg",
+        "text": "Hiroyuki Kambara Research Interest Computational modeling of neural motor control and learning MoBI for visuomotor transformation 2014, 2016",
+        "html": "<img src=\"/people/images/hiroyuki-kambara.jpg\" alt=\"Hiroyuki Kambara\" class=\"float-md-right ml-md-3\">\n                      <h3>Hiroyuki Kambara</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Computational modeling of neural motor control and learning</li>\n                        <li> MoBI for visuomotor transformation</li>\n                      </ul>\n                      <p>2014, 2016</p>\n                    "
+      },
+      {
+        "name": "Takahiro Kagawa",
+        "image": "/people/images/generic.jpg",
+        "text": "Takahiro Kagawa 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Takahiro Kagawa</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Sara Kamali",
+        "image": "/people/images/sara-kamali-2023.jpg",
+        "text": "Sara Kamali Research Interest Identifying robust sequences in the brain dynamics Nonlinear methods for EEG signal analysis EEG feature extraction with XAI Nonlinear dynamics and chaotic systems 2023",
+        "html": "<img src=\"/people/images/sara-kamali-2023.jpg\" alt=\"Sara Kamali\" class=\"float-md-right ml-md-3\">\n                      <h3>Sara Kamali</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Identifying robust sequences in the brain  dynamics</li>\n                        <li>Nonlinear methods for EEG signal analysis</li>\n                        <li>EEG feature  extraction with XAI</li>\n                        <li>Nonlinear dynamics and chaotic systems</li>\n                      </ul>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Joong Koo Kang",
+        "image": "/people/images/joong.png",
+        "text": "Joong Koo Kang Research Interest Epilepsy",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/joong.png\" alt=\"Joong Koo Kang\">\n                      <h3>Joong Koo Kang</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Epilepsy</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Seung Wan Kang",
+        "image": "/people/images/seung-kang.jpg",
+        "text": "Seung Wan Kang Research Interest development of gender and age dependent standard reference EEG DB from Korean healthy population relation & causality between EEG and behavior, emotion, cognitive function predicting the risk of developmental, behavioral, emotional & cognitive problem by computational analyzing of individual EEGs relation & causality between EEG, ECG and respiration 2016",
+        "html": "<img src=\"/people/images/seung-kang.jpg\" alt=\"Seung Kang\" class=\"float-md-right ml-md-3\">\n                      <h3>Seung Wan Kang</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>development  of gender and age dependent standard reference EEG DB from Korean healthy  population</li>\n                        <li>relation  &amp; causality between EEG and behavior, emotion, cognitive function</li>\n                        <li>predicting  the risk of developmental, behavioral, emotional &amp; cognitive problem by  computational analyzing of individual EEGs</li>\n                        <li>relation  &amp; causality between EEG, ECG and respiration</li>\n                      </ul>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Shiyong Kang",
+        "image": "/people/images/generic.jpg",
+        "text": "Shiyong Kang 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shiyong Kang</h3>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Jung-Tai King",
+        "image": "/people/images/generic.jpg",
+        "text": "Jung-Tai King 2025",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jung-Tai King</h3>\n                      <p>2025</p>\n                    "
+      },
+      {
+        "name": "Hyunmi Lim",
+        "image": "/people/images/generic.jpg",
+        "text": "Hyunmi Lim 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hyunmi Lim</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Simon Lind Kappel",
+        "image": "/people/images/generic.jpg",
+        "text": "Simon Lind Kappel 2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Simon Lind Kappel</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Shiva Khoshnoud",
+        "image": "/people/images/generic.jpg",
+        "text": "Shiva Khoshnoud 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shiva Khoshnoud</h3>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Li-Wei Ko",
+        "image": "/people/images/lwko.jpg",
+        "text": "Li-Wei Ko Research Interest Neural Engineering Brain Computer Interface Neural Rehabilitation Wearable Devices. SCCN position(s) Visiting PhD student: 2006–2007 Visiting Post-doc: 2008–2012 Visiting Professor: 2017–2020 Visiting Professor: 2024–2025 Current position Professor, Dept of Biological Science and Technology, National Chiao Tung University, Hsinchu, Taiwan.",
+        "html": "<img src=\"/people/images/lwko.jpg\" alt=\"Li-Wei Ko\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"http://e021.life.nctu.edu.tw/~lwko/\">Li-Wei Ko</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Neural Engineering</li>\n                        <li>Brain Computer Interface</li>\n                        <li>Neural Rehabilitation</li>\n                        <li>Wearable Devices.</li>\n                      </ul>\n                      <h4>SCCN position(s)</h4>\n                      <p>Visiting PhD student: 2006–2007<br>\n                      Visiting Post-doc: 2008–2012<br>\n                      Visiting Professor: 2017–2020<br>\n                      Visiting Professor: 2024–2025</p>\n                      <h4>Current position</h4>\n                      <p>Professor, Dept of Biological Science and Technology, National Chiao Tung University, Hsinchu, Taiwan. </p>\n                    "
+      },
+      {
+        "name": "Young-Hoon Ko",
+        "image": "/people/images/generic.jpg",
+        "text": "Young-Hoon Ko 2012–2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Young-Hoon Ko</h3>\n                      <p>2012–2014</p>\n                    "
+      },
+      {
+        "name": "Laurens R. Krol",
+        "image": "/people/images/generic.jpg",
+        "text": "Laurens R. Krol 2014, 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Laurens R. Krol</h3>\n                      <p>2014, 2017</p>\n                    "
+      },
+      {
+        "name": "Jeonghun Ku",
+        "image": "/people/images/generic.jpg",
+        "text": "Jeonghun Ku 2022–2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jeonghun Ku</h3>\n                      <p>2022–2023</p>\n                    "
+      },
+      {
+        "name": "Elise Labonte-LeMoyne",
+        "image": "/people/images/elise-labonte-lemoyne.jpg",
+        "text": "Elise Labonte-LeMoyne Research Interest Neuroscience, Cognition, Brain and Cognitive Development, Kinesiology, Cognitive Science, Cognitive Psychology, and 16 moreCognitive Neuroscience, Neuropsychology, Memory (Cognitive Psychology), Sport Psychology, Cognitive Neuropsychology, Exercise Physiology, Cognitive development, Sport And Exercise Psychology, Behavioral Neuroscience, Sports Medicine, Exercise and physical activity for health, Exercise Science, Sport, Physical Education, Psychology, and Social Psychology 2015",
+        "html": "<img src=\"/people/images/elise-labonte-lemoyne.jpg\" alt=\"Elise Labonte-LeMoyne\" class=\"float-md-right ml-md-3\">\n                      <h3>Elise Labonte-LeMoyne</h3>\n                      <h4>Research Interest</h4>\n                      <p>Neuroscience, Cognition, Brain and Cognitive Development, Kinesiology, Cognitive Science, Cognitive Psychology, and 16 moreCognitive Neuroscience, Neuropsychology, Memory (Cognitive Psychology), Sport Psychology, Cognitive Neuropsychology, Exercise Physiology, Cognitive development, Sport And Exercise Psychology, Behavioral Neuroscience, Sports Medicine, Exercise and physical activity for health, Exercise Science, Sport, Physical Education, Psychology, and Social Psychology</p>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Il Keun Lee",
+        "image": "/people/images/generic.jpg",
+        "text": "Il Keun Lee Position Clinical Research Fellow 2003–2005",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Il Keun Lee</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Clinical Research Fellow 2003–2005</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Pin-Shiuan Lee",
+        "image": "/people/images/pslee.png",
+        "text": "Pin-Shiuan Lee Research Interest EEG/MEG-beamforming method Cross-frequency coupling analysis of resting MEG data Emotion/Affective disorder",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/pslee.png\" alt=\"Pin-Shiuan Lee\">\n                      <h3>Pin-Shiuan Lee</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>EEG/MEG-beamforming  method</li>\n                        <li> Cross-frequency coupling analysis of resting MEG data</li>\n                        <li> Emotion/Affective disorder</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Grace Leslie",
+        "image": "/people/images/gleslie.png",
+        "text": "Grace Leslie Research Interest Music Perception and Cognition Emotion Motion Capture",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/gleslie.png\" alt=\"Grace Leslie\">\n                      <h3>Grace Leslie</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Music Perception and  Cognition</li>\n                        <li>Emotion</li>\n                        <li>Motion Capture</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Xiao-Ping Li",
+        "image": "/people/images/generic.jpg",
+        "text": "Xiao-Ping Li 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Xiao-Ping Li</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Chin-Teng Lin",
+        "image": "/people/images/generic.jpg",
+        "text": "Chin-Teng Lin 2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chin-Teng Lin</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Hongbo Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Hongbo Liu 2012–2013",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hongbo Liu</h3>\n                      <p>2012–2013</p>\n                    "
+      },
+      {
+        "name": "Yuan-Pin Lin",
+        "image": "/people/images/yplin.jpg",
+        "text": "Yuan-Pin Lin Research Interest Analysis and modeling of emotion perception and music appreciation Affective brain-computer interface Mobile SSVEP-based brain-computer interface",
+        "html": "<img src=\"/people/images/yplin.jpg\" alt=\"Yuan-Pin Lin\" class=\"float-md-right ml-md-3\">\n                      <a href=\"https://sites.google.com/site/yplin0115/\">\n                      <h3>Yuan-Pin Lin</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul type=\"square\">\n                        <li>Analysis and modeling of emotion perception and music appreciation</li>\n                        <li>Affective brain-computer interface</li>\n                        <li>Mobile SSVEP-based brain-computer interface</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Yu-Ting Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Yu-Ting Liu 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yu-Ting Liu</h3>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Jiacheng Ma",
+        "image": "/people/images/generic.jpg",
+        "text": "Jiacheng Ma 2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jiacheng Ma</h3>\n                      <p>2024</p>\n                    "
+      },
+      {
+        "name": "Franziska Michalczik",
+        "image": "/people/images/generic.jpg",
+        "text": "Franziska Michalczik 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Franziska Michalczik</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Elizabeth Milne",
+        "image": "/people/images/generic.jpg",
+        "text": "Elizabeth Milne Position Visiting Research Fellow 2007–2008",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Elizabeth Milne</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Research Fellow 2007–2008</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Marie Mueckstein",
+        "image": "/people/images/generic.jpg",
+        "text": "Marie Mueckstein 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Marie Mueckstein</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Helmi Norman",
+        "image": "/people/images/helmi-norman.jpg",
+        "text": "Helmi Norman Research Interest Social cognition in ubiquitous and mobile learning environments Cognitive models for emerging learning technologies 2014",
+        "html": "<img src=\"/people/images/helmi-norman.jpg\" alt=\"Helmi Norman\" class=\"float-md-right ml-md-3\"><h3>Helmi Norman</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Social cognition in ubiquitous and mobile learning environments</li>\n                        <li> Cognitive models for emerging learning technologies</li>\n                      </ul>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Paul Pawletta",
+        "image": "/people/images/generic.jpg",
+        "text": "Paul Pawletta 2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Paul Pawletta</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Steven Peterson",
+        "image": "/people/images/generic.jpg",
+        "text": "Steven Peterson 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Steven Peterson</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Caterina Piazza",
+        "image": "/people/images/caterina-piazza.jpg",
+        "text": "Caterina Piazza 2014–2015",
+        "html": "<img src=\"/people/images/caterina-piazza.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Caterina Piazza</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Yurong Qin",
+        "image": "/people/images/generic.jpg",
+        "text": "Yurong Qin 2016–2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yurong Qin</h3>\n                      <p>2016–2017</p>\n                    "
+      },
+      {
+        "name": "Rey Ramirez",
+        "image": "/people/images/rey-ramirez.jpg",
+        "text": "Rey Ramirez Position Postdoctoral Fellow: 2005–2008",
+        "html": "<img src=\"/people/images/rey-ramirez.jpg\" alt=\"Rey Ramirez\" class=\"float-md-right ml-md-3\">\n                      <h3>Rey Ramirez</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Postdoctoral Fellow: 2005–2008</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Joaquín Rapela",
+        "image": "/people/images/jrapela.jpg",
+        "text": "Joaquín Rapela Research Interest Oculomotor behaviors in humans Attention in humans Vision in single cells 2012–2017",
+        "html": "<img src=\"/people/images/jrapela.jpg\" alt=\"Joaquín Rapela\" class=\"float-md-right ml-md-3\">\n                      <a href=\"https://sccn.ucsd.edu/~rapela\">\n                      <h3>Joaquín Rapela</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Oculomotor behaviors in humans</li>\n                        <li>Attention in humans</li>\n                        <li>Vision in single cells</li>\n                      </ul>\n                      <p>2012–2017</p>\n                    "
+      },
+      {
+        "name": "Andrea Ravignani",
+        "image": "/people/images/generic.jpg",
+        "text": "Andrea Ravignani 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Andrea Ravignani</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Thomas Riis",
+        "image": "/people/images/generic.jpg",
+        "text": "Thomas Riis 2013",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Thomas Riis</h3>\n                      <p>2013</p>\n                    "
+      },
+      {
+        "name": "Yasufumi Sakai",
+        "image": "/people/images/generic.jpg",
+        "text": "Yasufumi Sakai 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yasufumi Sakai</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Dario Sanalitro",
+        "image": "/people/images/dario-sanalitro.jpg",
+        "text": "Dario Sanalitro Research Interest Brain-Computer Interface Aerial Robotics Aerial Physical Interactions Control 2024",
+        "html": "<img src=\"/people/images/dario-sanalitro.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://dsanalit.github.io/\">Dario Sanalitro</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain-Computer Interface</li>\n                        <li>Aerial  Robotics</li>\n                        <li>Aerial Physical Interactions</li>\n                        <li>Control</li>\n                      </ul>\n                      <p>2024</p>\n                    "
+      },
+      {
+        "name": "Pierfilippo de Sanctis",
+        "image": "/people/images/pierfilippo-de-sanctis.jpg",
+        "text": "Pierfilippo de Sanctis 2017",
+        "html": "<img src=\"/people/images/pierfilippo-de-sanctis.jpg\" alt=\"Philip de Sanctis\" class=\"float-md-right ml-md-3\">\n                      <h3>Pierfilippo de Sanctis</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Hsiao-Ching She",
+        "image": "/people/images/hsiao-ching-she.png",
+        "text": "Hsiao-Ching She Research Interest Scientific Conceptual Change On-line Scientific Reasoning and Conceptual Change On-line Scientific Argumentation and Conceptual Change EEG, Eye Movement and Science Learning Teacher-students Interaction and Knowledge construction",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/hsiao-ching-she.png\" alt=\"Hsiao-Ching She\">\n                      <a href=\"http://sciedu.cc.nctu.edu.tw/hcshe/eng/vitae_eng.html\">\n                      <h3>Hsiao-Ching She</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Scientific Conceptual Change</li>\n                        <li>On-line Scientific Reasoning and Conceptual Change</li>\n                        <li>On-line Scientific Argumentation and Conceptual Change</li>\n                        <li>EEG, Eye Movement and Science Learning</li>\n                        <li>Teacher-students Interaction and Knowledge construction</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Erh-Li Shen",
+        "image": "/people/images/erhli.jpg",
+        "text": "Erh-Li Shen Research Interest Brain Computer Interface Machine Learning Mobile Computing Human Computer Interaction 2011",
+        "html": "<img src=\"/people/images/erhli.jpg\" alt=\"Erh-Li Shen\" class=\"float-md-right ml-md-3\">\n                      <h3>Erh-Li Shen</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain Computer Interface</li>\n                        <li>Machine Learning</li>\n                        <li>Mobile Computing</li>\n                        <li>Human Computer Interaction</li>\n                      </ul>\n                      <p>2011</p>\n                    "
+      },
+      {
+        "name": "Cory Stevenson",
+        "image": "/people/images/cestevenson.jpg",
+        "text": "Cory Stevenson Research Interest Human motor and balance control Brain-machine interfaces Eye tracking Graduate student: –2021 Visiting scholar: 2021",
+        "html": "<img src=\"/people/images/cestevenson.jpg\" alt=\"Cory Stevenson\" class=\"float-md-right ml-md-3\">\n                      <h3>Cory Stevenson</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Human motor and balance control</li>\n                        <li>Brain-machine interfaces</li>\n                        <li>Eye tracking </li>\n                      </ul>\n                      <p>Graduate student: –2021<br>\n                      Visiting scholar: 2021</p>\n                    "
+      },
+      {
+        "name": "Maryam Tabatabaeian",
+        "image": "/people/images/generic.jpg",
+        "text": "Maryam Tabatabaeian 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Maryam Tabatabaeian</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Hirokazu Tanaka",
+        "image": "/people/images/generic.jpg",
+        "text": "Hirokazu Tanaka 2013, 2014–2015, 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hirokazu Tanaka</h3>\n                      <p>2013, 2014–2015, 2016</p>\n                    "
+      },
+      {
+        "name": "Yongquing Tang",
+        "image": "/people/images/generic.jpg",
+        "text": "Yongquing Tang 2012",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yongquing Tang</h3>\n                      <p>2012</p>\n                    "
+      },
+      {
+        "name": "Nattapong Thammasan",
+        "image": "/people/images/nattapong-thammasan.jpg",
+        "text": "Nattapong Thammasan Research Interest Affective Computing (Emotion Recognition) Brain-computer Interface in Music Listening EEG Signal Processing and Analysis Machine Learning 2016–2018",
+        "html": "<img src=\"/people/images/nattapong-thammasan.jpg\" alt=\"Nattapong Thammasan\" class=\"float-md-right ml-md-3\"><a href=\"https://sites.google.com/view/nthammasan\"><h3>Nattapong Thammasan</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Affective Computing (Emotion Recognition)</li>\n                        <li>Brain-computer Interface in Music Listening</li>\n                        <li>EEG Signal Processing and Analysis</li>\n                        <li> Machine Learning</li>\n                      </ul>\n                      <p>2016–2018</p>\n                    "
+      },
+      {
+        "name": "Thomas Töllner",
+        "image": "/people/images/thomas-toellner.jpg",
+        "text": "Thomas Töllner 2011",
+        "html": "<img src=\"/people/images/thomas-toellner.jpg\" alt=\"Thomas Töllner\" class=\"float-md-right ml-md-3\">\n                      <h3>Thomas Töllner</h3>\n                      <p>2011</p>\n                    "
+      },
+      {
+        "name": "Georg Turi",
+        "image": "/people/images/georg-turi.jpg",
+        "text": "Georg Turi Position Visiting Scientist",
+        "html": "<img src=\"/people/images/georg-turi.jpg\" alt=\"Georg Turi\" class=\"float-md-right ml-md-3\">\n                      <h3>Georg Turi</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Scientist</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Arthur Tsai",
+        "image": "/people/images/arthur-tsai.jpg",
+        "text": "Arthur Tsai Position Visiting Postdocotral Fellow: 2003–2004",
+        "html": "<img src=\"/people/images/arthur-tsai.jpg\" alt=\"Arthur Tsai\" class=\"float-md-right ml-md-3\">\n                      <h3>Arthur Tsai</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Postdocotral Fellow: 2003–2004</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Peter Ullsperger",
+        "image": "/people/images/generic.jpg",
+        "text": "Peter Ullsperger Position Visiting Research Fellow 2005–2006",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Peter Ullsperger</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Visiting Research Fellow 2005–2006</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Kevin Verdiere",
+        "image": "/people/images/kevin-verdiere.jpg",
+        "text": "Kevin Verdiere 2018",
+        "html": "<img src=\"/people/images/kevin-verdiere.jpg\" alt=\"Kevin Verdiere\" class=\"float-md-right ml-md-3\">\n                      <h3>Kevin Verdiere</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Feng Wan",
+        "image": "/people/images/generic.jpg",
+        "text": "Feng Wan 2019–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Feng Wan</h3>\n                      <p>2019–2021</p>\n                    "
+      },
+      {
+        "name": "YuKai Wang",
+        "image": "/people/images/yukai-wang.jpg",
+        "text": "YuKai Wang Research Interest Machine Learning EEG Based Brain Computer Interface 2013–2014",
+        "html": "<img src=\"/people/images/yukai-wang.jpg\" alt=\"YuKai Wang\" class=\"float-md-right ml-md-3\">\n                      <h3>YuKai Wang</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Machine Learning</li>\n                        <li>EEG Based Brain Computer Interface</li>\n                      </ul>\n                      <p>2013–2014</p>\n                    "
+      },
+      {
+        "name": "Tomas Ward",
+        "image": "/people/images/tomas-ward.jpg",
+        "text": "Tomas Ward Research Interest Neural correlates of temporal perception Neuroimaging of motor networks for application in rehabilitation Dual modality Brain Computer Interfaces 2012–2013",
+        "html": "<img src=\"/people/images/tomas-ward.jpg\" alt=\"Tomas Ward\" class=\"float-md-right ml-md-3\">\n                      <h3>Tomas Ward</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Neural correlates of temporal perception</li>\n                        <li>Neuroimaging of motor networks for application in rehabilitation</li>\n                        <li>Dual modality  Brain Computer Interfaces</li>\n                      </ul>\n                      <p>2012–2013</p>\n                    "
+      },
+      {
+        "name": "Chun-Shu Wei",
+        "image": "/people/images/chun-shu-wei.jpg",
+        "text": "Chun-Shu Wei Graduate Student: 2016–2017 Postdoctoral Fellow: 2018 Visiting Scholar: 2021",
+        "html": "<img src=\"/people/images/chun-shu-wei.jpg\" alt=\"Chun-Shu Wei\" class=\"float-md-right ml-md-3\">\n                      <h3>Chun-Shu Wei</h3>\n                      <p>Graduate Student: 2016–2017</p>\n                      <p>Postdoctoral Fellow: 2018</p>\n                      <p>Visiting Scholar: 2021</p>\n                    "
+      },
+      {
+        "name": "Dong Wen",
+        "image": "/people/images/dong-wen.png",
+        "text": "Dong Wen Research Interest Diagnosis and rehabilitation methods based on EEG/fNIRS/MEG/fMRI/PET data analysis for various types of cognitive impairment Nonlinear dynamics and networks methods Health big data mining based on machine learning Embedded systems based on brain-computer interface 2017–2018",
+        "html": "<img src=\"/people/images/dong-wen.png\" alt=\"Dong Wen\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://www.researchgate.net/profile/Dong_Wen2\">Dong Wen</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Diagnosis and rehabilitation methods based on  EEG/fNIRS/MEG/fMRI/PET data analysis for various types of cognitive impairment</li>\n                        <li>Nonlinear dynamics and networks methods</li>\n                        <li>Health big data mining based on machine learning</li>\n                        <li>Embedded systems based on brain-computer interface</li>\n                      </ul>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Magdalena Wizła",
+        "image": "/people/images/generic.jpg",
+        "text": "Magdalena Wizła 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Magdalena Wizła</h3>\n                      <p>2023–2024</p>\n                    "
+      },
+      {
+        "name": "Clemens Wöllner",
+        "image": "/people/images/clemens-wöllner.jpg",
+        "text": "Clemens Wöllner 2018–2019",
+        "html": "<img src=\"/people/images/clemens-w%C3%B6llner.jpg\" alt=\"Clemens Wöllner\" class=\"float-md-right ml-md-3\">\n                      <h3>Clemens Wöllner</h3>\n                      <p>2018–2019</p>\n                    "
+      },
+      {
+        "name": "Chaohua Wu",
+        "image": "/people/images/generic.jpg",
+        "text": "Chaohua Wu 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chaohua Wu</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Fangzhou Xu",
+        "image": "/people/images/fangzhou-xu.jpg",
+        "text": "Fangzhou Xu Research Interest Analysis and interpretation of neural activity measured by EEG, MEG, ECG and fMRI associated with human cognition, awareness and perception. Brain-Computer Interface and Rehabilitation. Neural Cognition and Human Machine Intelligence Collaboration. 2019–2020",
+        "html": "<img src=\"/people/images/fangzhou-xu.jpg\" alt=\"Fangzhou Xu\" class=\"float-md-right ml-md-3\">\n                      <h3>Fangzhou Xu</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Analysis and interpretation of  neural activity measured by EEG, MEG, ECG and fMRI associated with human  cognition, awareness and perception.</li>\n                        <li>Brain-Computer Interface and  Rehabilitation.</li>\n                        <li>Neural Cognition and Human Machine Intelligence Collaboration.</li>\n                      </ul>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Minpeng Xu",
+        "image": "/people/images/minpeng.jpg",
+        "text": "Minpeng Xu Research Interest Brain-Computer Interface (BCIs), especially vision-dependent BCIs. The generation mechanism of Event-Related Potentials (ERPs). The neural mechanisms of attention and expectation. 2014–2015",
+        "html": "<img src=\"/people/images/minpeng.jpg\" alt=\"Minpeng Xu\" class=\"float-md-right ml-md-3\">\n                      <h3>Minpeng Xu</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain-Computer Interface (BCIs), especially vision-dependent BCIs.</li>\n                        <li>The generation mechanism of Event-Related Potentials (ERPs).</li>\n                        <li>The neural mechanisms of attention and expectation.</li>\n                      </ul>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Natsue Yoshimura",
+        "image": "/people/images/natsue-yoshimura.jpg",
+        "text": "Natsue Yoshimura Research Interest Biosignal processing and neural decoding relating to motor control, language, and emotion, using non-invasive recording techniques. 2016",
+        "html": "<img src=\"/people/images/natsue-yoshimura.jpg\" alt=\"Natsue Yoshimura\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"http://www.cns.pi.titech.ac.jp/kylab/\">Natsue Yoshimura</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Biosignal processing and neural decoding  relating to motor control, language, and emotion, using non-invasive recording  techniques.</li>\n                      </ul>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Peng Yuan",
+        "image": "/people/images/pyuan.jpg",
+        "text": "Peng Yuan Research Interest Group Neuroimaging EEG Based Brain-Computer Interfaces Multi-brain computing and collective wisdom 2012–2013",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/pyuan.jpg\" alt=\"Peng Yuan\">\n                      <h3>Peng Yuan</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Group Neuroimaging</li>\n                        <li> EEG Based Brain-Computer  Interfaces</li>\n                        <li> Multi-brain computing and  collective wisdom</li>\n                      </ul>\n                      <p>2012–2013</p>\n                    "
+      },
+      {
+        "name": "Thorsten Zander",
+        "image": "/people/images/generic.jpg",
+        "text": "Thorsten Zander 2012, 2013, 2014, 2015, 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"Thorsten Zander\" class=\"float-md-right ml-md-3\">\n                      <h3>Thorsten Zander</h3>\n                      <p>2012, 2013, 2014, 2015, 2016</p>\n                    "
+      },
+      {
+        "name": "John Zao",
+        "image": "/people/images/john-zao.jpg",
+        "text": "John Zao 2013",
+        "html": "<img src=\"/people/images/john-zao.jpg\" alt=\"John Zao\" class=\"float-md-right ml-md-3\">\n                      <h3>John Zao</h3>\n                      <p>2013</p>\n                    "
+      },
+      {
+        "name": "Jialiu Zhang",
+        "image": "/people/images/generic.jpg",
+        "text": "Jialiu Zhang 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"Jialiu Zhang\" class=\"float-md-right ml-md-3\">\n                      <h3>Jialiu Zhang</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Lin Zhang",
+        "image": "/people/images/generic.jpg",
+        "text": "Lin Zhang 2015–2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Lin Zhang</h3>\n                      <p>2015–2017</p>\n                    "
+      },
+      {
+        "name": "Yuxi Zhang",
+        "image": "/people/images/generic.jpg",
+        "text": "Yuxi Zhang 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"Jialiu Zhang\" class=\"float-md-right ml-md-3\">\n                      <h3>Yuxi Zhang</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Yanhong Zhou",
+        "image": "/people/images/generic.jpg",
+        "text": "Yanhong Zhou Research Interest Diagnosis methods based on fMRI/EEG data analysis for cognitive impairment Health and medical big data mining based on machine learning methods 2017–2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"http://loop.frontiersin.org/people/228077/overview\">Yanhong Zhou</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Diagnosis methods based  on fMRI/EEG data analysis for cognitive impairment</li>\n                        <li>Health and medical big data  mining based on machine learning methods </li>\n                      </ul>\n                      <p>2017–2018</p>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Visiting Graduate Students",
+    "people": [
+      {
+        "name": "Vicky Bjerre",
+        "image": "/people/images/generic.jpg",
+        "text": "Vicky Bjerre 2005–2006",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Vicky Bjerre</h3>\n                      <p>2005–2006</p>\n                    "
+      },
+      {
+        "name": "YuYi Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "YuYi Chen 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>YuYi Chen</h3>\n                      <p>2023–2024</p>\n                    "
+      },
+      {
+        "name": "Yu-Yi Chien",
+        "image": "/people/images/generic.jpg",
+        "text": "Yu-Yi Chien 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yu-Yi Chien</h3>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Chun-Hsiang (Michael) Chuang",
+        "image": "/people/images/generic.jpg",
+        "text": "Chun-Hsiang (Michael) Chuang 2012–2013",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chun-Hsiang (Michael) Chuang</h3>\n                      <p>2012–2013</p>\n                    "
+      },
+      {
+        "name": "Daniel Comstock",
+        "image": "/people/images/generic.jpg",
+        "text": "Daniel Comstock 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Daniel Comstock</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Mads Dyrholm",
+        "image": "/people/images/generic.jpg",
+        "text": "Mads Dyrholm 2004–2005",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Mads Dyrholm</h3>\n                      <p>2004–2005</p>\n                    "
+      },
+      {
+        "name": "Christiane Glatz",
+        "image": "/people/images/generic.jpg",
+        "text": "Christiane Glatz 2017–2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Christiane Glatz</h3>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Jean Hausser",
+        "image": "/people/images/generic.jpg",
+        "text": "Jean Hausser 2005–2006",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jean Hausser</h3>\n                      <p>2005–2006</p>\n                    "
+      },
+      {
+        "name": "Joseph Heng",
+        "image": "/people/images/joseph-heng.jpg",
+        "text": "Joseph Heng 2016–2017",
+        "html": "<img src=\"/people/images/joseph-heng.jpg\" alt=\"Joseph Heng\" class=\"float-md-right ml-md-3\">\n                      <h3>Joseph Heng</h3>\n                      <p>2016–2017</p>\n                    "
+      },
+      {
+        "name": "Russell Cohen Hoffing",
+        "image": "/people/images/generic.jpg",
+        "text": "Russell Cohen Hoffing 2021–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Russell Cohen Hoffing</h3>\n                      <p>2021–2022</p>\n                    "
+      },
+      {
+        "name": "Bill Hsu",
+        "image": "/people/images/generic.jpg",
+        "text": "Bill Hsu 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Bill Hsu</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Li-Yu Huang",
+        "image": "/people/images/generic.jpg",
+        "text": "Li-Yu Huang 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Li-Yu Huang</h3>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Hsiang-Jan Hung",
+        "image": "/people/images/generic.jpg",
+        "text": "Hsiang-Jan Hung 2025",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hsiang-Jan Hung</h3>\n                      <p>2025</p>\n                    "
+      },
+      {
+        "name": "He-Yi Ji",
+        "image": "/people/images/generic.jpg",
+        "text": "He-Yi Ji 2025",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>He-Yi Ji</h3>\n                      <p>2025</p>\n                    "
+      },
+      {
+        "name": "YeongDae Kim",
+        "image": "/people/images/generic.jpg",
+        "text": "YeongDae Kim 2017–2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>YeongDae Kim</h3>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Po-Chih Kuo",
+        "image": "/people/images/po-chih.jpg",
+        "text": "Po-Chih Kuo Research Interest Decoding and encoding of visual perception Nonlinear features of MEG/EEG Endogenous pain perception 2015–2016",
+        "html": "<img src=\"/people/images/po-chih.jpg\" alt=\"Po-Chih Kuo\" class=\"float-md-right ml-md-3\">\n                      <a href=\"https://scholar.google.com/citations?user=ganmD58AAAAJ&amp;hl=en\">\n                      <h3>Po-Chih Kuo</h3></a>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Decoding and encoding of visual perception </li>\n                        <li>Nonlinear features of MEG/EEG  </li>\n                        <li>Endogenous pain perception</li>\n                      </ul>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Hongma Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Hongma Liu 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hongma Liu</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Zhiya Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Zhiya Liu 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Zhiya Liu</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Kaylie Lu",
+        "image": "/people/images/generic.jpg",
+        "text": "Kaylie Lu 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Kaylie Lu</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Hayato Maki",
+        "image": "/people/images/generic.jpg",
+        "text": "Hayato Maki 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hayato Maki</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Enrique Molina",
+        "image": "/people/images/generic.jpg",
+        "text": "Enrique Molina 2013–2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Enrique Molina</h3>\n                      <p>2013–2014</p>\n                    "
+      },
+      {
+        "name": "Butovens Mede",
+        "image": "/people/images/generic.jpg",
+        "text": "Butovens Mede 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Butovens Mede</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Steven Peterson",
+        "image": "/people/images/generic.jpg",
+        "text": "Steven Peterson 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Steven Peterson</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Marco Petilli",
+        "image": "/people/images/generic.jpg",
+        "text": "Marco Petilli 2016–2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Marco Petilli</h3>\n                      <p>2016–2018</p>\n                    "
+      },
+      {
+        "name": "Caterina Piazza",
+        "image": "/people/images/caterina-piazza.jpg",
+        "text": "Caterina Piazza 2014–2015",
+        "html": "<img src=\"/people/images/caterina-piazza.jpg\" alt=\"Caterina Piazza\" class=\"float-md-right ml-md-3\">\n                      <h3>Caterina Piazza</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Jessica Ross",
+        "image": "/people/images/generic.jpg",
+        "text": "Jessica Ross 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jessica Ross</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Ariadna Sáenz Marín",
+        "image": "/people/images/ariadna.jpg",
+        "text": "Ariadna Sáenz Marín Research Interest Neural mechanisms of music-evoked emotion Neural correlates of expressive human movement Embodied cognition 2015–2016",
+        "html": "<img src=\"/people/images/ariadna.jpg\" alt=\"Ariadna Sáenz Marín\" class=\"float-md-right ml-md-3\">\n                      <h3>Ariadna Sáenz Marín</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Neural mechanisms of music-evoked emotion</li>\n                        <li>Neural correlates of expressive human movement</li>\n                        <li>Embodied cognition</li>\n                      </ul>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Jingyi (Amy) Song",
+        "image": "/people/images/jingyi-song.jpg",
+        "text": "Jingyi (Amy) Song 2014–2017",
+        "html": "<img src=\"/people/images/jingyi-song.jpg\" alt=\"Jingyi Song\" class=\"float-md-right ml-md-3\">\n                      <h3>Jingyi (Amy) Song</h3>\n                      <p>2014–2017</p>\n                    "
+      },
+      {
+        "name": "Cheng-Hua Su (Jay)",
+        "image": "/people/images/generic.jpg",
+        "text": "Cheng-Hua Su (Jay) 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Cheng-Hua Su (Jay)</h3>\n                      <p>2023–2024</p>\n                    "
+      },
+      {
+        "name": "Miryam Taba",
+        "image": "/people/images/generic.jpg",
+        "text": "Miryam Taba 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Miryam Taba</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Yu-Pei Wang",
+        "image": "/people/images/generic.jpg",
+        "text": "Yu-Pei Wang 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yu-Pei Wang</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Chi Man Wong",
+        "image": "/people/images/chiman.jpg",
+        "text": "Chi Man Wong Research Interest Brain-computer interface Bio-signal processing Machine learning 2020",
+        "html": "<img src=\"/people/images/chiman.jpg\" alt=\"Chi Man Wong\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"https://www.researchgate.net/profile/Chi_Wong17\">Chi Man Wong</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Brain-computer interface</li>\n                        <li>Bio-signal processing</li>\n                        <li>Machine learning</li>\n                      </ul>\n                      <p>2020</p>\n                    "
+      },
+      {
+        "name": "Lihuang Zhang",
+        "image": "/people/images/generic.jpg",
+        "text": "Lihuang Zhang 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"Lihuang Zhang\" class=\"float-md-right ml-md-3\">\n                      <h3>Lihuang Zhang</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Bin Zhao",
+        "image": "/people/images/bin-zhao.jpg",
+        "text": "Bin Zhao Research Interest cognitive neuroscience speech perception and production EEG signal processing 2017–2018",
+        "html": "<img src=\"/people/images/bin-zhao.jpg\" alt=\"Bin Zhao\" class=\"float-md-right ml-md-3\">\n                      <h3>Bin Zhao</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>cognitive neuroscience</li>\n                        <li>speech perception and production</li>\n                        <li>EEG signal processing</li>\n                      </ul>\n                      <p>2017–2018</p>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Graduate Student Volunteers",
+    "people": [
+      {
+        "name": "Joel Aftreth",
+        "image": "/people/images/joel-aftreth.jpg",
+        "text": "Joel Aftreth 2014–2016",
+        "html": "<img src=\"/people/images/joel-aftreth.jpg\" alt=\"Joel Aftreth\" class=\"float-md-right ml-md-3\">\n                      <h3>Joel Aftreth</h3>\n                      <p>2014–2016</p>\n                    "
+      },
+      {
+        "name": "Lena Andreessen",
+        "image": "/people/images/lena-andreessen.jpg",
+        "text": "Lena Andreessen 2015, 2017, 2018",
+        "html": "<img src=\"/people/images/lena-andreessen.jpg\" alt=\"Lena Andreessen\" class=\"float-md-right ml-md-3\">\n                      <h3>Lena Andreessen</h3>\n                      <p>2015, 2017, 2018</p>\n                    "
+      },
+      {
+        "name": "Iris Xiaoyu Bi",
+        "image": "/people/images/generic.jpg",
+        "text": "Iris Xiaoyu Bi 2019",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Iris Xiaoyu Bi</h3>\n                      <p>2019</p>\n                    "
+      },
+      {
+        "name": "Avital Birger",
+        "image": "/people/images/avital-birger.jpg",
+        "text": "Avital Birger 2015",
+        "html": "<img src=\"/people/images/avital-birger.jpg\" alt=\"Avital Birger\" class=\"float-md-right ml-md-3\">\n                      <h3>Avital Birger</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Damin Borooah",
+        "image": "/people/images/generic.jpg",
+        "text": "Damin Borooah 2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Damin Borooah</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Frederic Broccard",
+        "image": "/people/images/frederic-broccard.jpg",
+        "text": "Frederic Broccard Research Interest Neuromorphic neural interfaces Adaptive processes in artificial and biological systems Neural computation at multiple levels of biological organization Combined EEG brain dynamics and eye tracking 2012–2014",
+        "html": "<img src=\"/people/images/frederic-broccard.jpg\" alt=\"Frederic Broccard\" class=\"float-md-right ml-md-3\">\n                      <h3>Frederic Broccard</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Neuromorphic neural interfaces</li>\n                        <li>Adaptive processes in artificial and biological systems</li>\n                        <li>Neural computation at multiple levels of biological organization</li>\n                        <li>Combined EEG brain dynamics and eye tracking</li>\n                      </ul>\n                      <p>2012–2014</p>\n                    "
+      },
+      {
+        "name": "Matthew Burns",
+        "image": "/people/images/burns.jpg",
+        "text": "Matthew Burns Research Interest Statistical signal modeling Intelligent systems Brain-computer interface 2014–2016",
+        "html": "<img src=\"/people/images/burns.jpg\" alt=\"Matthew Burns\" class=\"float-md-right ml-md-3\">\n                      <h3>Matthew Burns</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Statistical signal modeling</li>\n                        <li>Intelligent systems</li>\n                        <li>Brain-computer interface</li>\n                      </ul>\n                      <p>2014–2016</p>\n                    "
+      },
+      {
+        "name": "Scott Burwell",
+        "image": "/people/images/generic.jpg",
+        "text": "Scott Burwell 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Scott Burwell</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Chiyuan Chang",
+        "image": "/people/images/generic.jpg",
+        "text": "Chiyuan Chang 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chiyuan Chang</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "C-F Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "C-F Chen 2012",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>C-F Chen</h3>\n                      <p>2012</p>\n                    "
+      },
+      {
+        "name": "Tzu-han (Zoe) Cheng",
+        "image": "/people/images/generic.jpg",
+        "text": "Tzu-han (Zoe) Cheng 2017–2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Tzu-han (Zoe) Cheng</h3>\n                      <p>2017–2023</p>\n                    "
+      },
+      {
+        "name": "Anthony Cheung",
+        "image": "/people/images/generic.jpg",
+        "text": "Anthony Cheung 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Anthony Cheung</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Kuan-Jung Chiang",
+        "image": "/people/images/generic.jpg",
+        "text": "Kuan-Jung Chiang 2017–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Kuan-Jung Chiang</h3>\n                      <p>2017–2021</p>\n                    "
+      },
+      {
+        "name": "Sahithi Chimmula",
+        "image": "/people/images/generic.jpg",
+        "text": "Sahithi Chimmula 2021–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Sahithi Chimmula</h3>\n                      <p>2021–2022</p>\n                    "
+      },
+      {
+        "name": "Hristos Courellis",
+        "image": "/people/images/generic.jpg",
+        "text": "Hristos Courellis 2015–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hristos Courellis</h3>\n                      <p>2015–2016</p>\n                    "
+      },
+      {
+        "name": "Manjari Daniel",
+        "image": "/people/images/generic.jpg",
+        "text": "Manjari Daniel 2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Manjari Daniel</h3>\n                      <p>2021</p>\n                    "
+      },
+      {
+        "name": "Dylan Davis",
+        "image": "/people/images/generic.jpg",
+        "text": "Dylan Davis 2020–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Dylan Davis</h3>\n                      <p>2020–2021</p>\n                    "
+      },
+      {
+        "name": "Sophia DiGiovanni",
+        "image": "/people/images/generic.jpg",
+        "text": "Sophia DiGiovanni 2022–2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Sophia DiGiovanni</h3>\n                      <p>2022–2023</p>\n                    "
+      },
+      {
+        "name": "Aleksei Driker",
+        "image": "/people/images/generic.jpg",
+        "text": "Aleksei Driker 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Aleksei Driker</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Noah Driker",
+        "image": "/people/images/generic.jpg",
+        "text": "Noah Driker 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Noah Driker</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Chiara Frank",
+        "image": "/people/images/generic.jpg",
+        "text": "Chiara Frank 2021&ndash2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chiara Frank</h3>\n                      <p>2021&amp;ndash2022</p>\n                    "
+      },
+      {
+        "name": "Raphael Gilliam",
+        "image": "/people/images/generic.jpg",
+        "text": "Raphael Gilliam 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Raphael Gilliam</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Robert Gougelet",
+        "image": "/people/images/generic.jpg",
+        "text": "Robert Gougelet 2013–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Robert Gougelet</h3>\n                      <p>2013–2020</p>\n                    "
+      },
+      {
+        "name": "David Groppe",
+        "image": "/people/images/generic.jpg",
+        "text": "David Groppe Position Graduate Student, Cognitive Science 2006–2007",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>David Groppe</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Graduate Student, Cognitive Science 2006–2007</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Grant Hanada",
+        "image": "/people/images/generic.jpg",
+        "text": "Grant Hanada 2013",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Grant Hanada</h3>\n                      <p>2013</p>\n                    "
+      },
+      {
+        "name": "Amelia Harrison",
+        "image": "/people/images/amelia-harrison.jpg",
+        "text": "Amelia Harrison 2019–2020",
+        "html": "<img src=\"/people/images/amelia-harrison.jpg\" alt=\"Amelia Harrison\" class=\"float-md-right ml-md-3\">\n                      <h3>Amelia Harrison</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Jonathan Ho",
+        "image": "/people/images/generic.jpg",
+        "text": "Jonathan Ho 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Jonathan Ho</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Andrea Hsieh",
+        "image": "/people/images/generic.jpg",
+        "text": "Andrea Hsieh 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Andrea Hsieh</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Yu-Peng (Melody) Hsieh",
+        "image": "/people/images/generic.jpg",
+        "text": "Yu-Peng (Melody) Hsieh 2022–2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yu-Peng (Melody) Hsieh</h3>\n                      <p>2022–2023</p>\n                    "
+      },
+      {
+        "name": "Rishikesh Ingale",
+        "image": "/people/images/generic.jpg",
+        "text": "Rishikesh Ingale 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Rishikesh Ingale</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Tasnia Jamal",
+        "image": "/people/images/generic.jpg",
+        "text": "Tasnia Jamal 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Tasnia Jamal</h3>\n                      <p>2023–2024</p>\n                    "
+      },
+      {
+        "name": "Shiyong Kang",
+        "image": "/people/images/generic.jpg",
+        "text": "Shiyong Kang 2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shiyong Kang</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Shivani Kedila",
+        "image": "/people/images/generic.jpg",
+        "text": "Shivani Kedila 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shivani Kedila</h3>\n                      <p>2023–2024</p>\n                    "
+      },
+      {
+        "name": "Christian Lay-Geng",
+        "image": "/people/images/generic.jpg",
+        "text": "Christian Lay-Geng 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Christian Lay-Geng</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Zoe Kaegi",
+        "image": "/people/images/generic.jpg",
+        "text": "Zoe Kaegi 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Zoe Kaegi</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Kritin Karkare",
+        "image": "/people/images/generic.jpg",
+        "text": "Kritin Karkare 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Kritin Karkare</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Adam Koerner",
+        "image": "/people/images/generic.jpg",
+        "text": "Adam Koerner 2011",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Adam Koerner</h3>\n                      <p>2011</p>\n                    "
+      },
+      {
+        "name": "Ryan Lay",
+        "image": "/people/images/generic.jpg",
+        "text": "Ryan Lay 2023–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Ryan Lay</h3>\n                      <p>2023–2024</p>\n                    "
+      },
+      {
+        "name": "Sabrina Lee",
+        "image": "/people/images/generic.jpg",
+        "text": "Sabrina Lee 2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Sabrina Lee</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Susan Lee",
+        "image": "/people/images/generic.jpg",
+        "text": "Susan Lee 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Susan Lee</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Alvin Li",
+        "image": "/people/images/alvin-li.jpg",
+        "text": "Alvin Li 2014–2015",
+        "html": "<img src=\"/people/images/alvin-li.jpg\" alt=\"Alvin Li\" class=\"float-md-right ml-md-3\">\n                      <h3>Alvin Li</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Tsong-Yan Lin",
+        "image": "/people/images/linjoe.jpg",
+        "text": "Tsong-Yan Lin Research Interest Digital Signal Processing Eye fixation estimation by Electrooculography (EOG)",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/linjoe.jpg\" alt=\"Tsong-Yan Lin\">\n                      <h3>Tsong-Yan Lin</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Digital Signal Processing</li>\n                        <li>Eye fixation estimation by Electrooculography (EOG) </li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Chang Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Chang Liu 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chang Liu</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Chang Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Chang Liu 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chang Liu</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Weichen Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Weichen Liu 2020–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Weichen Liu</h3>\n                      <p>2020–2022</p>\n                    "
+      },
+      {
+        "name": "Michael Malina",
+        "image": "/people/images/michael-malina.jpg",
+        "text": "Michael Malina 2017–2018",
+        "html": "<img src=\"/people/images/michael-malina.jpg\" alt=\"Michael Malina\" class=\"float-md-right ml-md-3\">\n                      <h3>Michael Malina</h3>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Przemyslaw Marcowski",
+        "image": "/people/images/generic.jpg",
+        "text": "Przemyslaw Marcowski 2021–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Przemyslaw Marcowski</h3>\n                      <p>2021–2024</p>\n                    "
+      },
+      {
+        "name": "Andrew Mokhtarzadeh",
+        "image": "/people/images/andrew-mokhtarzadeh.jpg",
+        "text": "Andrew Mokhtarzadeh 2020",
+        "html": "<img src=\"/people/images/andrew-mokhtarzadeh.jpg\" alt=\"Andrew Mokhtarzadeh\" class=\"float-md-right ml-md-3\">\n                      <h3>Andrew Mokhtarzadeh</h3>\n                      <p>2020</p>\n                    "
+      },
+      {
+        "name": "Natalie Morris",
+        "image": "/people/images/generic.jpg",
+        "text": "Natalie Morris 2019",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Natalie Morris</h3>\n                      <p>2019</p>\n                    "
+      },
+      {
+        "name": "Tim Mullen",
+        "image": "/people/images/tim.jpg",
+        "text": "Tim Mullen Research Interest Dynamical systems analysis and neuronal system identification (Synchronization, Information Flow, Causality) Statistical Machine Learning Brain-Computer Interfaces SIFTing through data Data Visualization",
+        "html": "<img src=\"/people/images/tim.jpg\" alt=\"Tim Mullen\" class=\"float-md-right ml-md-3\">\n                      <h3>Tim Mullen</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li>Dynamical systems analysis and neuronal system  identification (Synchronization, Information Flow, Causality)</li>\n                        <li> Statistical Machine Learning</li>\n                        <li> Brain-Computer Interfaces</li>\n                        <li> SIFTing through data</li>\n                        <li>Data Visualization</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Nick Nguyen",
+        "image": "/people/images/generic.jpg",
+        "text": "Nick Nguyen 2014",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Nick Nguyen</h3>\n                      <p>2014</p>\n                    "
+      },
+      {
+        "name": "Cynthia Nyongesa",
+        "image": "/people/images/generic.jpg",
+        "text": "Cynthia Nyongesa 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Cynthia Nyongesa</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Juliane Pawlitzki",
+        "image": "/people/images/generic.jpg",
+        "text": "Juliane Pawlitzki 2017, 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Juliane Pawlitzki</h3>\n                      <p>2017, 2018</p>\n                    "
+      },
+      {
+        "name": "Elinor Oren",
+        "image": "/people/images/generic.jpg",
+        "text": "Elinor Oren 2022–2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Elinor Oren</h3>\n                      <p>2022–2023</p>\n                    "
+      },
+      {
+        "name": "Franklin Orndorff-Plunkett",
+        "image": "/people/images/generic.jpg",
+        "text": "Franklin Orndorff-Plunkett 2015–2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Franklin Orndorff-Plunkett</h3>\n                      <p>2015–2017</p>\n                    "
+      },
+      {
+        "name": "Steven Pillen",
+        "image": "/people/images/generic.jpg",
+        "text": "Steven Pillen 2014–2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Steven Pillen</h3>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Luca Pion-Tonachini",
+        "image": "/people/images/generic.jpg",
+        "text": "Luca Pion-Tonachini",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Luca Pion-Tonachini</h3>\n                      <p> </p>\n                    "
+      },
+      {
+        "name": "Subathra Raj",
+        "image": "/people/images/subathra-raj.jpg",
+        "text": "Subathra Raj 2017–2018",
+        "html": "<img src=\"/people/images/subathra-raj.jpg\" alt=\"Subathra Raj\" class=\"float-md-right ml-md-3\">\n                      <h3>Subathra Raj</h3>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Junting Ren",
+        "image": "/people/images/generic.jpg",
+        "text": "Junting Ren 2021–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Junting Ren</h3>\n                      <p>2021–2022</p>\n                    "
+      },
+      {
+        "name": "Carson G Miller Rigoli",
+        "image": "/people/images/carson-rigoli.jpg",
+        "text": "Carson G Miller Rigoli 2017",
+        "html": "<img src=\"/people/images/carson-rigoli.jpg\" alt=\"Carson G Miller Rigoli\" class=\"float-md-right ml-md-3\">\n                      <h3>Carson G Miller Rigoli</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Siddharth",
+        "image": "/people/images/generic.jpg",
+        "text": "Siddharth 2015–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Siddharth</h3>\n                      <p>2015–2021</p>\n                    "
+      },
+      {
+        "name": "Brian Silverstein",
+        "image": "/people/images/generic.jpg",
+        "text": "Brian Silverstein 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Brian Silverstein</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Niklas Sprute",
+        "image": "/people/images/niklas-sprute.jpg",
+        "text": "Niklas Sprute 2016–2017",
+        "html": "<img src=\"/people/images/niklas-sprute.jpg\" alt=\"Niklas Sprute\" class=\"float-md-right ml-md-3\">\n                      <h3>Niklas Sprute</h3>\n                      <p>2016–2017</p>\n                    "
+      },
+      {
+        "name": "Ahmad Soomro",
+        "image": "/people/images/soomro.jpg",
+        "text": "Ahmad Soomro Research Interest Idea/Form Theory 3D-data Visualization Models Machine Intelligence and Ethics BCI-enabled, Immersive Virtual Reality Haptics and Sensorimotor Interception through nanotechnology Sleep and Lucid Dreaming Psychology 2014–2015",
+        "html": "<img src=\"/people/images/soomro.jpg\" alt=\"Ahmad Soomro\" class=\"float-md-right ml-md-3\">\n                      <h3><a href=\"http://www.ahmadsoomro.com\">Ahmad Soomro</a></h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                        <li> Idea/Form Theory</li>\n                        <li> 3D-data Visualization Models</li>\n                        <li> Machine Intelligence and Ethics</li>\n                        <li> BCI-enabled, Immersive Virtual Reality</li>\n                        <li> Haptics and Sensorimotor Interception through nanotechnology</li>\n                        <li> Sleep and Lucid Dreaming Psychology</li>\n                      </ul>\n                      <p>2014–2015</p>\n                    "
+      },
+      {
+        "name": "Dana Steinberg",
+        "image": "/people/images/generic.jpg",
+        "text": "Dana Steinberg 2019–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Dana Steinberg</h3>\n                      <p>2019–2021</p>\n                    "
+      },
+      {
+        "name": "Tejas Srinivasan",
+        "image": "/people/images/generic.jpg",
+        "text": "Tejas Srinivasan 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Tejas Srinivasan</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Miranda Summers",
+        "image": "/people/images/generic.jpg",
+        "text": "Miranda Summers 2017–2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Miranda Summers</h3>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Kevin Tan",
+        "image": "/people/images/generic.jpg",
+        "text": "Kevin Tan 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Kevin Tan</h3>\n                      <p>2017</p>\n                    "
+      },
+      {
+        "name": "Dung Truong",
+        "image": "/people/images/generic.jpg",
+        "text": "Dung Truong 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Dung Truong</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Michael Vu",
+        "image": "/people/images/generic.jpg",
+        "text": "Michael Vu 2014–2016",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Michael Vu</h3>\n                      <p>2014–2016</p>\n                    "
+      },
+      {
+        "name": "Jeffery Wang",
+        "image": "/people/images/jeffery-wang.jpg",
+        "text": "Jeffery Wang 2014–2015",
+        "html": "<img src=\"/people/images/jeffery-wang.jpg\" alt=\"Jeffery Wang\" class=\"float-md-right ml-md-3\">\n                      <h3>Jeffery Wang</h3>\n                       <p>2014–2015</p>\n                     <p></p>\n                    "
+      },
+      {
+        "name": "Siwen Wang",
+        "image": "/people/images/generic.jpg",
+        "text": "Siwen Wang 2021–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Siwen Wang</h3>\n                      <p>2021–2022</p>\n                    "
+      },
+      {
+        "name": "Yinying Wang",
+        "image": "/people/images/generic.jpg",
+        "text": "Yinying Wang",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yinying Wang</h3>\n                    "
+      },
+      {
+        "name": "Xin Wen",
+        "image": "/people/images/generic.jpg",
+        "text": "Xin Wen 2021–2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Xin Wen</h3>\n                      <p>2021–2023</p>\n                    "
+      },
+      {
+        "name": "Diane Whitmer",
+        "image": "/people/images/diane-whitme.jpg",
+        "text": "Diane Whitmer Position Graduate Student, Computational Neurobiology 2006–2008",
+        "html": "<img src=\"/people/images/diane-whitme.jpg\" alt=\"Diane Whitmer\" class=\"float-md-right ml-md-3\">\n                      <h3>Diane Whitmer</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Graduate Student, Computational Neurobiology 2006–2008</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Yunbo Wu",
+        "image": "/people/images/generic.jpg",
+        "text": "Yunbo Wu 2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yunbo Wu</h3>\n                      <p>2020</p>\n                    "
+      },
+      {
+        "name": "Derek Yen",
+        "image": "/people/images/derek-yen.jpg",
+        "text": "Derek Yen 2016",
+        "html": "<img src=\"/people/images/derek-yen.jpg\" alt=\"Derek Yen\" class=\"float-md-right ml-md-3\">\n                      <h3>Derek Yen</h3>\n                      <p>2016</p>\n                    "
+      },
+      {
+        "name": "Ting Yu",
+        "image": "/people/images/generic.jpg",
+        "text": "Ting Yu 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Ting Yu</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Zhilin Zhang",
+        "image": "/people/images/zhang.png",
+        "text": "Zhilin Zhang Research Interest In algorithms: Sparse Signal Recovery Bayesian Statistics (Sparse Bayesian Learning, Graphical Model, Hierarchical Model) Independent Component Analysis In applications: EEG/MEG Source Localization EEG/MEG/fMRI/ECG Data Analysis Neuro-Marketing and Neuro-Education",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/zhang.png\" alt=\"Zhilin Zhang\" width=\"72\" height=\"96\">\n                      <h3><a href=\"http://sites.google.com/site/researchbyzhang/\">Zhilin Zhang</a></h3>\n                      <h4>Research Interest</h4>\n                      <p>In algorithms:</p>\n                      <ul>\n                        <li>Sparse Signal Recovery</li>\n                        <li>Bayesian Statistics (Sparse Bayesian Learning,  Graphical Model, Hierarchical Model)</li>\n                        <li>Independent Component Analysis</li>\n                      </ul>\n                      <p>In applications:</p>\n                      <ul>\n                        <li> EEG/MEG Source Localization</li>\n                        <li> EEG/MEG/fMRI/ECG Data Analysis</li>\n                        <li> Neuro-Marketing and Neuro-Education </li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Zihao (Roland) Xu",
+        "image": "/people/images/generic.jpg",
+        "text": "Zihao (Roland) Xu 2015",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Zihao (Roland) Xu</h3>\n                      <p>2015</p>\n                    "
+      },
+      {
+        "name": "Xixie Zhang",
+        "image": "/people/images/generic.jpg",
+        "text": "Xixie Zhang 2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Xixie Zhang</h3>\n                      <p>2018</p>\n                    "
+      },
+      {
+        "name": "Wesley Zhuang",
+        "image": "/people/images/generic.jpg",
+        "text": "Wesley Zhuang 2017",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Wesley Zhuang</h3>\n                      <p>2017</p>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Staff Volunteers",
+    "people": [
+      {
+        "name": "Rhea Bhutada",
+        "image": "/people/images/generic.jpg",
+        "text": "Rhea Bhutada 2022–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Rhea Bhutada</h3>\n                      <p>2022–2024</p>\n                    "
+      },
+      {
+        "name": "Yuh-Jer Chang",
+        "image": "/people/images/generic.jpg",
+        "text": "Yuh-Jer Chang 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yuh-Jer Chang</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "I-Fan (Cody) Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "I-Fan (Cody) Chen 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>I-Fan (Cody) Chen</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Yin-Erh Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "Yin-Erh Chen 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yin-Erh Chen</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Yu-Chi Chen",
+        "image": "/people/images/generic.jpg",
+        "text": "Yu-Chi Chen 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yu-Chi Chen</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Ya-Hsuan (Alice) Chu",
+        "image": "/people/images/yahsuan.jpg",
+        "text": "Ya-Hsuan (Alice) Chu Research Interest computer vision, music information retrieval 2022",
+        "html": "<img src=\"/people/images/yahsuan.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Ya-Hsuan (Alice) Chu</h3>\n                      <h4>Research Interest</h4>\n                      <p>computer vision, music information  retrieval</p>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Yen-Cheng Chung",
+        "image": "/people/images/generic.jpg",
+        "text": "Yen-Cheng Chung 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yen-Cheng Chung</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Chieh Hsu",
+        "image": "/people/images/generic.jpg",
+        "text": "Chieh Hsu Research Interest Brain computer interface EEG analysis 2020–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chieh Hsu</h3>\n                      <h4>Research Interest</h4>\n                      <ul>\n                      \t<li>Brain computer interface</li>\n                      \t<li>EEG analysis</li>\n                     \t</ul>\n\t\t\t\t\t\t\t\t\t\t\t<p>2020–2021</p>\n                    "
+      },
+      {
+        "name": "Kai-Wei Huang",
+        "image": "/people/images/generic.jpg",
+        "text": "Kai-Wei Huang 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Kai-Wei Huang</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Zalan Kaposzta",
+        "image": "/people/images/generic.jpg",
+        "text": "Zalan Kaposzta 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Zalan Kaposzta</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Cho-Yuan (Jason) Lee",
+        "image": "/people/images/generic.jpg",
+        "text": "Cho-Yuan (Jason) Lee 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Cho-Yuan (Jason) Lee</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Hanning Li",
+        "image": "/people/images/generic.jpg",
+        "text": "Hanning Li 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hanning Li</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Yi (Auston) Liu",
+        "image": "/people/images/generic.jpg",
+        "text": "Yi (Auston) Liu 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Yi (Auston) Liu</h3>\n                      <p>2022</p>\n                    "
+      },
+      {
+        "name": "Mu-Kuan Shih",
+        "image": "/people/images/generic.jpg",
+        "text": "Mu-Kuan Shih 2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Mu-Kuan Shih</h3>\n                      <p>2021</p>\n                    "
+      },
+      {
+        "name": "Shan-Ping Wu",
+        "image": "/people/images/generic.jpg",
+        "text": "Shan-Ping Wu 2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shan-Ping Wu</h3>\n                      <p>2022</p>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Undergraduate Student Volunteers",
+    "people": [
+      {
+        "name": "Brian Barry",
+        "image": "/people/images/generic.jpg",
+        "text": "Brian Barry 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Brian Barry</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Rhea Bhutada",
+        "image": "/people/images/generic.jpg",
+        "text": "Rhea Bhutada 2022–2024",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Rhea Bhutada</h3>\n                      <p>2022–2024</p>\n                    "
+      },
+      {
+        "name": "Evan Center",
+        "image": "/people/images/generic.jpg",
+        "text": "Evan Center 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Evan Center</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Ziyi Cheng",
+        "image": "/people/images/generic.jpg",
+        "text": "Ziyi Cheng 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Ziyi Cheng</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Shannon Chu",
+        "image": "/people/images/generic.jpg",
+        "text": "Shannon Chu 2019–2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Shannon Chu</h3>\n                      <p>2019–2020</p>\n                    "
+      },
+      {
+        "name": "Daniel John",
+        "image": "/people/images/generic.jpg",
+        "text": "Daniel John 2019–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Daniel John</h3>\n                      <p>2019–2021</p>\n                    "
+      },
+      {
+        "name": "Andrew Mokhtarzadeh",
+        "image": "/people/images/generic.jpg",
+        "text": "Andrew Mokhtarzadeh 2020",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Andrew Mokhtarzadeh</h3>\n                      <p>2020</p>\n                    "
+      },
+      {
+        "name": "Matti Pouke",
+        "image": "/people/images/generic.jpg",
+        "text": "Matti Pouke 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Matti Pouke</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Layla Slipper",
+        "image": "/people/images/generic.jpg",
+        "text": "Layla Slipper 2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Layla Slipper</h3>\n                      <p>2021</p>\n                    "
+      },
+      {
+        "name": "Aaron Wu",
+        "image": "/people/images/generic.jpg",
+        "text": "Aaron Wu 2023",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Aaron Wu</h3>\n                      <p>2023</p>\n                    "
+      },
+      {
+        "name": "Chuyang Xiao",
+        "image": "/people/images/generic.jpg",
+        "text": "Chuyang Xiao 2020–2021",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Chuyang Xiao</h3>\n                      <p>2020–2021</p>\n                    "
+      },
+      {
+        "name": "Hao Yin Xu",
+        "image": "/people/images/generic.jpg",
+        "text": "Hao Yin Xu 2020–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Hao Yin Xu</h3>\n                      <p>2020–2022</p>\n                    "
+      }
+    ]
+  },
+  {
+    "group": "Administrative Staff",
+    "people": [
+      {
+        "name": "Grecia Cedillo",
+        "image": "/people/images/generic.jpg",
+        "text": "Grecia Cedillo Student 2019",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"Grecia Cedillo\" class=\"float-md-right ml-md-3\">\n                      <h3>Grecia Cedillo</h3>\n                      <p>Student</p>\n                      <p>2019</p>\n                    "
+      },
+      {
+        "name": "Lucy Dang",
+        "image": "/people/images/ludang.jpg",
+        "text": "Lucy Dang Human Resources Assistant",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/ludang.jpg\" alt=\"Lucy Dang\">\n                      <h3>Lucy Dang</h3>\n                      <p>Human Resources  Assistant</p>\n                    "
+      },
+      {
+        "name": "Maddie Ebel",
+        "image": "/people/images/generic.jpg",
+        "text": "Maddie Ebel Student",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Maddie Ebel</h3>\n                      <p>Student</p>\n                      <h4> </h4>\n                    "
+      },
+      {
+        "name": "Mimi Gim",
+        "image": "/people/images/mgim.jpg",
+        "text": "Mimi Gim Financial Assistant",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/mgim.jpg\" width=\"75\" height=\"99\" alt=\"Mimi Gim\">\n                      <h3>Mimi Gim</h3>\n                      <p>Financial Assistant</p>\n                    "
+      },
+      {
+        "name": "Kevin Johnson",
+        "image": "/people/images/generic.jpg",
+        "text": "Kevin Johnson Student",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Kevin Johnson</h3>\n                      <p>Student</p>\n                      <h4> </h4>\n                    "
+      },
+      {
+        "name": "Lori Koller",
+        "image": "/people/images/generic.jpg",
+        "text": "Lori Koller Position Center Administrator 2002–2007",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Lori Koller</h3>\n                      <h4>Position</h4>\n                      <ul>\n                        <li>Center Administrator 2002–2007</li>\n                      </ul>\n                    "
+      },
+      {
+        "name": "Rhonda McCoy",
+        "image": "/people/images/rhonda.png",
+        "text": "Rhonda McCoy Sr. Research Administrator 2008–2020",
+        "html": "<img src=\"/people/images/rhonda.png\" alt=\"Rhonda McCoy\" class=\"float-md-right ml-md-3\">\n                      <h3>Rhonda McCoy</h3>\n                      <p>Sr. Research Administrator</p>\n                      <p>2008–2020</p>\n                    "
+      },
+      {
+        "name": "Lily Ouyang",
+        "image": "/people/images/generic.jpg",
+        "text": "Lily Ouyang Student 2017–2018",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Lily Ouyang</h3>\n                      <p>Student</p>\n                      <p>2017–2018</p>\n                    "
+      },
+      {
+        "name": "Vivian Trinh",
+        "image": "/people/images/generic.jpg",
+        "text": "Vivian Trinh Student",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Vivian Trinh</h3>\n                      <p>Student</p>\n                       <h4></h4>\n                    "
+      },
+      {
+        "name": "Julie Sullivan",
+        "image": "/people/images/jsullivan.jpg",
+        "text": "Julie Sullivan Asst. Center Administrator",
+        "html": "<img class=\"float-md-right ml-md-3\" src=\"/people/images/jsullivan.jpg\" alt=\"Julie Sullivan\">\n                      <h3>Julie Sullivan</h3>\n                      <p>Asst. Center Administrator</p>\n                    "
+      },
+      {
+        "name": "Steven Swee",
+        "image": "/people/images/generic.jpg",
+        "text": "Steven Swee 2021–2022",
+        "html": "<img src=\"/people/images/generic.jpg\" alt=\"\" class=\"float-md-right ml-md-3\">\n                      <h3>Steven Swee</h3>\n                      <p>2021–2022</p>\n                    "
+      },
+      {
+        "name": "Aerin Wang",
+        "image": "/people/images/aerin.jpg",
+        "text": "Aerin Wang Student 2018–2020",
+        "html": "<img src=\"/people/images/aerin.jpg\" alt=\"Aerin Wang\" class=\"float-md-right ml-md-3\">\n                      <h3>Aerin Wang</h3>\n                      <p>Student</p>\n                      <p>2018–2020</p>\n                    "
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "label": "People",
+    "url": "/people/"
+  },
+  {
+    "label": "Research",
+    "url": "/projects/"
+  },
+  {
+    "label": "Methods",
+    "url": "/methods/"
+  },
+  {
+    "label": "Publications",
+    "url": "/publications/"
+  },
+  {
+    "label": "News",
+    "url": "/news-events/"
+  },
+  {
+    "label": "Visit",
+    "url": "/visit/"
+  }
+]

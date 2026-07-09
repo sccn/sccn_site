@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Swartz Center for Computational Neuroscience at UC San Diego.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>What is EEGLAB? - SCCN</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/" aria-label="SCCN home"><img src="/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/people/">People</a><a href="/projects/">Research</a><a href="/methods/">Methods</a><a href="/publications/">Publications</a><a href="/news-events/">News</a><a href="/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Archive</p><h1>What is EEGLAB?</h1><p class="lead">Preserved SCCN source content rendered in the SCCN3 site shell.</p></div></section>
+      <section class="section"><div class="container legacy-content"><div class="container">
+        <div class="row">
+          <section class="col-lg-9 text-justify">
+            <h1>What is EEGLAB?</h1>
+            <p>
+            <a href="https://www.github.com/sccn/eeglab" class="fa fa-github"></a>
+            <a href="https://www.facebook.com/groups/eeglab" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/eeglab2" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/groups/4320340/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCK8x1bdiHWmT0yCNEjTcEvA" class="fa fa-youtube"></a>
+            </p>
+            <div class="text-center"><img src="/eeglab/images/400px-Eeglab_small.jpg" class="img-fluid text-center float-md-right ml-md-3 mb-3"></div>
+            <p>EEGLAB is an interactive Matlab toolbox for processing continuous and event-related EEG, MEG and other electrophysiological data incorporating independent component analysis (ICA), time/frequency analysis, artifact rejection, event-related statistics, and several useful modes of visualization of the averaged and single-trial data. EEGLAB runs under Linux, Unix, Windows, and Mac OS X.</p>
+                  
+            <p>EEGLAB provides an interactive graphic user interface (GUI) allowing users to flexibly and interactively process their high-density EEG and other dynamic brain data using independent component analysis (ICA) and/or time/frequency analysis (TFA), as well as standard averaging methods. EEGLAB also incorporates extensive tutorial and help windows, plus a command history function that eases users' transition from GUI-based data exploration to building and running batch or custom data analysis scripts. EEGLAB offers a wealth of methods for visualizing and modeling event-related brain dynamics, both at the level of individual EEGLAB 'datasets' and/or across a collection of datasets brought together in an EEGLAB 'studyset.'</p>
+            <p>For experienced Matlab users, EEGLAB offers a structured programming environment for storing, accessing, measuring, manipulating and visualizing event-related EEG data. For creative research programmers and methods developers, EEGLAB offers an extensible, open-source platform through which they can share new methods with the world research community by publishing EEGLAB 'plug-in' functions that appear automatically in the EEGLAB menu of users who download them. For example, novel EEGLAB plug-ins might be built and released to 'pick peaks' in ERP or time/frequency results, or to perform specialized import/export, data visualization, or inverse source modeling of EEG, MEG, and/or ECOG data.</p>
+            
+            <div class="card mb-3">
+              <div class="card-header">
+                <h2 class="card-text">EEGLAB Features</h2>
+              </div>
+              <div class="card-body">
+                <ul class="card-text">
+                  <li>Academic (free) software</li>
+                  <li>Running on Matlab or standalone</li>
+                  <li>Graphic user interface</li>
+                  <li>Multiformat data importing</li>
+                  <li>High-density data scrolling</li>
+                  <li>Interactive plotting functions</li>
+                  <li>Semi-automated artifact removal</li>
+                  <li>ICA &amp; time/frequency transforms</li>
+                  <li>Event &amp; channel location handling</li>
+                  <li>Forward/inverse head/source modeling</li>
+                  <li>Defined EEG &amp; STUDY data structures</li>
+                  <li>Over 120 advanced plug-in/extensions</li>
+                </ul>
+              </div>
+            </div>
+<!--            <div class="embed-responsive embed-responsive-21by9 my-3">
+              <iframe src="https://www.youtube.com/embed/7TP-xrVokXk?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <h2>Use EEGLAB to work at the EEG source level</h2>
+            <p>EEGLAB features processing source activity isolated using ICA. Scalp electroencephalographic (EEG) electrodes record sums of activity from cortical sources and non-brain processes, making direct interpretation of scalp channel waveforms problematic. As an example, the video above shows a silent 1/10th-speed simulation by Zeynep Akalin Acar and Scott Makeig shows (on the left) two cm-sized, parietal EEG sources expressing simulated alpha band activities (at 9 Hz and 10 Hz respectively), and (on the right) their summed scalp projection. Note the strong difference between the cortical source dynamics (left) and scalp EEG dynamics (right), and the difficulty of determining the nature and locations of the source activities directly from the scalp pattern. To download this animation directly (.mp4, 7MB), right click <a href="http://sccn.ucsd.edu/eeglab/TwoSourceEEG12.mp4">here</a>.</p>
+-->
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <p class="card-text"><strong>“Why  was I unsubscribed?”</strong></p>
+                <p class="card-text">Beginning around February 2024, Yahoo and Google and other mail providers started rejecting incoming mail from eeglablist because we were not registered with their newly required SPF and DKIM mail headers. As a result, many eeglablist and eeglabnews subscribers were automatically disabled or unsubscribed due to our Mailman list server interpreting the bounced messages as permanent delivery failures. We apologize if you were unexpectedly unsubscribed, and we invite you to resubscribe to either <a href="mailto:eeglablist-subscribe@sccn.ucsd.edu">eeglablist</a> or <a href="mailto:eeglabnews-subscribe@sccn.ucsd.edu">eeglabnews</a> (or both).</p>
+              </div>
+            </div>
+          </section>
+          <section class="col-lg-3 order-lg-first">
+            <article class="main-content-nav">
+              <h2><a href="/eeglab">EEGLAB</a></h2>
+              <ul id="page_nav">
+				                <li class="active">
+                                <a href="/eeglab/index.php">
+                                What is EEGLAB?
+                                </a>
+                                </li>
+				                <li class="collapsed">
+                                <a href="/eeglab/ressources.php">
+                                Requirements
+                                </a>
+                                </li>
+				                <li class="collapsed">
+                                <a href="/eeglab/download.php">
+                                Download
+                                </a>
+                                </li>
+				                <li class="collapsed">
+                                <a href="/wiki/EEGLAB">
+                                Documentation - Wiki
+                                </a>
+                                </li>
+				                <li class="collapsed">
+                                <a href="/wiki/EEGLAB#EEGLAB_Workshops">
+                                Workshops - Wiki
+                                </a>
+                                </li>
+				                <li class="collapsed">
+                                <a href="/wiki/EEGLAB#The_EEGLAB_Tutorial_Outline">
+                                Tutorial - Wiki
+                                </a>
+                                </li>
+              </ul>
+            </article>
+            <article class="main-content-nav">
+              <h2>EEGLAB News</h2>
+                  <h4><strong>NEMAR project</strong></h4>
+                  <p align="justify"> NIMH has funded an EEG portal to the OpenNeuro data archive and tool resource. <a href="https://ucsdnews.ucsd.edu/pressrelease/uc-san-diego-brain-imaging-data-gateway">More...</a>                  </p>
+                  <h4><strong>Quarterly Newsletter</strong></h4>
+                  <p>NEW: <a href="https://mailchi.mp/799b386ebd4f/the-eeglab-news-issue-18-august-2024?e=48c79081cb">The EEGLAB News #18 (August 2024)</a>                <br>
+                  Read past issues <a href="https://sccn.ucsd.edu/eeglab/EEGLAB_Newsletter.php">here</a></p>
+              <h4>New plug-in released</h4>
+              <p>See the list of plugins <a href="https://sccn.ucsd.edu/eeglab/plugin_uploader/plugin_list_all.php">here</a>.
+	</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/methods/">Methods</a> &middot;
+          <a href="/news-events/">News</a> &middot;
+          <a href="/visit/">Visit</a> &middot;
+          <a href="/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/assets-site.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "12",
+    "retmax": "12",
+    "retstart": "0",
+    "idlist": [
+      "40535580",
+      "41424496",
+      "37779613",
+      "35144325",
+      "30605268",
+      "29867419",
+      "27965558",
+      "25150386",
+      "24342149",
+      "16730194",
+      "12915235",
+      "10800749"
+    ],
+    "translationset": [
+      {
+        "from": "Onton JA[Author]",
+        "to": "Onton, Ja[Full Author Name] OR onton ja[Author]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "sleep",
+        "to": "\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep's\"[All Fields]"
+      },
+      {
+        "from": "neuroimaging",
+        "to": "\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]"
+      },
+      {
+        "from": "brain",
+        "to": "\"brain\"[MeSH Terms] OR \"brain\"[All Fields] OR \"brains\"[All Fields] OR \"brain's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(onton, ja[Author] OR onton ja[Author]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields] OR (\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) OR (\"neuroimage\"[All Fields] OR \"neuroimaged\"[All Fields] OR \"neuroimagers\"[All Fields] OR \"neuroimages\"[All Fields] OR \"neuroimaging\"[MeSH Terms] OR \"neuroimaging\"[All Fields] OR \"neuroimagings\"[All Fields]) OR (\"brain\"[MeSH Terms] OR \"brain\"[All Fields] OR \"brains\"[All Fields] OR \"brain s\"[All Fields]))"
+  }
+}

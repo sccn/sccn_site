@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* showHide */
+#schedule-container {
+ overflow: hidden;
+ position: relative;
+ margin-top: 20px;
+ max-width: 100%;
+}
+.slot-container {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.time {
+	background-color: #FFF !important;
+	border-top: 1px solid #e3e0e0;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center !important;
+	width: 19%;
+}
+.detail-full {
+	overflow: hidden;
+	position: relative;
+	width: 78%;
+}
+.detail-split {
+	overflow: hidden;
+	min-height: 80px;
+	position: relative;
+	width: 38.5%;
+}
+.detail-third {
+	overflow: hidden;
+	min-height: 80px;
+	position: relative;
+	width: 25.5%;
+}
+.cell {
+	background-color: #f4f8fa;
+	float: left;
+	margin: 0 0 .5%;
+	/*padding: .5%;*/
+	text-align: left;
+}
+.break {
+	background-color: #f5f5f5 !important;
+}
+.cell {
+	padding: 10px;
+}
+.style {
+	padding: 0;
+	margin-top: 10px;
+	display: none;
+}
+a.show_hide {
+	background-color: #dbe9f0;
+	color: #109ae3;
+	display: block;
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	width: 70px;
+}
+.show_hide {
+	margin: 0 0 10px;
+}
+#tap {
+	display: none;
+}
+/*
+.time p {
+	margin: 15px auto !important;
+}
+*/
+@media only screen and (max-width:767px) {
+.time {
+	background-color: #bdddee !important;
+	font-weight: bold;
+	width: 100%;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.cell {
+	width: 100%;
+}
+#tap {
+	display: block;
+}
+.cell p {
+	margin: 0 0 .5em 0;
+}
+.time.cell {
+	padding: 0 10px;
+}
+.time.cell, .time.cell p {
+	margin: 0;
+}
+/*
+.cell {
+	padding: 0 10px;
+}
+.time p {
+	margin: 5px auto !important;
+}
+*/
+}

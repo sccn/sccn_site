@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Swartz Center for Computational Neuroscience at UC San Diego.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>The EEGLAB News - SCCN</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/" aria-label="SCCN home"><img src="/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/people/">People</a><a href="/projects/">Research</a><a href="/methods/">Methods</a><a href="/publications/">Publications</a><a href="/news-events/">News</a><a href="/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Archive</p><h1>The EEGLAB News</h1><p class="lead">Preserved SCCN source content rendered in the SCCN3 site shell.</p></div></section>
+      <section class="section"><div class="container legacy-content"><div class="container">
+        <div class="row">
+          <section class="col-12">
+            <h2>The EEGLAB News #17<br>
+            </h2>
+            <h4 align="justify"><strong>EEGLAB and Large Language Models (LLMs)<br>
+            </strong></h4>
+            <p align="justify"><br>
+            </p>
+            <p align="justify">Using Large Language Models (LLMs) to generate EEGLAB code presents a fascinating intersection of advanced AI techniques and neuroscience. LLMs, trained on vast amounts of text (some claim the entire internet), can understand and replicate the structure and syntax of programming languages, including MATLAB, which is used in EEGLAB. This capability is particularly valuable in EEG data analysis, where custom scripting is often required to preprocess data, conduct statistical analyses, and visualize results. By generating EEGLAB code, LLMs can significantly reduce the time and effort researchers spend on coding, allowing them to focus more on experimental design and data interpretation. Additionally, LLMs can assist in troubleshooting and optimizing code and even suggest new methods or approaches for data analysis based on their extensive training. This not only streamlines the EEG analysis process but also democratizes access to advanced data analysis techniques, making them more accessible to researchers who may not have extensive programming expertise.</p>
+            <p>We tried the following prompt in ChatGPT (4.0; commercial version) and Bard.</p>
+            <p>“Create a simple EEGLAB script to import the "test.edf" file in EEGLAB, resample the file to 250 Hz, high pass filter the file at 0.5, run the clean_rawdata to reject bad channels and bad portions of data, then run ICA decomposition and the IClabel plugin.”</p>
+            <p>On January 7, 2024, We obtained the following result in ChatGPT<br>
+            </p>
+		    <p></p><center><img src="/eeglab/eeglab_news/17/EEGLAB-LLMs.gif" alt="EEGLAB script in ChatGPT"></center>
+		    <p>And the following result in Bard:</p>
+            <p></p><center><img src="/eeglab/eeglab_news/17/EEGLAB-LLMs2.gif" alt="EEGLAB script in Bard"></center>
+            <p align="justify">We also tried of free models free models such as Mistral7B without much success (the model could not even find the correct function and invented random function names). In Bard and ChatGPT cases, the model was able to import and filter the data (Bard added some extra unneeded parameters). ChatGPT added some commands to save the EEG dataset in the ALLEEG dataset (something that is shown in EEGLAB history for completion but that is not really needed). However, when it came to using clean_rawdata, both models failed to use relevant parameters (the solution of using -1 for all parameters of ChatGPT means that the plugin does not modify the data (the call does not crash)). Note that the free version of ChatGPT (3.5) returned almost the same result as ChatGPT 4.0 (it omitted the parameters to the clean_rawdata and the iclabel function). By contrast, Bard uses parameters that do not exist (such as Threshold; WindowSize actually exists, although it is not a parameter you usually modify, and 200 seconds is way too long). The call to run ica is correct in both cases, and ChatGPT is capable of calling the IClabel function while Bard is unable to do so. Although the solution provided by ChatGPT is slightly better in this case, we have found that both models have similar performances.</p>
+            <p align="justify">In other words, while these models can offer relevant suggestions and a great starting point, they are not yet able to write functional EEGLAB scripts and understand the intricacies and parameters of complex functions. We will provide updates as these models continue to improve in the following years.<br>
+            </p>
+            <p align="justify">For reference, a functional script to process a dataset is available <a href="https://eeglab.org/tutorials/11_Scripting/automated_pipeline.html" target="_blank">here</a>.</p>
+            <p>What about general MATLAB reasoning to write code? Can LLMs help with that. We asked the following question, which we consider advanced MATLAB programming. </p>
+            <p>“Can you rewrite this MATLAB code without using a loop and without using the conv function?"<br>
+            </p>
+            <p><br>
+              x = [0.2819 0.5386 0.6952 0.4991 0.5358 0.4452 0.1239 0.4904 0.8530 0.8739];<br>
+              convval = [-0.4 3 -0.6];<br>
+              y = zeros(1,10);</p>
+            <p>for i = 2:9<br>
+              y(i) = sum(x(i-1:i+1).*convval(end:-1:1));<br>
+              end<br>
+            </p>
+            <p align="justify">Below are Bard and ChatGPT (4) answers. Both solutions failed to execute based on matrix size inconsistency, although both solutions are very close to being correct (still, when provided with the MATLAB error and asked to fix the code, both LLMs provided updated code that also failed to execute).</p>
+            <p align="justify">Bard<br>
+              </p><center><img src="/eeglab/eeglab_news/17/EEGLAB-LLMs3.gif" alt="Bard"><small><em><br>
+              </em></small>
+              </center>
+            
+            <blockquote>
+              <p>ChatGPT</p>
+              <p></p><center><img src="/eeglab/eeglab_news/17/EEGLAB-LLMs4.gif" alt=""></center>
+              
+              <p>Although LLMs failed to implement complex reasoning for MATLAB programming, they are not far from being able to do so and can still be useful for inspiration.</p>
+              <p><br>
+              </p>
+            </blockquote>
+          </section>
+        </div>
+      </div>
+    </div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/methods/">Methods</a> &middot;
+          <a href="/news-events/">News</a> &middot;
+          <a href="/visit/">Visit</a> &middot;
+          <a href="/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/assets-site.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Swartz Center for Computational Neuroscience at UC San Diego.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>The EEGLAB News - SCCN</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/" aria-label="SCCN home"><img src="/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/people/">People</a><a href="/projects/">Research</a><a href="/methods/">Methods</a><a href="/publications/">Publications</a><a href="/news-events/">News</a><a href="/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Archive</p><h1>The EEGLAB News</h1><p class="lead">Preserved SCCN source content rendered in the SCCN3 site shell.</p></div></section>
+      <section class="section"><div class="container legacy-content"><div class="container">
+        <div class="row">
+          <section class="col-12">
+            <h2>              The EEGLAB News #4<br>
+              <br>
+            </h2>
+            <p><strong><img src="/eeglab/eeglab_news/4/../images/Ehinger_Dimigen.jpg" alt="Benedikt Ehinger and Olaf Dimigen" border="0" align="left">Benedikt Ehinger</strong><br>
+              Donders Institute for Brain, Cognition and Behaviour in Nijmegen, The Netherlands<br>
+            Psychology, Postdoctoral fellow, <a href="https://www.benediktehinger.de" target="_blank">https://benediktehinger.de</a></p>
+            <p><strong>Olaf Dimigen</strong><br>
+              Humboldt-Universität zu Berlin, Germany<br>
+              Visiting professor for Biological Psychology, <a href="http://olaf.dimigen.de" target="_blank">http://olaf.dimigen.de</a></p>
+            <p align="justify"><br>
+            Sometimes inspiration  hits at just the right time. That was the case for Drs. Benedikt Ehinger  (Postdoctoral researcher at Donders Institute for Brain, Cognition and  Behaviour in Nijmegen, The Netherlands) and Olaf Dimigen (Visiting professor at  Humboldt-University in Berlin, Germany). Over coffee at a scientific conference  in Vienna, in 2015, they found out that they both struggled with the analysis  of temporally overlapping brain potentials from eye movements. After some  discussion, they decided to write an <a href="https://www.unfoldtoolbox.org" target="_blank">open source toolbox</a> that allows  researchers to separate such overlapping EEG signals using deconvolution, a technique  used to enhance signals from recorded data.<br>
+            </p>
+            <p align="justify"><strong>The Unfold Toolbox</strong><br>
+            Drs. Ehinger and Dimigen both work with electroencephalography (EEG) – monitoring the electrical activity of the brain supporting thought and action via the fraction of its potentials that reach the scalp. Dr. Ehinger explains: "If we want to record the EEG in naturalistic situations – for example while reading a book, looking at a piece of art, or walking around in a (possibly virtual) city – one problem is immediately apparent: Many things happen at nearly the same time. The recorded EEG typically sums brain activity associated with complex interleaved sensory inputs and motor action events. However, even in traditional, well-controlled laboratory experiments, EEG measures typically reflect the overlapping activities associated with multiple events during the trial, such as stimulus onsets, involuntary microsaccades, and button presses. <strong></strong>Such overlap can both produce confounding effects or obscure real effects. If we want to separate these potentials and<strong> </strong>move towards more ecologically valid experimental designs, we need a different analysis approach: deconvolution based on multiple linear regression. Whereas independent component analysis (ICA) separates the spatially overlapping activity of different sources, deconvolution separates temporally overlapping activity."</p>
+            <p align="justify"><strong><img src="/eeglab/eeglab_news/4/../images/Dimigen_Ehinger_Unfold2.gif" alt="Unfold toolbox" class="img-fluid" align="right"></strong>Upon first review of relevant literature, Drs. Ehinger and Dimigen realized they were not the first to come up with this idea. Just in the same year, a twin-paper by Smith &amp; Kutas (2015) came out in <em>Psychophysiology</em>. "And the fMRI community embraced this approach quite extensively already in the 1990s," Dr. Dimigen explains. "It was also used in EEG. For example, in Dr. Makeig’s lab, they were making the first prototypes of this approach available in 2013." And it was perhaps first introduced in one form (ADJAR) by Marty Woldorff at UCSD in the early 1980s.</p>
+            <p align="justify">But after becoming more familiar with these efforts, Drs. Ehinger and Dimigen noticed a lack of documentation and usability: "We saw the need for a tool that was more intuitive to use and that allows us to simulate data and thoroughly test whether and where the approach is useful." So they made it their goal to create that tool. The final product: “<a href="https://peerj.com/articles/7838/" target="_blank"><em><strong>Unfold</strong></em>: an integrated toolbox for overlap correction, non-linear modeling, and regression-based EEG analysis</a>.” </p>
+            <p align="justify">There are three reasons why <em>Unfold</em> is easy to adopt into an EEGLAB workflow: (1) <em>Unfold</em> makes use of the popular Wilkinson Formulas (used in R, Python, and Matlab statistics) to specify linear models, (2) the <em>Unfold</em> documentation has many tutorials of increasing complexity to help you get started, and (3) <em>Unfold</em> uses the EEGLAB data structure with which many users are already familiar. (<em>Figure to right: Overview of typical analysis steps in Unfold applications.</em>)<br>
+            </p>
+            <p align="justify"><strong>Current Use</strong> <br>
+            "Now, five years later, we can conclude that the approach works really well”, Dr. Dimigen remarks, “for example when we want to model eye movement-related brain responses in active viewing situations like scene perception or reading." Drs. Ehinger and Dimigen both apply the <em>Unfold</em> toolbox extensively in their work. For example, in a <a href="https://www.biorxiv.org/content/10.1101/735530v2" target="_blank">recently submitted paper</a>, the two analyzed combined eye-tracking/EEG experiments with (non)linear deconvolution models.            </p>
+            <p align="justify"><strong><em><strong><img src="/eeglab/eeglab_news/4/../images/Dimigen_Ehinger_Unfold.gif" alt="Unfold toolbox image" class="img-fluid" border="0" align="left"></strong></em></strong><small>(Figure to left: (A) The concept of deconvolution, illustrated for simulated data of an eye-tracking/EEG experiment in which participants look at faces and cars. (B) A short interval of the recorded EEG. Every eye fixation elicits its own brain response (lower row). However, because brain responses last much longer than a typical fixation duration, we can only observe the sum of overlapping responses (upper row). (C) Average fixation-related brain potential (FRP) of each condition. In addition to the genuine N170 effect of looking at a face, this simulation reveals several spurious effects, caused by the systematic differences in fixation duration and saccade size between the two conditions. Here we assume shorter fixation durations for faces, and thus the overlap with the next fixation is stronger. We also simulate a difference in saccade size between conditions. (D) Deconvolution corrects for both spurious effects. Now we can recover the true N170 effect of looking at a face, free of confounds.) (adapted from Dimigen &amp; Ehinger, "<a href="https://www.biorxiv.org/content/10.1101/735530v1.abstract" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable">Analyzing combined eye-tracking/EEG experiments with (non) linear deconvolution models</a>," bioRxiv, 2019).</small></p>
+            <p align="justify">The <em>Unfold</em> toolbox is being used by many researchers and being applied in diverse contexts. Dr. Ehinger rattles off an impressive list of current applications, including: "Reading and spoken language comprehension, anti- &amp; prosaccade tasks in aging, navigation in virtual environments, face perception inside and outside the laboratory, mobile EEG, evidence integration in a P300 task, heart beat potentials and pain, visual search with pointing movements of the arm, or infant research." <br>
+            </p>
+            <p align="justify"><strong>The Future</strong><br>
+            Both researchers agree that the toolbox appeared at a good time. "Many EEG and MEG groups are currently starting to use deconvolution," Dr. Dimigen shares, "so we are lucky to have early adopters that provide us with feedback on usability and features."</p>
+            <p align="justify">"We have also recently added a number of new features," Dr. Ehinger adds. "These include functions for cross-validation, for plotting ERP-images of partial effects, and for computing the temporal response functions (TRFs) of time-continuous predictors (like the sound envelope of a music track). More functions are in the pipeline."<br>
+            </p>
+            <p align="justify">And both researchers are enthusiastic about a new, more exploratory direction -- connected to a new, sister toolbox, <a href="https://ccneuro.org/2019/showDoc.php?s=W&amp;pn=1102" target="_blank"><em>'Unmixed'</em></a>. This extension to <em>Unfold</em> uses mixed linear models to calculate single-subject estimates of deconvolved brain responses. "It would also be useful to include a simple graphical user interface, so models can also be run directly from the EEGLAB menus, instead of only from the MATLAB command line."</p>
+            <p align="justify">Drs. Ehinger and Dimigen are full of ideas for future applications in their own projects. While they don't know exactly where and how far their cutting-edge method will lead them, one thing is clear: They are ready to bring their best tools on their journey. Even, or especially, if it means making their own – and then sharing them with other researchers.</p>
+            <p> </p>
+            <p></p>
+            <p><br>
+              </p>
+            <p><small><em>R. Weistrop, April 2020</em></small><br>
+            </p>
+            
+            <div class="row"></div>
+          </section>
+        </div>
+      </div>
+    </div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/methods/">Methods</a> &middot;
+          <a href="/news-events/">News</a> &middot;
+          <a href="/visit/">Visit</a> &middot;
+          <a href="/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/assets-site.js" defer></script>
+  </body>
+</html>

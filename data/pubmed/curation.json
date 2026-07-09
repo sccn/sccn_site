@@ -1,0 +1,6 @@
+{
+  "exclude_pmids": [],
+  "exclude_dois": [],
+  "exclude_titles": [],
+  "notes": "Use this file to remove PubMed false positives or add future manual curation rules before regenerating publications."
+}

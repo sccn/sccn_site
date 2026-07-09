@@ -1,0 +1,50 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "14",
+    "retmax": "14",
+    "retstart": "0",
+    "idlist": [
+      "41256398",
+      "40959706",
+      "40830348",
+      "38405712",
+      "39008387",
+      "39034596",
+      "38717333",
+      "37022022",
+      "36711641",
+      "35594214",
+      "35906239",
+      "33539300",
+      "31787866",
+      "30440817"
+    ],
+    "translationset": [
+      {
+        "from": "Shirazi SY[Author]",
+        "to": "Shirazi, Sy[Full Author Name] OR shirazi sy[Author]"
+      },
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "motor",
+        "to": "\"motor\"[All Fields] OR \"motor's\"[All Fields] OR \"motoric\"[All Fields] OR \"motorically\"[All Fields] OR \"motorics\"[All Fields] OR \"motoring\"[All Fields] OR \"motorisation\"[All Fields] OR \"motorised\"[All Fields] OR \"motorization\"[All Fields] OR \"motorized\"[All Fields] OR \"motors\"[All Fields]"
+      },
+      {
+        "from": "rehabilitation",
+        "to": "\"rehabilitant\"[All Fields] OR \"rehabilitant's\"[All Fields] OR \"rehabilitants\"[All Fields] OR \"rehabilitate\"[All Fields] OR \"rehabilitated\"[All Fields] OR \"rehabilitates\"[All Fields] OR \"rehabilitating\"[All Fields] OR \"rehabilitation\"[MeSH Terms] OR \"rehabilitation\"[All Fields] OR \"rehabilitations\"[All Fields] OR \"rehabilitative\"[All Fields] OR \"rehabilitation\"[Subheading] OR \"rehabilitation's\"[All Fields] OR \"rehabilitational\"[All Fields] OR \"rehabilitator\"[All Fields] OR \"rehabilitators\"[All Fields]"
+      },
+      {
+        "from": "brain",
+        "to": "\"brain\"[MeSH Terms] OR \"brain\"[All Fields] OR \"brains\"[All Fields] OR \"brain's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(shirazi, sy[Author] OR shirazi sy[Author]) AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields] OR \"MoBI\"[All Fields] OR (\"motor\"[All Fields] OR \"motor s\"[All Fields] OR \"motoric\"[All Fields] OR \"motorically\"[All Fields] OR \"motorics\"[All Fields] OR \"motoring\"[All Fields] OR \"motorisation\"[All Fields] OR \"motorised\"[All Fields] OR \"motorization\"[All Fields] OR \"motorized\"[All Fields] OR \"motors\"[All Fields]) OR (\"rehabilitant\"[All Fields] OR \"rehabilitants\"[All Fields] OR \"rehabilitate\"[All Fields] OR \"rehabilitated\"[All Fields] OR \"rehabilitates\"[All Fields] OR \"rehabilitating\"[All Fields] OR \"rehabilitation\"[MeSH Terms] OR \"rehabilitation\"[All Fields] OR \"rehabilitations\"[All Fields] OR \"rehabilitative\"[All Fields] OR \"rehabilitation\"[MeSH Subheading] OR \"rehabilitation s\"[All Fields] OR \"rehabilitational\"[All Fields] OR \"rehabilitator\"[All Fields] OR \"rehabilitators\"[All Fields]) OR (\"brain\"[MeSH Terms] OR \"brain\"[All Fields] OR \"brains\"[All Fields] OR \"brain s\"[All Fields]))"
+  }
+}

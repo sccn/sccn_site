@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "EEG",
+        "to": "\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields]"
+      },
+      {
+        "from": "motor",
+        "to": "\"motor\"[All Fields] OR \"motor's\"[All Fields] OR \"motoric\"[All Fields] OR \"motorically\"[All Fields] OR \"motorics\"[All Fields] OR \"motoring\"[All Fields] OR \"motorisation\"[All Fields] OR \"motorised\"[All Fields] OR \"motorization\"[All Fields] OR \"motorized\"[All Fields] OR \"motors\"[All Fields]"
+      },
+      {
+        "from": "rehabilitation",
+        "to": "\"rehabilitant\"[All Fields] OR \"rehabilitant's\"[All Fields] OR \"rehabilitants\"[All Fields] OR \"rehabilitate\"[All Fields] OR \"rehabilitated\"[All Fields] OR \"rehabilitates\"[All Fields] OR \"rehabilitating\"[All Fields] OR \"rehabilitation\"[MeSH Terms] OR \"rehabilitation\"[All Fields] OR \"rehabilitations\"[All Fields] OR \"rehabilitative\"[All Fields] OR \"rehabilitation\"[Subheading] OR \"rehabilitation's\"[All Fields] OR \"rehabilitational\"[All Fields] OR \"rehabilitator\"[All Fields] OR \"rehabilitators\"[All Fields]"
+      },
+      {
+        "from": "brain",
+        "to": "\"brain\"[MeSH Terms] OR \"brain\"[All Fields] OR \"brains\"[All Fields] OR \"brain's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Yahya\"[All Fields] AND Shirazi[Author] AND (\"electroencephalography\"[MeSH Terms] OR \"electroencephalography\"[All Fields] OR \"eeg\"[All Fields] OR \"MoBI\"[All Fields] OR (\"motor\"[All Fields] OR \"motor s\"[All Fields] OR \"motoric\"[All Fields] OR \"motorically\"[All Fields] OR \"motorics\"[All Fields] OR \"motoring\"[All Fields] OR \"motorisation\"[All Fields] OR \"motorised\"[All Fields] OR \"motorization\"[All Fields] OR \"motorized\"[All Fields] OR \"motors\"[All Fields]) OR (\"rehabilitant\"[All Fields] OR \"rehabilitants\"[All Fields] OR \"rehabilitate\"[All Fields] OR \"rehabilitated\"[All Fields] OR \"rehabilitates\"[All Fields] OR \"rehabilitating\"[All Fields] OR \"rehabilitation\"[MeSH Terms] OR \"rehabilitation\"[All Fields] OR \"rehabilitations\"[All Fields] OR \"rehabilitative\"[All Fields] OR \"rehabilitation\"[MeSH Subheading] OR \"rehabilitation s\"[All Fields] OR \"rehabilitational\"[All Fields] OR \"rehabilitator\"[All Fields] OR \"rehabilitators\"[All Fields]) OR (\"brain\"[MeSH Terms] OR \"brain\"[All Fields] OR \"brains\"[All Fields] OR \"brain s\"[All Fields]))",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

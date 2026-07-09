@@ -1,0 +1,738 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Roboto Thin'), local('Roboto-Thin'), url('../../../../template/fonts/Roboto-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 100;
+	src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('../../../../template/fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Light'), local('Roboto-Light'), url('../../../../template/fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('../../../../template/fonts/Roboto-LightItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto Regular'), local('Roboto-Regular'), url('../../../../template/fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Roboto Italic'), local('Roboto-Italic'), url('../../../../template/fonts/Roboto-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url('../../../../template/fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('../../../../template/fonts/Roboto-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'), url('../../../../template/fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('../../../../template/fonts/Roboto-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Roboto Black'), local('Roboto-Black'), url('../../../../template/fonts/Roboto-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 900;
+	src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('../../../../template/fonts/Roboto-BlackItalic.ttf') format('truetype');
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+	color: #5a5a5a;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: 400;
+	padding-top: 130px;
+	padding-bottom: 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+@media screen and (max-width: 767px) {
+.featurette-divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+nav {
+	font-weight: 500;
+}
+.navbar {
+    -webkit-box-shadow: 0px 1px 4px #999;
+    -moz-box-shadow: 0px 1px 4px #999;
+    box-shadow: 0px 1px 4px #999;
+}
+.navbar-logo {
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: url(images/logo.png) no-repeat transparent;
+	background-size: 100px 100px;
+}
+.nav-item {
+	font-size: 120%;
+}
+.bg-dark {
+    background-color: #004 !important;
+}
+.announcements {
+	background-color: #cbd6eb;
+}
+/*
+ * Footer
+ */
+.blog-footer {
+	color: #999;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p {
+	margin-bottom: .1rem;
+}
+.blog-footer .row {
+	padding: .5rem 0;
+}
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+table.styled {
+	margin-bottom: 1rem
+}
+table.styled td, table.styled th {
+	padding: .25rem .25rem
+}
+table.styled th {
+	background-color: #eee;
+	font-weight: 700
+}
+table.styled td, table.styled th {
+	border: 1px solid #ccc
+}
+table.styled tbody tr.even {
+	background-color: #eff
+}
+table.mysql {
+	text-align: left;
+	margin-bottom: 1em;
+	border-top: 1px solid #DDD;
+}
+table.mysql th {
+	font-size: 14px;
+	background: #DDD;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+table.mysql td {
+	vertical-align: top;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+table.mysql tr.even {
+	background-color: #eff;
+}
+.department {
+	color:#999;
+}
+article, section, div.article, div.section {
+	margin-bottom:1rem;
+}
+div.styled, article.styled, section.styled {
+	background:#F2F5F7;
+	border:1px solid #d2d2d2;
+	margin-bottom:1rem;
+	padding:1rem
+}
+div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
+	color:#738aa3;
+	text-shadow:0 1px 1px #fff
+}
+div.styled h2 {
+	font-size:110%
+}
+div.styled h3 {
+	font-size:105%
+}
+form, .form table {
+    margin-bottom: 1rem;
+}
+.form input[type="text"], .form textarea {
+	width: 100%;
+}
+.form textarea {
+    resize: none;
+	font-family: monospace;
+}
+.form .error {
+    color: red;
+}
+#page_nav {
+    margin: 0 -1em -1em;
+    padding: 0;
+}
+article.nav-left {
+	width: 300px;
+	float: left;
+	margin-right: 1rem;
+}
+@media only screen and (max-width:767px) {
+article.nav-left {
+	width: auto;
+	float: none;
+	margin-right: 0;
+}
+}
+.main-content-nav {
+	background: #F2F5F7;
+	border: solid 1px #C8CFD3;
+	padding: 1em;
+	margin-bottom: 1rem;
+}
+@media only screen (min-width:992px) and (max-width:1199px) {
+.main-content-nav {
+	font-size: 80%;
+}
+}
+@media only screen and (max-width:767px) {
+.main-content-nav {
+	margin-top: 2em
+}
+}
+.main-content-nav>h2 {
+	color: #738AA3;
+/*	font-size: 140%; */
+	text-shadow: 0 1px 1px #FFF;
+	margin: 0 0 .7em
+}
+.main-content-nav>ul {
+	margin: 0 -1em -1em;
+	font-size: 1em
+}
+.main-content-nav>ul>li.active {
+	color: #d56a03
+}
+.main-content-nav>ul li {
+	border-top: solid 1px #D8D7D7;
+	list-style: none
+}
+.main-content-nav>ul li a {
+	display: block;
+	padding: 1em 0 1em 1em
+}
+.main-content-nav>ul li a:hover {
+	background-color: #fff
+}
+.main-content-nav>ul li a:active, .main-content-nav>ul li a:hover, .main-content-nav>ul li a:link {
+	text-decoration: none
+}
+.main-content-nav>ul li.active {
+	background-color: #fff;
+	/*padding: 1em 0 1em 1em*/
+}
+.main-content-nav>ul li.active>a {
+	color: #d56a03
+}
+.main-content-nav>ul li.active a:hover {
+	text-decoration: underline
+}
+.main-content-nav>ul li ul {
+	margin: .4em 0 -.4em 1em;
+	padding: 0
+}
+.main-content-nav>ul li li {
+	font-size: 85%
+}
+.main-content-nav text {
+	background: #F2F5F7;
+	border: solid 1px #C8CFD3;
+	padding: 1em;
+	margin-bottom: 1em
+}
+/*drawer - BEGIN*/
+.drawer h2 a, .drawer-toggle a {
+	background: url(images/sprite_icon_widget.png)  no-repeat transparent
+}
+.drawer-wrapper {
+	margin-bottom: 1em
+}
+.drawer {
+	border-bottom: 1px solid #ccc
+}
+.drawer h2 {
+	border-top: 1px solid #ccc;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: .2rem 0 .2rem;
+	zoom: 1;
+}
+.drawer h2 a {
+	background-position: 0 6px;
+	display: block;
+	padding-left: 20px;
+	text-decoration: none
+}
+.drawer h2, .main-content-nav h2 {
+	font-size: 125%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 120%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 115%;
+}
+@media only screen and (max-width:991px) {
+.drawer h2 {
+	font-size: 120%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 115%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 110%;
+}
+}
+:first-child+html .drawer h2 a {
+	display: inline-block
+}
+.drawer h2.expand {
+	background-color: #0B4A67
+}
+.drawer h2.expand a {
+	background-position: 0 -92px;
+	color: #fff
+}
+.drawer h2:active, .drawer h2:hover {
+	background-color: #F0FAFF;
+	cursor: pointer
+}
+.drawer h2.expand:active, .drawer h2.expand:hover {
+	background: #0B4A67
+}
+.drawer h2, .main-content-nav h2 {
+	font-size: 150%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 140%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 130%;
+}
+@media only screen and (max-width:991px) {
+.drawer h2 {
+	font-size: 120%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 115%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 110%;
+}
+}
+.drawer>article, .drawer>div {
+	padding: 1em 2em
+}
+.drawer>div.cols_wrapper {
+	padding: 1em 0
+}
+.drawer-toggle {
+	font-size: 90%;
+	padding: .5em 0
+}
+.drawer-toggle a {
+	color: #666
+}
+.drawer-toggle a:active, .drawer-toggle a:hover {
+	color: #016691
+}
+.drawer-toggle a {
+	background-position: 0 -217px;
+	padding-left: 16px
+}
+.drawer-toggle a.expand {
+	background-position: 0 -201px
+}
+.drawer .section {
+	float: none;
+	overflow: auto;
+}
+.drawer .article {
+	float: none;
+	overflow: auto;
+}
+.directory .section {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #006;
+}
+.directory .article {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #006;
+}
+.directory .title {
+	font-size: 120%;
+	font-weight: 500;
+}
+.directory .department {
+	font-size: 120%;
+	font-weight: 500;
+}
+/*drawer - END*/
+/*carousel - BEGIN*/
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.35);
+}
+/*carousel - BEGIN*/
+/*flexslider - BEGIN*/
+.flexslider {
+	border: 0;
+	margin: 0 0 1rem 0;
+}
+.flex-caption {
+	padding: 10px;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	font-size: 120%;
+	font-weight: 500;
+	position: absolute
+}
+.flex-caption a {
+	color: #61c6f1;
+}
+.flexslider .flex-direction-nav li a.flex-prev {
+	left: 20px
+}
+.flexslider .flex-direction-nav li a.flex-next {
+	right: 20px
+}
+.flex-direction-nav .flex-prev {
+  left: 20px;
+  line-height: 1;
+}
+.flex-direction-nav .flex-next {
+  right: 20px;
+  text-align: right;
+  line-height: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+	left: 20px
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+	right: 20px
+}
+/*flexslider - END*/
+/*UCSD Campus Lisa - BEGIN*/
+#schedule-container {
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	max-width: 100%;
+}
+.slot-container {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.time {
+	background-color: #FFF !important;
+	border-top: 1px solid #e3e0e0;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center !important;
+	width: 19%;
+}
+.detail-full {
+	overflow: hidden;
+	position: relative;
+	width: 78%;
+}
+.detail-split {
+	overflow: hidden;
+	min-height: 80px;
+	position: relative;
+	width: 38.5%;
+}
+.detail-third {
+	overflow: hidden;
+	min-height: 80px;
+	position: relative;
+	width: 25.5%;
+}
+.cell {
+	background-color: #f4f8fa;
+	float: left;
+	margin: .5%;
+	/*padding: .5%;*/
+	text-align: left;
+}
+.break {
+	background-color: #f5f5f5 !important;
+}
+.time p {
+	margin: 15px auto !important;
+}
+.cell p {
+	margin: 15px 0 15px 20px;
+}
+.title {
+	color: #333;
+	font-weight: bold;
+}
+.style {
+	padding: 15px;
+	border-bottom: 5px solid #176f96;
+	display: none;
+}
+.style p {
+	margin: 0 0 0 0;
+}
+a.show_hide {
+	background-color: #dbe9f0;
+	color: #109ae3;
+	display: block;
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	width: 47px;
+	font-size: 80%;
+}
+.show_hide {
+	margin: 0 0 10px 20px;
+}
+/*UCSD Campus Lisa - END*/
+/*Talks*/
+div.talks h1 {
+	font-size: 140%;
+	color: #555;
+}
+div.talks h1 a {
+	color: #555;
+}
+div.talks h2 {
+	font-size: 130%;
+	color: #666;
+}
+div.talks h2 a {
+	color: #666;
+}
+div.talks table {
+	text-align: left;
+	margin-bottom: 1em;
+	border-top: 1px solid #DDD;
+}
+div.talks table th {
+	font-size: 14px;
+	background: #DDD;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+div.talks table td {
+	vertical-align: top;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+div.talks table td p {
+	margin: 0;
+}
+div.talks div.styled p.date, div.talks div.styled p.title, div.talks div.styled p.speaker, div.talks div.styled p.author {
+	text-align: center;
+	font-size:125%;
+}
+div.talks p.date, div.talks p.title, div.talks p.speaker, div.talks p.author {
+	text-align: center;
+	font-size:150%;
+}
+div.talks p.department {
+	text-align: center;
+	font-size: 120%;
+}
+div.talks .title {
+	font-size: 120%;
+	font-weight: bold;
+}
+div.talks .department, .university, .college {
+	color: #99a;
+	font-size: 110%;
+}
+div.talks .abstract {
+}
+/*Talks - END*/
+@media screen and (-webkit-min-device-pixel-ratio:3) {
+.navbar-logo {
+	display: block;
+	width: 128px;
+	height: 96px;
+	background-image: url(https://sccn.ucsd.edu/eeglab/template/bootstrap/css/images/inc-128x96.png);
+	background-size: 128px 96px;
+}
+}
+@media screen and (max-width: 767px) {
+.featurette img.logo {
+	display: none;
+}
+.time {
+	background-color: #bdddee !important;
+	font-weight: bold;
+	width: 100%;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.time p {
+	margin: 5px auto !important;
+}
+.cell {
+	width: 100%;
+}
+#tap {
+	display: block;
+}
+.cell p {
+	margin: 0 0 .5em 0;
+}
+.show_hide {
+	margin: 0 0 10px 0px;
+}
+.style {
+	padding: 0;
+}
+.flex-caption, .carousel-caption {
+	font-size: 80%;
+}
+.flex-caption {
+	padding: 2px;
+}
+}
+@media (min-width: 62em) {
+.featurette-heading {
+  margin-top: 0;
+}
+}
+@media print {
+.main-content-nav {
+	background: 0 0
+}
+}

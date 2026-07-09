@@ -1,0 +1,37 @@
+[
+  {
+    "title": "EEGLAB",
+    "image": "/images/eeglab_small.png",
+    "body_html": "<p>EEGLAB is an open-source MATLAB environment for processing continuous and event-related EEG, MEG, and related electrophysiological data. It combines an interactive graphical interface with an extensive scripting and plugin ecosystem.</p>\n          <ul>\n            <li>Independent component analysis and artifact modeling</li>\n            <li>Time/frequency analysis and event-related dynamics</li>\n            <li>Source localization, connectivity, and visualization</li>\n            <li>Community plugins for reproducible EEG workflows</li>\n          </ul>\n          <a class=\"btn btn-primary\" href=\"https://eeglab.org\" target=\"_blank\" rel=\"noopener\">Visit EEGLAB ↗</a>\n        ",
+    "summary": "EEGLAB is an open-source MATLAB environment for processing continuous and event-related EEG, MEG, and related electrophysiological data. It combines an interactive graphical interface with an extensive scripting and plugin ecosystem. Independent component analysis and artifact modeling Time/frequency analysis and event-related dynamics Source localization, c",
+    "url": "https://eeglab.org"
+  },
+  {
+    "title": "NEMAR",
+    "image": "/images/nemar.svg",
+    "body_html": "<p>NEMAR connects BIDS-formatted EEG, MEG, and iEEG datasets with OpenNeuro, quality visualization, and high-performance computing through SDSC and NSG.</p>\n          <ul>\n            <li>Browse and search openly shared EEG/MEG/iEEG datasets</li>\n            <li>Validate metadata and inspect dataset quality</li>\n            <li>Run large-scale analyses on shared compute infrastructure</li>\n          </ul>\n          <a class=\"btn btn-primary\" href=\"https://nemar.org\" target=\"_blank\" rel=\"noopener\">Visit NEMAR ↗</a>\n        ",
+    "summary": "NEMAR connects BIDS-formatted EEG, MEG, and iEEG datasets with OpenNeuro, quality visualization, and high-performance computing through SDSC and NSG. Browse and search openly shared EEG/MEG/iEEG datasets Validate metadata and inspect dataset quality Run large-scale analyses on shared compute infrastructure Visit NEMAR ↗",
+    "url": "https://nemar.org"
+  },
+  {
+    "title": "HED",
+    "image": "/images/hed-logo-transparent.png",
+    "body_html": "<p>Hierarchical Event Descriptors make experimental events machine-actionable and comparable across datasets by adding standardized, extensible event annotation.</p>\n          <a class=\"btn btn-primary\" href=\"https://www.hedtags.org\" target=\"_blank\" rel=\"noopener\">Visit HED ↗</a>\n        ",
+    "summary": "Hierarchical Event Descriptors make experimental events machine-actionable and comparable across datasets by adding standardized, extensible event annotation. Visit HED ↗",
+    "url": "https://www.hedtags.org"
+  },
+  {
+    "title": "EEGDash",
+    "image": "/images/eegdash_long.svg",
+    "body_html": "<p>EEGDash supports programmatic access to EEG datasets for analysis, benchmarking, and machine-learning workflows.</p>\n        ",
+    "summary": "EEGDash supports programmatic access to EEG datasets for analysis, benchmarking, and machine-learning workflows.",
+    "url": ""
+  },
+  {
+    "title": "EEGPrep",
+    "image": "/images/eegprep.jpg",
+    "body_html": "<p>EEGPrep supports automated, reproducible preprocessing for standardized EEG analysis pipelines.</p>\n        ",
+    "summary": "EEGPrep supports automated, reproducible preprocessing for standardized EEG analysis pipelines.",
+    "url": ""
+  }
+]

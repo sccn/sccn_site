@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Swartz Center for Computational Neuroscience at UC San Diego.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>News - SCCN</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/" aria-label="SCCN home"><img src="/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/people/">People</a><a href="/projects/">Research</a><a href="/methods/">Methods</a><a href="/publications/">Publications</a><a href="/news-events/">News</a><a href="/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Archive</p><h1>News</h1><p class="lead">Preserved SCCN source content rendered in the SCCN3 site shell.</p></div></section>
+      <section class="section"><div class="container legacy-content"><div class="container">
+        <div class="row">
+          <section class="col-lg-12">
+            <h1>News</h1>
+            <p>August 1, 2019</p>
+            <h2>The NEMAR project to build a  neuroelectromagnetic data portal to the NIMH OpenNeuro human neuroimaging data  archive funded by the National Institute for Mental Health (NIMH)</h2>
+            <p align="justify">UCSD scientists Scott Makeig and Arnaud Delorme at the Swartz  Center for Computational Neuroscience (SCCN) of the Institute for Neural  Computation (INC), together with co-PIs Amitava Majumdar from the San Diego  Supercomputer Center (SDSC), UCSD, and Russ Poldrack of Stanford University,  have received a five-year , nearly $5M grant from the U.S. National Institutes  of Health (NIH) to create a portal (‘NEMAR’) for human electrophysiological  data to the OpenNeuro data archive and tools resource (<em>OpenNeuro.org</em>) developed by Poldrack and colleagues. OpenNeuro has  been designated by the National Institute of Mental Health (NIMH) as a  repository for NIH-funded and other human neuroimaging data. Currently it mainly  hosts data acquired using functional magnetic resonance imaging (fMRI), but  will over time accumulate data acquired using other brain imaging modalities.  The new project will add a web and data processing front door to OpenNeuro specifically  designed to archive, combine, and further analyze human electrophysiological  data – scalp EEG, its magnetic counterpart, MEG, and, eventually, intracranial  iEEG and ECoG data sometimes recorded to plan brain surgeries for epilepsy or  other brain pathologies.</p>
+            <p align="justify">Previous neuroimaging data archives were  designed primarily for use only as data libraries and required users to use a complex  query language to find and copy data. Typically, these served the few users who  were prepared explore the downloaded data using their own tools and devices. The  title, of the new project, NEMAR, stands for ‘NeuroElectroMagnetic data Archive  and tools Resource.’ The new data archive and tools resource (DATR) concept integrates  an archive of sufficiently annotated data, stored in compatible formats, with an  easily extended resource of data analysis tools built to efficiently explore  the archived data, all housed in a widely accessible and computationally  powerful cloud computing environment – the latter becoming necessary to allow  new machine learning tools to be applied <em>across</em> archived studies that together constitute a very large corpus of archived data,  one that <em>in toto</em> could not be quickly  copied to another computing resource.</p>
+            <p align="justify"> To build a  working DATR requires that the included datasets be well organized and described  in a way suitable for machine search and comparison. Over the last few years, a  new set of neuroimaging data archiving standards, extensions of the Brain  Imaging Data Standard (BIDS) for fMRI data, have been created by neuroimaging  research communities to organize EEG, MEG, and ECoG or iEEG, and other types of  data, an effort spearheaded in part by Dr. Poldrack and colleagues, with  contributions by Delorme, Makeig, NEMAR project consultants Cyril Pernet (University  of Edinborough) and Robert Oostenveld (Nijmegan University), and many others.  ‘BIDS-app’ tools efficiently read and process BIDS data; else, BIDS data sets  may be readily exported to other formats for further analysis.</p>
+            <p align="justify">              A specific need for research using human electrophysiological  data has been a system for carefully describing the nature of experimental  events experienced or produced by the subject during the data recording. For  this purpose, BIDS incorporates the Hierarchical Event Descriptor (HED) system and  tools first developed in SCCN by project consultant Nima Bigdely-Shamlo during  his Ph.D. studies at UCSD. HED tagging, also an extensible standard under  continuing development by the electrophysiology research community, allows  researchers to use new statistical approaches to uncover hidden patterns  visible only when viewed across a large enough amount of data, a new data  analysis approach termed data mining. Data mining using machine learning  approaches, essential tools in the new science of neuroinformatics, present exciting  new horizons for researchers in human electrophysiology, who for decades could  only could only compare results of their studies to those of past studies by visually  comparing their plotted results against similar plots in previously published  journal articles by themselves and others.</p>
+            <p align="justify">              The NEMAR project has a second goal of linking the  OpenNeuro data archive to high-performance computing (HPC) resources of the  NSF-supported XSEDE network of supercomputers including Comet (and its planned  successor) at SDSC. The NEMAR researchers at INC and SDSC are already  collaborating on an NIH project to include the world-leading EEGLAB software  environment for electrophysiological data analysis of Drs. Delorme and Makeig (<em>sccn.ucsd.edu/eeglab</em>) in the suite of  neuroscience software made freely available to researchers for computing on the  XSEDE network by the Neuroscience Gateway (NSG) project of Drs. Majumdar,  Sivagnanam, and Yoshimoto at SDSC and Carnevale at Yale, funded by the U.S.  National Science Foundation. NSG (<em>nsgportal.org</em>)  currently provides neuroscience simulation and data processing tools and  pipelines on multiple XSEDE HPC resources freely and openly for neuroscience  researchers.</p>
+            <p align="justify">              The NSG facility will support the development of NEMAR  project data quality evaluation and visualization tools that will allow electrophysiology  researchers using OpenNeuro to visualize and compute on archived data --- both  raw data as recorded by the sensors themselves, and transformed data identified  as generated in part by brain and in part by non-brain (‘artifact’) processes. Computing  on data portions associated with cortical sources will allow data from multiple  studies, recorded with different numbers, placements, and even types of sensors  to be aggregated and compared within a common brain space. Brain sources of  NEMAR-processed data accompanied by subject magnetic resonance (MR) head images  can be localized using advanced individual electromagnetic head models.  In future, NSG users may also be able to work  on OpenNeuro data ported to UCSD XSEDE resources via a high-bandwidth pipe  between SDSC and commercial cloud providers such as Amazon, where the OpenNeuro  data will reside.            </p>
+            <p align="justify"><strong>For more information contact:</strong> Ms.  Rhonda McCoy (<a href="mailto:rmccoy@ucsd.edu">rmccoy@ucsd.edu</a>) or Scott Makeig (<a href="mailto:smakeig@ucsd.edu">smakeig@ucsd.edu</a>) Institute  for Neural Computation; Mr. Jan Zverina (<a href="mailto:jzverina@sdsc.edu">jzverina@sdsc.edu</a>) or Amitava  Majumdar (<a href="mailto:majumdar@sdsc.edu">majumdar@sdsc.edu</a>), San Diego Supercomputer Center </p>
+            <p><strong>NIH award notice:</strong><em> <a href="https://projectreporter.nih.gov/project_info_details.cfm?aid=9795341&amp;icde=45812664">https://projectreporter.nih.gov/project_info_details.cfm?aid=9795341&amp;icde=45812664</a></em></p>
+          </section>
+        </div>
+      </div>
+    </div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/methods/">Methods</a> &middot;
+          <a href="/news-events/">News</a> &middot;
+          <a href="/visit/">Visit</a> &middot;
+          <a href="/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/assets-site.js" defer></script>
+  </body>
+</html>

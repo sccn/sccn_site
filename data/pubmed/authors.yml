@@ -1,0 +1,25 @@
+authors:
+  - display: Arnaud Delorme
+    queries:
+      - Delorme A[Author] AND (EEG OR electroencephalography OR EEGLAB OR meditation OR neuroscience OR brain)
+  - display: Scott Makeig
+    queries:
+      - Makeig S[Author] AND (EEG OR electroencephalography OR EEGLAB OR neuroscience OR brain OR neural)
+  - display: Tzyy-Ping Jung
+    queries:
+      - Jung TP[Author] AND (EEG OR electroencephalography OR BCI OR brain-computer OR neural OR neuroscience)
+      - Jung T-P[Author] AND (EEG OR electroencephalography OR BCI OR brain-computer OR neural OR neuroscience)
+  - display: Ying Wu
+    queries:
+      - Ying Wu[Full Author Name] AND (UCSD[Affiliation] OR "University of California San Diego"[Affiliation] OR EEG[Title/Abstract] OR electroencephalography[Title/Abstract] OR semantic[Title/Abstract] OR language[Title/Abstract])
+  - display: Mateusz Gola
+    queries:
+      - Gola M[Author] AND (EEG OR brain OR addiction OR compulsive OR sexual OR neuroimaging)
+  - display: Julie Onton
+    queries:
+      - Onton J[Author] AND (EEG OR sleep OR neuroimaging OR brain)
+      - Onton JA[Author] AND (EEG OR sleep OR neuroimaging OR brain)
+  - display: Seyed Yahya Shirazi
+    queries:
+      - Shirazi SY[Author] AND (EEG OR MoBI OR motor OR rehabilitation OR brain)
+      - Yahya Shirazi[Author] AND (EEG OR MoBI OR motor OR rehabilitation OR brain)

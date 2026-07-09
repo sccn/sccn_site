@@ -1,0 +1,723 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Roboto Thin'), local('Roboto-Thin'), url('../../fonts/Roboto-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 100;
+	src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('../../fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Light'), local('Roboto-Light'), url('../../fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('../../fonts/Roboto-LightItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto Regular'), local('Roboto-Regular'), url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Roboto Italic'), local('Roboto-Italic'), url('../../fonts/Roboto-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url('../../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('../../fonts/Roboto-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'), url('../../fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('../../fonts/Roboto-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Roboto Black'), local('Roboto-Black'), url('../../fonts/Roboto-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 900;
+	src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('../../fonts/Roboto-BlackItalic.ttf') format('truetype');
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+	color: #5a5a5a;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: 400;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+@media screen and (max-width: 767px) {
+.featurette-divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40rem) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+.featurette-heading {
+  margin-top: 0;
+}
+nav {
+	font-weight: 500;
+}
+.navbar.sub {
+    -webkit-box-shadow: 0px 1px 4px #999;
+    -moz-box-shadow: 0px 1px 4px #999;
+    box-shadow: 0px 1px 4px #999;
+}
+.nav-item {
+	font-size: 120%;
+}
+.bg-dark {
+    background-color: #004 !important;
+}
+.text-yellow {
+  color: #ffa;
+}
+.announcements {
+	background-color: #cbd6eb;
+}
+/* Main
+main p, main li, main .figure-caption {
+	text-align: justify;
+} */
+/*
+ * Footer
+ */
+.blog-footer {
+	color: #999;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p {
+	margin-bottom: .1rem;
+}
+.blog-footer .row {
+	padding: .5rem 0;
+}
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+table.styled {
+	margin-bottom: 1rem
+}
+table.styled td, table.styled th {
+	padding: .25rem .25rem
+}
+table.styled th {
+	background-color: #eee;
+	font-weight: 700
+}
+table.styled td, table.styled th {
+	border: 1px solid #ccc
+}
+table.styled tbody tr.even {
+	background-color: #eff
+}
+table.mysql {
+	text-align: left;
+	margin-bottom: 1rem;
+	border-top: 1px solid #DDD;
+}
+table.mysql th {
+	font-size: 14px;
+	background: #DDD;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+table.mysql td {
+	vertical-align: top;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+table.mysql tr.even {
+	background-color: #eff;
+}
+.department {
+	color:#999;
+}
+article, section, div.article, div.section {
+	margin-bottom:1rem;
+}
+div.styled {
+  color:black;
+	background-color: rgba(225,225,255);
+	margin-bottom:1rem;
+	padding:1rem;
+}
+div.styled.highlight {
+  background-image: url(../../../images/bg-light-blue-trident.png);
+  background-position: 100% 0;
+  background-size: cover!important;
+}
+div.card.highlight {
+	background-color: rgba(235,235,255);
+  background-position: 100% 0;
+  background-size: cover!important;
+}
+div.card.trident {
+  background-image: url(../../../images/bg-light-blue-trident.png);
+}
+div.card.highlight li.list-group-item {
+	background-color: rgba(235,235,255);
+}
+div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
+	color:darkblue;
+}
+div.styled h2 {
+	font-size: 150%
+}
+div.styled h3 {
+	font-size: 130%
+}
+div.styled h4 {
+	font-size: 120%
+}
+article.styled, section.styled {
+  color:black;
+	background-color: rgba(225,225,255);
+	margin-bottom:1rem;
+	padding:1rem
+}
+form, .form table {
+    margin-bottom: 1rem;
+}
+.form input[type="text"], .form textarea {
+	width: 100%;
+}
+.form textarea {
+    resize: none;
+	font-family: monospace;
+}
+.form .error {
+    color: red;
+}
+#page_nav {
+    margin: 0 -1rem -1rem;
+    padding: 0;
+}
+article.nav-left {
+	width: 300px;
+	float: left;
+	margin-right: 1rem;
+}
+@media only screen and (max-width:767px) {
+article.nav-left {
+	width: auto;
+	float: none;
+	margin-right: 0;
+}
+}
+.main-content-nav {
+	background: #f9f9f9;
+	border: solid 1px rgb(222, 226, 230);
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+@media only screen (min-width:992px) and (max-width:1199px) {
+.main-content-nav {
+	font-size: 80%;
+}
+}
+@media only screen and (max-width:767px) {
+.main-content-nav {
+	margin-top: 2rem
+}
+}
+.main-content-nav>h2 {
+	color: #738AA3;
+/*	font-size: 140%; */
+	text-shadow: 0 1px 1px #FFF;
+	margin: 0 0 .7rem
+}
+.main-content-nav>ul {
+	margin: 0 -1rem -1rem;
+	font-size: 1rem
+}
+.main-content-nav>ul>li.active {
+	color: #d56a03
+}
+.main-content-nav>ul li {
+	border-top: solid 1px #D8D7D7;
+	list-style: none
+}
+.main-content-nav>ul li a {
+	display: block;
+	padding: 1rem 0 1rem 1rem
+}
+.main-content-nav>ul li a:hover {
+	background-color: #fff
+}
+.main-content-nav>ul li a:active, .main-content-nav>ul li a:hover, .main-content-nav>ul li a:link {
+	text-decoration: none
+}
+.main-content-nav>ul li.active {
+	background-color: #fff;
+	/*padding: 1rem 0 1rem 1rem*/
+}
+.main-content-nav>ul li.active>a {
+	color: #d56a03
+}
+.main-content-nav>ul li.active a:hover {
+	text-decoration: underline
+}
+.main-content-nav>ul li ul {
+	margin: .4rem 0 -.4rem 1rem;
+	padding: 0
+}
+.main-content-nav>ul li li {
+	font-size: 85%
+}
+.main-content-nav text {
+	background: #f9f9f9;
+	border: solid 1px rgb(222, 226, 230);
+	padding: 1rem;
+	margin-bottom: 1rem
+}
+.home li {
+	font-size: 125%;
+}
+@media screen and (max-width: 575px) {
+.home .header h5 {
+	font-size: 90%;
+}
+}
+/* drawer - BEGIN */
+.drawer h2 a, .drawer-toggle a {
+	background: url(images/sprite_icon_widget.svg)  no-repeat transparent;
+  background-size: 16px 300px;
+}
+.drawer-wrapper {
+	margin-bottom: 1rem
+}
+.drawer {
+	border-bottom: 1px solid #ccc
+}
+.drawer h2 {
+	border-top: 1px solid #ccc;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: .2rem 0 .2rem;
+	zoom: 1;
+}
+.drawer h2 a {
+	background-position: 0 6px;
+	display: block;
+	padding-left: 20px;
+	text-decoration: none
+}
+@media only screen and (max-width:991px) {
+.drawer h2 a {
+	background-position: 0 4px;
+}
+}
+.drawer h2, .main-content-nav h2 {
+	font-size: 125%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 120%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 115%;
+}
+@media only screen and (max-width:991px) {
+.drawer h2 {
+	font-size: 120%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 115%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 110%;
+}
+}
+:first-child+html .drawer h2 a {
+	display: inline-block
+}
+.drawer h2.expand {
+	background-color: #004
+}
+.drawer h2.expand a {
+	background-position: 0 -92px;
+	color: #fff
+}
+@media only screen and (max-width:991px) {
+.drawer h2.expand a {
+	background-position: 0 -95px;
+	color: #fff
+}
+}
+.drawer h2:active, .drawer h2:hover {
+	background-color: #F0FAFF;
+	cursor: pointer
+}
+.drawer h2.expand:active, .drawer h2.expand:hover {
+	background: #006
+}
+.drawer h2, .main-content-nav h2 {
+	font-size: 150%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 140%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 130%;
+}
+@media only screen and (max-width:991px) {
+.drawer h2 {
+	font-size: 120%;
+}
+.drawer h3, .main-content-nav h3 {
+	font-size: 115%;
+}
+.drawer h4, .main-content-nav h4 {
+	font-size: 110%;
+}
+}
+.drawer>article, .drawer>div {
+	padding: 1rem 1rem
+}
+.drawer>div.cols_wrapper {
+	padding: 1rem 0
+}
+.drawer-toggle {
+	font-size: 90%;
+	padding: .5rem 0
+}
+.drawer-toggle a {
+	color: #666
+}
+.drawer-toggle a:active, .drawer-toggle a:hover {
+	color: #016691
+}
+.drawer-toggle a {
+	background-position: 0 -215px;
+	padding-left: 16px
+}
+.drawer-toggle a.expand {
+	background-position: 0 -200px
+}
+.drawer .section {
+	float: none;
+	overflow: auto;
+}
+.drawer .article {
+	float: none;
+	overflow: auto;
+}
+.directory .section {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #006;
+}
+.directory .article {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #006;
+}
+.directory .title {
+	font-size: 120%;
+	font-weight: 500;
+}
+.directory .department {
+	font-size: 120%;
+	font-weight: 500;
+}
+.directory img.profile {
+	max-height: 100px;
+}
+/* drawer - END */
+/* carousel - BEGIN */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.35);
+}
+/* carousel - BEGIN */
+/* flexslider - BEGIN */
+.flexslider {
+	border: 0;
+	margin: 0 0 1rem 0;
+}
+.flex-caption {
+	padding: 10px;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	font-size: 120%;
+	font-weight: 500;
+	position: absolute
+}
+@media screen and (max-width: 991px) {
+.flex-caption {
+	padding: 2px;
+	bottom: auto;
+	position: static;
+	background: rgba(31,15,0,.7);
+}
+}
+@media screen and (max-width: 767px) {
+.flex-caption, .carousel-caption {
+	font-size: 80%;
+}
+}
+.flex-caption a {
+	color: #61c6f1;
+}
+.flexslider .flex-direction-nav li a.flex-prev {
+	left: 20px
+}
+.flexslider .flex-direction-nav li a.flex-next {
+	right: 20px
+}
+.flex-direction-nav .flex-prev {
+  left: 20px;
+  line-height: 1;
+}
+.flex-direction-nav .flex-next {
+  right: 20px;
+  text-align: right;
+  line-height: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+	left: 20px
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+	right: 20px
+}
+/*flexslider - END*/
+/*Talks*/
+.drawer h2.talk a {
+	color: #039;
+}
+.drawer h2.talk.expand a  {
+	color: #fff
+}
+div.talks h1 {
+	font-size: 140%;
+	color: #555;
+}
+div.talks h1 a {
+	color: #555;
+}
+div.talks h2 {
+	font-size: 130%;
+	color: #666;
+}
+div.talks h2 a {
+	color: #666;
+}
+div.talks table {
+	text-align: left;
+	margin-bottom: 1em;
+	border-top: 1px solid #DDD;
+}
+div.talks table th {
+	font-size: 14px;
+	background: #DDD;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+div.talks table td {
+	vertical-align: top;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 1px solid #DDD;
+}
+div.talks table td p {
+	margin: 0;
+}
+div.talks div.styled p.date, div.talks div.styled p.title, div.talks div.styled p.speaker, div.talks div.styled p.author {
+	text-align: center;
+	font-size:125%;
+}
+div.talks p.date, div.talks p.title, div.talks p.speaker, div.talks p.author {
+	text-align: center;
+	font-size:150%;
+}
+div.talks p.department {
+	text-align: center;
+	font-size: 120%;
+}
+div.talks .title {
+	font-size: 120%;
+	font-weight: bold;
+}
+div.talks .department, .university, .college {
+	color: #99a;
+	font-size: 110%;
+}
+div.talks .abstract {
+}
+.slot-container .title{
+	font-weight: bold;
+}
+/*Talks - END*/
+@media screen and (-webkit-min-device-pixel-ratio:3) {
+.navbar-logo {
+	display: block;
+	width: 128px;
+	height: 96px;
+	background-image: url(https://sccn.ucsd.edu/template/bootstrap/bootstrap/images/inc-128x96.png);
+	background-size: 128px 96px;
+}
+}
+@media screen and (max-width: 767px) {
+.featurette img.logo {
+	display: none;
+}
+.time {
+	background-color: #bdddee !important;
+	font-weight: bold;
+	width: 100%;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.time p {
+	margin: 5px auto !important;
+}
+.cell {
+	width: 100%;
+}
+#tap {
+	display: block;
+}
+.cell p {
+	margin: 0 0 .5rem 0;
+}
+.show_hide {
+	margin: 0 0 10px 0px;
+}
+.style {
+	padding: 0;
+}
+.flex-caption, .carousel-caption {
+	font-size: 80%;
+}
+.flex-caption {
+	padding: 2px;
+}
+}
+@media (min-width: 62rem) {
+.featurette-heading {
+  margin-top: 0;
+}
+}
+@media print {
+.main-content-nav {
+	background: 0 0
+}
+}
+
