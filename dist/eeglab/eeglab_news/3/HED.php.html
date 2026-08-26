@@ -7,20 +7,20 @@
     <meta name="ORGANIZATION" content="University of California, San Diego">
     <meta name="SITE" content="Swartz Center for Computational Neuroscience">
     <title>The EEGLAB News - SCCN</title>
-    <link rel="icon" href="/sccn_site2/images/favicon.ico">
-    <link rel="stylesheet" href="/sccn_site2/assets-site.css">
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
   </head>
   <body>
     
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <div class="nav-shell">
-        <a class="brand" href="/sccn_site2/" aria-label="SCCN home"><img src="/sccn_site2/images/sccn.svg" alt="SCCN"></a>
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
         <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
-          <a href="/sccn_site2/people/">People</a><a href="/sccn_site2/projects/">Research</a><a href="/sccn_site2/methods/">Methods</a><a href="/sccn_site2/publications/">Publications</a><a href="/sccn_site2/news-events/">News</a><a href="/sccn_site2/visit/">Visit</a>
+          <a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
         </nav>
-        <form class="header-search" action="/sccn_site2/search/" method="get" data-header-search>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
           <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
             <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
           </button>
@@ -37,7 +37,7 @@
           <section class="col-12">
             <h2><br>
               The EEGLAB News #3</h2>
-            <p><strong><img src="/sccn_site2/eeglab/eeglab_news/3/../images/HED.gif" alt="" align="right">The <em>Hierarchical Event Descriptor (HED)</em> system</strong></p>
+            <p><strong><img src="/sccn_site/eeglab/eeglab_news/3/../images/HED.gif" alt="" align="right">The <em>Hierarchical Event Descriptor (HED)</em> system</strong></p>
             <p align="justify">Events should have HED tags: "What did 'Event code 17' mean??" Traditionally, software systems for event-related EEG data collection and analysis have used simple numeric codes (2,17, 253 ...) whose meaning is hopefully saved with the datasomewhere, or else given a brief text label ('Target'). But with the creation and availability of new analysis methods for extracting information, EEG data are valuable long after their first publication, and will in near future become even more so as public <em>data, tool, and compute resources</em> (DATCORs) become active and available. Archiving data in private or public DATCORs allows further, intensive data analyses as well as meta-analyses across studies with different designs. All of this requires that the more exact nature of the recorded experimental events are saved and accessible in an agreed format.<br>
               </p><p align="justify">Today the only such format is the Hierarchical Event Descriptor (HED) system of Nima Bigdely-Shamlo.  Accordingly, HED has been accepted in the rapidly emerging BIDS standards for data archive. In conjunction with building a DATCOR ('NEMAR') for human neuroelectromagnetic data under NIMH funding, we are creating and polishing tools to make adding HED tag descriptions of events in new or existing data as simple as possible, and for using HED tags within EEGLAB to create custom collections of events based on their detailed HED tag descriptions. Dung ('yung') Troung at SCCN is working with us on this and on enhanced tutorial websites and videos we will put online soon.<br>
               </p><p align="justify">The HED system, first developed by Nima Bigdely-Shamlo at SCCN (Bigdely-Shamlo et al., 2014) and enhanced with Kay Robbins of UT San Antonio (Bigdely-Shamlo et al., 2016), provides a standardized way to describe precisely the nature of when-recorded or later-identified experimental events marked in the dataset (in EEGLAB, in structures <em>EEG.event</em> and <em>EEG.urevent</em>). Using HED-tagged datasets, researchers will no longer have to deal with in-themselves meaningless event codes. Moreover, analysis tools will be able to aggregate event-related data epochs across archived studies with minimal human supervision. The HED system comprises a schema (syntax and agreed upon top-level tag hierarchy) and a software ecosystem supporting annotation, validation, and extraction of EEG events using HED tags. The <a data-cke-saved-href="http://www.hedtags.org/display_hed.html" href="http://www.hedtags.org/display_hed.html" target="_blank">HED schema</a> specifies a collection of HED tags in use to annotate events, organized in a partially hierarchical structure. Software supporting the use of HED event tagging currently includes the EEGLAB plug-in <a data-cke-saved-href="https://github.com/hed-standard/hed-matlab/tree/master/EEGLABPlugin" href="https://github.com/hed-standard/hed-matlab/tree/master/EEGLABPlugin" target="_blank">HEDTools</a>, a GUI-based tagging application <a data-cke-saved-href="https://github.com/hed-standard/hed-java/blob/master/java/tagging/CTagger.jar" href="https://github.com/hed-standard/hed-java/blob/master/java/tagging/CTagger.jar" target="_blank">CTAGGER</a> (now bundled with the HEDTools), and an online <a data-cke-saved-href="http://visual.cs.utsa.edu/hed/validation" href="http://visual.cs.utsa.edu/hed/validation" target="_blank">HED validator</a>. The current HED schema (version 2) is in the process of being updated to HED v3, and the HEDTools are still not all equally polished or well documented. However, we look to more fully integrate HED tagging into EEGLAB in the coming year, and will be presenting on HED at OHBM and SfN. We welcome feedback and suggestions.</p>
@@ -58,14 +58,14 @@
         </div>
         <div>
           Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
-          <a href="/sccn_site2/methods/">Methods</a> &middot;
-          <a href="/sccn_site2/news-events/">News</a> &middot;
-          <a href="/sccn_site2/visit/">Visit</a> &middot;
-          <a href="/sccn_site2/login/">Internal</a>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
         </div>
       </div>
     </footer>
     
-    <script src="/sccn_site2/assets-site.js" defer></script>
+    <script src="/sccn_site/assets-site.js" defer></script>
   </body>
 </html>
