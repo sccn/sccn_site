@@ -182,7 +182,6 @@ def render_page(title: str, content: str, active: str = "", description: str = "
 def render_home() -> tuple[str, str]:
     people = load_json("people.json", [])
     methods = load_json("methods.json", [])
-    research = load_json("research.json", [])[:3]
     news = load_json("news.json", [])[:3]
     pub_count = len(load_json("publications.json", []) or [])
     people_count = sum(len(group["people"]) for group in people)
@@ -235,13 +234,11 @@ def render_home() -> tuple[str, str]:
           <div class="section-header">
             <div>
               <p class="eyebrow">Research</p>
-              <h2>Research directions</h2>
+              <h2>Research themes</h2>
             </div>
             <a class="button secondary" href="/projects/">Explore all research</a>
           </div>
-          <div class="research-grid">
-            {''.join(render_research_card(item) for item in research)}
-          </div>
+          {render_research_themes()}
         </div>
       </section>
       <section class="section band">
@@ -303,6 +300,36 @@ def render_method_card(item: dict, show_image: bool = True, show_icon: bool = Fa
         {f'<p><a href="{html_escape(url)}">Learn more</a></p>' if url else ''}
       </article>
     """
+
+
+def render_theme_band(item: dict, index: int) -> str:
+    image = html_escape(item.get("image", ""))
+    classes = "image-band theme-band"
+    if not image:
+        classes += " text-only"
+    elif index % 2:
+        classes += " reverse"
+    picture = f'<img src="{image}" alt="{html_escape(item.get("alt", ""))}" loading="lazy">' if image else ""
+    return f"""
+          <div class="{classes}">
+            {picture}
+            <div>
+              <h3>{html_escape(item.get("title", ""))}</h3>
+              <p>{html_escape(item.get("summary", ""))}</p>
+            </div>
+          </div>"""
+
+
+def render_research_themes() -> str:
+    """Homepage research bands from src/data/research_themes.json.
+
+    Falls back to the first three research.json cards when no themes exist.
+    """
+    themes = load_json("research_themes.json", []) or []
+    if not themes:
+        cards = "".join(render_research_card(item) for item in load_json("research.json", [])[:3])
+        return f'<div class="research-grid">{cards}</div>'
+    return "".join(render_theme_band(item, index) for index, item in enumerate(themes))
 
 
 def render_research_card(item: dict) -> str:
