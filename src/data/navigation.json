@@ -1,5 +1,9 @@
 [
   {
+    "label": "Home",
+    "url": "/"
+  },
+  {
     "label": "People",
     "url": "/people/"
   },
