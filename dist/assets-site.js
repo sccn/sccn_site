@@ -142,7 +142,110 @@ async function setupSearchPage() {
   render(initialQuery);
 }
 
+function setupCarousel() {
+  const carousel = qs("[data-carousel]");
+  if (!carousel) return;
+  const slides = qsa("[data-carousel-slide]", carousel);
+  if (slides.length < 2) return;
+  const track = qs("[data-carousel-track]", carousel);
+  const dots = qsa("[data-carousel-dot]", carousel);
+  const toggle = qs("[data-carousel-toggle]", carousel);
+  const ROTATE_MS = 6000;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  let current = Math.max(0, slides.findIndex((slide) => slide.classList.contains("is-active")));
+  let timer = null;
+  let stopped = reduceMotion; // user-controlled (pause button, or OS reduced-motion preference)
+  let hovering = false;
+  let focused = false;
+
+  const show = (index) => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", active ? "false" : "true");
+      qsa("a", slide).forEach((link) => link.setAttribute("tabindex", active ? "0" : "-1"));
+    });
+    dots.forEach((dot, i) => {
+      if (i === current) dot.setAttribute("aria-current", "true");
+      else dot.removeAttribute("aria-current");
+    });
+  };
+
+  const halt = () => {
+    if (timer) clearInterval(timer);
+    timer = null;
+  };
+  const schedule = () => {
+    halt();
+    if (stopped || hovering || focused || document.hidden) return;
+    timer = setInterval(() => show(current + 1), ROTATE_MS);
+  };
+  const syncToggle = () => {
+    carousel.classList.toggle("is-paused", stopped);
+    if (toggle) {
+      toggle.setAttribute("aria-label", stopped ? "Start automatic slide rotation" : "Stop automatic slide rotation");
+    }
+    // Announce slide changes only when the user is driving the carousel.
+    if (track) track.setAttribute("aria-live", stopped ? "polite" : "off");
+  };
+
+  qs("[data-carousel-prev]", carousel)?.addEventListener("click", () => {
+    show(current - 1);
+    schedule();
+  });
+  qs("[data-carousel-next]", carousel)?.addEventListener("click", () => {
+    show(current + 1);
+    schedule();
+  });
+  dots.forEach((dot, i) =>
+    dot.addEventListener("click", () => {
+      show(i);
+      schedule();
+    })
+  );
+  toggle?.addEventListener("click", () => {
+    stopped = !stopped;
+    syncToggle();
+    schedule();
+  });
+  carousel.addEventListener("mouseenter", () => {
+    hovering = true;
+    halt();
+  });
+  carousel.addEventListener("mouseleave", () => {
+    hovering = false;
+    schedule();
+  });
+  carousel.addEventListener("focusin", () => {
+    focused = true;
+    halt();
+  });
+  carousel.addEventListener("focusout", (event) => {
+    if (carousel.contains(event.relatedTarget)) return;
+    focused = false;
+    schedule();
+  });
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      show(current - 1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      show(current + 1);
+    }
+  });
+  document.addEventListener("visibilitychange", schedule);
+
+  carousel.classList.add("is-ready");
+  show(current);
+  syncToggle();
+  schedule();
+}
+
 setupNavigation();
 setupPeopleFilter();
 setupPublicationFilter();
 setupSearchPage();
+setupCarousel();
