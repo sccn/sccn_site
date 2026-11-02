@@ -94,12 +94,37 @@ a:hover {
 .brand {
   display: inline-flex;
   align-items: center;
-  min-width: 112px;
+  gap: 0.7rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--ink);
 }
 
 .brand img {
-  width: 104px;
   display: block;
+  width: auto;
+  height: 46px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-text strong {
+  color: var(--blue-dark);
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+.brand-text small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
 }
 
 .nav-toggle {
@@ -684,6 +709,10 @@ h4 {
 }
 
 @media (max-width: 640px) {
+  .brand-text small {
+    display: none;
+  }
+
   .feature-grid,
   .method-grid,
   .news-grid,
