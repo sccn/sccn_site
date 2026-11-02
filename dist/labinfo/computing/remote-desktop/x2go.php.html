@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>Remote Access - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>Remote Access</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><h2>X2Go</h2>
+            <div class="article clearfix">
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/x2go.png" alt="X2Go" width="80" height="80" class="float-left mr-3">First, download the X2Go client for your computer from here: <a href="http://wiki.x2go.org/doku.php">http://wiki.x2go.org/doku.php</a>.</p>
+            </div>
+            <div class="article clearfix">
+              <p><strong>Special note for Macintosh users</strong></p>
+              <p>To resolve black screen issues, It is recommended to run the following command in a terminal before running x2go.</p>
+              <p><code>defaults write org.xquartz.X11 enable_render_extension 0</code></p>
+              <p>For more information, see <a href="https://github.com/XQuartz/XQuartz/issues/31">https://github.com/XQuartz/XQuartz/issues/31</a>.</p>
+            </div>
+            <div class="article clearfix">
+              <p><strong>Special note for Windows users</strong></p>
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/x2go-fonts.png" alt="" class="float-right img-fluid ml-3 mb-3">Install the extra fonts during the installation.</p>
+            </div>
+            <div class="article clearfix">
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/x2go-win-11.png" alt="" class="float-right img-fluid ml-3 mb-3">To avoid a pop-up error every time you start x2go, set the default terminal to <strong>Windows Console Host</strong>.</p>
+            </div>
+            <hr>
+            <div class="article clearfix">
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/toolbar-66.gif" alt="" class="float-right img-fluid ml-3 mb-3">Run the X2Go Client.</p>
+              <p>Create a new session. You can use the pencil icon in the toolbar to create a new session.</p>
+            </div>
+            <div class="article clearfix">
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/2-01.png" alt="" class="float-right img-fluid ml-3 mb-3">Click the <strong>Session</strong> tab.</p>
+              <p>Enter the following.</p>
+              <p>Session name: <strong>jumping</strong></p>
+              <p>Host: <strong>jumping.ucsd.edu</strong> </p>
+              <p>Session type: <strong>MATE</strong>      </p>
+            </div>
+            <div class="article clearfix">
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/2-02.png" alt="" class="float-right img-fluid ml-3 mb-3">Click the <strong>Connection</strong> tab.</p>
+              <p>Select Connection speed: <strong>WAN</strong>.</p>
+              <p>For slower connections, you may need to use <strong>ISDN</strong>.</p>
+            </div>
+            <div class="article clearfix">
+              <p><img src="/sccn_site/labinfo/computing/remote-desktop/images/2-03.png" alt="" class="float-right img-fluid ml-3 mb-3"></p>
+              <p>Click the <strong>Input/Output</strong> tab.</p>
+              <p>Select Display*: <strong>Custom: 1920x1000</strong>.</p>
+              <p>Set display DPI**: <strong>90</strong>.        </p>
+              <p>Click <strong>OK</strong>.        </p>
+              <hr>
+              <p>*For some screens, you might prefer to have a little extra space at the bottom of the screen to accommodate the dock or task bar. Some recommended display sizes are:</p>
+              <p>MacBook screens with the default screen size<br>
+                Custom: <strong>1680x970</strong></p>
+              <p>Laptops with full HD (1920x1080)<br>
+                Custom: <strong>1920x1000</strong>.</p>
+              <p>For other screen sizes, subtract 80 from the vertical pixel dimension to determine the recommended value.</p>
+              <p>It's best to set this value to the smallest screen size that you will use. If you switch to a larger screen with the same remote desktop, you can always resize the main window to accommodate the larger screen.</p>
+              <div class="card mb-3">
+                <div class="card-body bg-light">
+                  <p class="card-text text-info">SCCN sysadmins recommended that you avoid using fullscreen. It may cause display problems that are difficult to recover from.</p>
+                </div>
+              </div>
+              <hr>
+              <p>**DPI depends on the physical size of your screen and pixel dimensions, so there is no &quot;one size fits all&quot;. <strong>90</strong> is a good starting point, however, if your  fonts appear too large in your x2go remote desktop, use a <em>smaller</em> value for DPI. Similarly, if fonts are too small in your x2go remote desktop, use a <em>larger</em> value for DPI.</p>
+              <hr>
+            </div>
+            <div class="article clearfix">
+              <p>Now click the new settings button that was created for <strong>jumping</strong>..</p>
+              <p>You will be prompted to accept the host keys when you first connect. This is normal and will only appear once.</p>
+            </div>
+			<div class="card mb-3">
+              <div class="card-body bg-light">
+                <p class="card-text">This system is used by many lab members for remote access. Please be considerate and do not run anything computationally intensive directly on this system. You may run terminals and connect to any of the other available computing servers that we offer, including our <a href="/sccn_site/labinfo/computing/cluster/">computing cluster</a>.</p>
+              </div>
+			</div>
+              <p>When finished with your session, there are several opttions.</p>
+              <p>Closing the remote window will suspend the session, meaning you can reconnect to the session later. All programs running will appear when you reconnect.</p>
+              <p>Clicking the pause icon in X2Go will suspend the session. Again, you will be able to reconnect to the suspended session later.</p>
+              <p>Clicking the on/off icon will terminate the session. This means the desktop and all programs running within it will be terminated. This is the option to use when you no longer need the running session or if the session become unusable for some reason. Reconnecting after using the terminate option will start up an all new virtual remote desktop.</p>
+            </div></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

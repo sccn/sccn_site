@@ -146,6 +146,7 @@ def render_footer() -> str:
           <a href="/methods/">Methods</a> &middot;
           <a href="/news-events/">News</a> &middot;
           <a href="/visit/">Visit</a> &middot;
+          <a href="/labinfo/">Lab info</a> &middot;
           <a href="/login/">Internal</a>
         </div>
       </div>
@@ -554,6 +555,41 @@ def render_search() -> tuple[str, str]:
     return "/search/", render_page("Search", content)
 
 
+def render_labinfo_link(item: dict, current: str) -> str:
+    url = item["url"]
+    external = url.startswith("http")
+    attrs = ' aria-current="page"' if url == current else ""
+    suffix = " &#8599;" if external else ""
+    return f'<a href="{html_escape(url)}"{attrs}>{html_escape(item["label"])}{suffix}</a>'
+
+
+def render_labinfo_nav(nav: list, current: str) -> str:
+    groups = []
+    for group in nav:
+        if group.get("items"):
+            links = "".join(render_labinfo_link(item, current) for item in group["items"])
+            groups.append(f'<div class="subnav-group"><span class="subnav-label">{html_escape(group["label"])}</span>{links}</div>')
+        else:
+            groups.append(f'<div class="subnav-group">{render_labinfo_link(group, current)}</div>')
+    return f'<nav class="subnav" aria-label="Lab information sections">{"".join(groups)}</nav>'
+
+
+def render_labinfo() -> list[tuple[str, str]]:
+    """Lab information section (mirrored from sccn.ucsd.edu/labinfo) from src/data/labinfo.json."""
+    data = load_json("labinfo.json", {}) or {}
+    lead = data.get("lead", "")
+    nav = data.get("nav", [])
+    pages = []
+    for page in data.get("pages", []):
+        title = page.get("title", "Lab Information")
+        content = f"""
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>{html_escape(title)}</h1><p class="lead">{html_escape(lead)}</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content">{render_labinfo_nav(nav, page["route"])}{page.get("content_html", "")}</div></section>
+    """
+        pages.append((page["route"], render_page(title, content, "", lead)))
+    return pages
+
+
 def render_legacy(page: dict) -> tuple[str, str]:
     content = f"""
       <section class="hero"><div class="narrow"><p class="eyebrow">Archive</p><h1>{html_escape(page.get('title', 'Archive'))}</h1><p class="lead">Preserved SCCN source content rendered in the SCCN3 site shell.</p></div></section>
@@ -590,6 +626,7 @@ def main() -> None:
         render_visit(),
         render_search(),
     ]
+    pages.extend(render_labinfo())
     for legacy in load_json("legacy_pages.json", []):
         route = legacy.get("route", "")
         if route in {route for route, _ in pages}:

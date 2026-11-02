@@ -7,6 +7,7 @@
     "migrate": "python3 scripts/migrate_content.py",
     "pubmed": "python3 scripts/fetch_pubmed.py --authors data/pubmed/authors.yml --out data/publications/pubmed.bib",
     "publications": "python3 scripts/bibtex_to_publications.py --bib data/publications/sccn_publications.bib --out src/data/publications.json",
+    "labinfo": "python3 scripts/import_labinfo.py",
     "build": "python3 scripts/build_site.py",
     "dev": "python3 scripts/serve.py 8173",
     "preview": "python3 scripts/serve.py 8173",

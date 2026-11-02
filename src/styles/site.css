@@ -594,6 +594,131 @@ h4 {
   margin: 0 0 1rem 1rem;
 }
 
+/* Lab information section (render_labinfo in scripts/build_site.py) */
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  margin: 0 0 1.8rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+  font-size: 0.9rem;
+}
+
+.subnav-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+}
+
+.subnav-label {
+  margin-right: 0.25rem;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.subnav a {
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  text-decoration: none;
+}
+
+.subnav a:hover {
+  border-color: var(--blue);
+}
+
+.subnav a[aria-current="page"] {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+
+.labinfo-content pre {
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+  font-size: 0.9rem;
+}
+
+.labinfo-content table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.labinfo-content th,
+.labinfo-content td {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.labinfo-content .alert {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+
+.labinfo-content .alert-warning {
+  border-left-color: var(--gold);
+}
+
+.labinfo-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.labinfo-content .row > * {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.labinfo-content .float-right,
+.labinfo-content .float-lg-right,
+.labinfo-content .float-md-right {
+  float: right;
+  max-width: 320px;
+  margin: 0 0 1rem 1rem;
+}
+
+.labinfo-content .float-left {
+  float: left;
+  max-width: 320px;
+  margin: 0 1rem 1rem 0;
+}
+
+.labinfo-content .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 640px) {
+  .labinfo-content .float-right,
+  .labinfo-content .float-lg-right,
+  .labinfo-content .float-md-right,
+  .labinfo-content .float-left {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 1rem;
+  }
+}
+
 .search-results {
   display: grid;
   gap: 0.75rem;
