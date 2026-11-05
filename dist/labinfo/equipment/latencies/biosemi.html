@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>BioSemi - SCCN</title>
+    <link rel="icon" type="image/png" href="/sccn_site/images/favicon.png">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn-logo.png" alt=""><span class="brand-text"><strong>SCCN</strong><small>Swartz Center for Computational Neuroscience</small></span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/">Home</a><a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>BioSemi</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><h2>Introduction</h2>
+<p><a href="http://www.biosemi.com/">BioSemi</a> is the EEG signal acquisition device used at SCCN. The time it takes for a BioSemi amplifier to send its data to a computer program that timestamps each sample using labstreaminglayer was measured by Matthew Grivich using a National Instruments data acquisition device (<ha href="http://sine.ni.com/nips/cds/view/p/lang/en/nid/210777">NIdaq</a>) as a control clock. This experiment is detailed <a href="https://sccn.ucsd.edu/~mgrivich/LSL_Validation.html">here</a>. In that case a latency of 7.72ms was measured.</p>
+<h2>Experimental Procedure</h2>
+<p>In order to verify these results, we use the same procedure. The NIdaq program used to generate the signal and the markers can be downloaded <a href="/sccn_site/labinfo/equipment/latencies/code/main.c">here</a>. The program and the device patch is setup to:
+<ul>
+<li>generate 200ms pulses of 200mv every second out of the NIdaq output</li>
+<li>feed the voltage signal back into the NIdaq input</li>
+<li>feed the same signal into BioSemi</li>
+<li>send an LSL marker when the signal (in software) goes above 100mv</li>
+<li>find the time at which the BioSemi signal goes above 100mv</li>
+<li>compare the two markers -- their difference is the latency of BioSemi</li>
+</ul>
+<h2>Results</h2>
+<p>Previously, (using the same procedure) it was determined that the latency of BioSemi was 7.72ms. The more recent experiments find a very similar, but not exactly the same, value <i>but</i>, <b>only for the BioSemi Analog Input Box, and when collecting the EEG channel subset 'all'.</b></p>
+<p><img src="/sccn_site/labinfo/equipment/latencies/figs/biosemi-app.jpg"></p>
+<p>It turns out that this latency changes based on what subset of EEG inputs are used. The latency values are also slightly different, depending on whether or not the <a href="http://www.biosemi.com/aib.htm">Analog Input Box (AIB)</a>, or the <a href="http://www.biosemi.com/ad-box_activetwo.htm">ActiveTwo Box (AD-Box)</a></p>
+<p><a href="/sccn_site/labinfo/equipment/latencies/biosemi-latencies.htm">Here</a> you will find a table detailing the latency, standard deviation and jitter for each of the two boxes in each mode. <a href="/sccn_site/labinfo/equipment/latencies/biosemi-latencies.xlsx">Here</a> is a spreadsheet in xlsx format. Discluding the AUX channels had minimal impact, so these values are not included. These boxes can also be daisy chained together (and this is often done in our lab) so in future I will provide results for more configurations. Please email me at <a href="mailto:dmedine@ucsd.edu">dmedine@ucsd.edu</a> if some configuration's latency needs be known immediately. Also coming soon is the same data when the App is the mode in which it downsamples to 512Hz.</p>
+<h2>IMPORTANT!!!</h2>
+<p>As of now (3/13/2015) the BioSemi App that is bundled with the LSL package automatically reduces its timestamps by 7.72ms. If you are unsure whether or not this happening, you can check by opening an xdf in XDFViewer and looking for the descriptor:
+<pre>&lt;desc&gt;
+  &lt;synchronization&gt;        <br />    &lt;offset_mean&gt;0.00772&lt;/offset_mean&gt;    <br />  &lt;/synchronization&gt;
+&lt;/desc&gt;</pre>
+This means that 7.72ms will be subtracted from all the data timestamps by the Mobilab XDF loading procedure. This will change in future editions of BioSemi.exe to account for the different setups. You can always adjust this by hand simply by adding or subtracting the appropriate amount to the BioSemi data timestamps in your analysis code.</p>
+<p>Finally, histograms and binned latency times are accumulated <a href="/sccn_site/labinfo/equipment/latencies/biosemi--accum.html">here</a>.</p></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>
