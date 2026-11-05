@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>Equipment Latencies - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/">Home</a><a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>Equipment Latencies</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/" aria-current="page">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><h3>Introduction</h3>
+            This webpage has information regarding the latencies associated with various lab equipment in SCCN. 
+            <p>Each piece of equipment involved in MoBI experiments takes some amount of time to deliver or receive its data. Furthermore, given the high CPU and memory load necessary for real time MoBI experiments, often times equipment is driven by more than one computer. Thanks to <a href="https://github.com/sccn/labstreaminglayer/">labstreaminglayer</a> (LSL -- by Christian K&ouml;the), we have a convenient and reliable way to coordinate the timing of events and data streams; but, in order to line everything up, it is necessary to understand how long it takes for information to go in or out of every piece of equipment that the lab uses.</p>
+            <p>Measured latencies are also gathered in a spreadsheet below. Whenever possible, these latencies are accounted for in software so that experimenters will not have to worry about them when running their analyses. Sometimes, however, devices don't behave as reliably as one would like and special care must be taken. Futrhermore, the latencies measured here are only for the equipment used in SCCN. The below procedures are given to indicate how similar measurements might be taken with other equipment that other labs may use in conjunction with labstreaminglayer. The pages below outline the procedure and results of tests made on equipment and example for testing and analysis are provided.</p>
+            <h3>Procedure for adjusting latencies</h3>
+            <p>The xdf loading function (eeg_load_xdf.m) is sensitive to a marker in the xdf header that can be adjusted to compensate for latency or lead time. This is how synchrony is acheived. Unfortunately, many devices behave differently depending on what mode they are in. Every effort is made to include these latencies in the data gathering process. However, it is wise to check what, if any, lag times are subtracted from LSL timestamps by the loading procedure.</p>
+            <p>This can be done with the XDFBrowser application (part of the suite of LSL apps). Check for lines in the stream headers like:
+            <pre>&lt;desc&gt;
+  &lt;synchronization&gt;        <br />    &lt;offset_mean&gt;0.00772&lt;/offset_mean&gt;    <br />  &lt;/synchronization&gt;
+&lt;/desc&gt;</pre>
+            In this case when this stream is loaded into EEGlab or MobiLab, 7.72ms will be subtracted from every timestamp. This block of code can be edited and saved into the xdf file directly (again, using XDFBrowser). Be careful. XDFBrowser is a crude program and if the syntax is not correct, the meaning of the xml markup will be lost.</p>
+            <p>This work was begun by Matthew Grivich and continued by David Medine.</p>
+            <h3>Procedures and Results</h3>
+            <ul>Experiments to measure lab equipment at SCCN
+            <li><a href="/sccn_site/labinfo/equipment/latencies/biosemi.html">BioSemi</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/phasespace.html">PhaseSpace</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/touch_screen.html">Touch Screen</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/eyetracker.html">EyeTracker (no Hotspots)</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/eyetracker2.html">EyeTracker with Hotspots</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/game_controller.html">Xbox Controller</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/audio_playback.html">Audio Playback</a></li>
+            <li><a href="/sccn_site/labinfo/equipment/latencies/force_plate.html">Force Plate</a></li>
+            </ul>
+            <h3>Spreadsheet</h3>
+            <p>An up to date spreadsheet accumulating the results of these experiments can be found <a href="/sccn_site/labinfo/equipment/latencies/Latencies.htm">here</a>. Click <a href="/sccn_site/labinfo/equipment/latencies/Latencies.xlsx">here</a> to download it in xlsx format.</p></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

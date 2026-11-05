@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>EyeLink - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/">Home</a><a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>EyeLink</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/" aria-current="page">EyeLink</a></div></nav><h3>I. Eyelink Computer Setup</h3>
+            <ul>Plug in all cables:
+              <li>keyboard</li>
+              <li>mouse</li>
+              <li>power</li>
+              <li>monitor (VGA)</li>
+              <li>Eyelink camera rig</li>
+              <li>ethernet  <p>*Note that the grey ethernet cable goes in the vertical slot on the back of the Eyelink computer. It is plainly marked 'EyeLink Ethernet', but is not to be confused with the ethernet port on the motherboard, near the VGA output. The other end of this cable (in the control room) may need to be moved fromt he Netgear gigabit switch to the ethernet port on PRESENTING marked 'eth0'.</p></li>
+            </ul>
+            <h3>II. Monitor Setup</h3>
+              <h4>Video routing setup:</h4>
+                  <p>First, use the <a href="http://www.stake5.be/attachments/pdf/68-877-01_MVX_UG_E.pdf">Extron MVX patch bay</a> (located on the rack with the mixer on it) to set the East facing video projector (projector 5) to correspond to monitor 2 on PRESENTING:</p>
+              <ul>
+                  <li>1. Select 'Preset 3'<p>Make sure the 'Audio Setup' button on the farright is set to 'Vid' and not 'Aud'. Then press the 'Preset' button. At this point the LEDs by the first 4 buttons on the 'Input' bank should light up. Press 3, then 'Enter. The patch will now be set to preset 3. If the projector still does not project the desktop, read on.</p></li>
+                  <li>2. Route 'Input 1' to 'Output 8'<p>The button 'Input 1' corresponds to PRESENTING's notion of monitor 2, which is what we want piped to projector 5. This corresponds to 'Output 8' on the patch bay. To make the connection, press button 1 on the 'Input' bank. On the 'Output' bank, all the connected outputs will illuminate. If 8 does not illuminate, press it once. It should start blinking. While it is blinking, press the 'Enter' button on the right side of the patch bay. Now, press button 1 on the input bank again just to check the connection. Output 8 should now be illuminated, and the projector should be display the appropriate thing.</p></li> 
+              </ul>
+              <p>Now, continue the setup:</p>
+              <ul>
+                  <li>move the dartboard into position</li>
+                  <li>turn on projector 5 (the one facing the board)</li>
+                  <li>adjust the position of the board so that the image is maximally flat (boarders should be parallel to the floor, ceiling, and walls)</li>
+                  <li>on PRESENTING, open 'Screen Resolution' (right click on the desktop and select Screen Resolution)</li>
+                  <li>duplicate displays 1 and 2<p>This is done by clicking on 2 and selecting 'Duplicate Desktop on 1 and 2 from the 'Multiple Displays' pull down menu. Then hit 'Apply' and 'Keep Changes' when prompted. The screen resolution will change and the desktop should appear on the dart board</p></li>
+              </ul>
+            <h3>III. Use PRESENTING as the 'Display' Computer to Calibrate and Validate the Subject</h3>
+            <p>In order to present the calibration pattern on the projector screen (the dart board) we need to use PRESENTING as the so-called 'display' computer. The program we use to calibrate on the projection screen is a feeble one called 'Track.exe'. This doesn't have all the flexibility that EyeLink has to offer and it requires a kind of dual use of the EyeLink Computer and PRESENTING. It is agood idea to have keybaords and mice for both computers handy during the calibration process.</p>
+            <ul>
+              <li>First, turn on the EyeLink computer and boot into Eyelink (which is the default). Note that elcl.exe (which is the program that runs the eyetracking) will not boot unless the EyeLink camera is connected and plugged in. If you get the command prompt and an error message saying the camera is not found, simply connect the camera, plug it in and type 'elcl' at the prompt and hit enter. It should then load.</li>
+              <li>Now, have the subject get situated with the target on her forehead. Adjust the camera focus (physically rotate the lens), as well as the 'pupil' and 'cornea' thresholds. The subject's eye should roughly appear in the center of the image on top, there should be a consistent bead on the pupil as well as the corneal reflection on the closeup of the eye. The fields below the eye image should be green nearly always. Note that it helps if the EyeLink camera is not looking up the subject's nose too much. It is a good idea to have it sitting on some boards to raise its level a bit. The subject will be calibrating on the dartboard display so it is a good idea to have her look towards that as these adjustments are made. The subject need ever look at the monitor connected to the EyeLink computer in this experiment.</li>
+              <li>Next, on PRESENTING, open up the folder called 'Eyelink' on the desktop. This folder has some python files in it including one called 'eyelink.py - Shortcut, which is what we will need. Minimize it the folder so we can grab it later.</p>
+              <li>On  PRESENTING, x2 click the icon for 'Track.exe' which is on the desktop.</li>
+              <li>A dialog will open up prompting to save an EDF file (EyeLink's native data format). It is a good idea to save this along with the XDF data, just in case, but this is just a precaution.</li>
+              <li>At this point, the display computer (PRESENTING) should show a grey screen with some instructions at the top. Hit 'enter' to begin the calibration process.</li>
+              <li>Hit 'c' on PRESENTING to begin the calibration. You will have to click off the 'Auto Trigger' button on the EyeLink monitor. When the gaze is fixed on the calibration point and EyeLink can track the eye, the field under the calibration screen (on the EyeLink monitor) will turn green. Hit spacebar to move on to the next point.</li>
+              <li>Once all the points are calibrated, hit 'v' on PRESENTING to move on to the validation procedure. Again, make sure 'Auto Trigger' is disabled. The validation must be 'Fair' or 'Good' in order to be accepted. Otherwise, exit Track.exe. (hit escape), reopen it and restart the calibration/validation procedure.</li>
+              <li>Once the validation is acceptable, hit 'Accept' on the EyeLink computer.</li>
+              <li>Press 'o' on PRESENTING to start recording</li>
+              <li>Now hit the 'windows' button on PRESENTING to call up the taskbar at the bottom of the screen. Now call up the 'Eyelink' folder that we opened earlier and x2 click on 'eyelink.py - Shortcut' (not 'eyelink.py'!!!). It is critical that this be launched <i>after</i> EyeLink is calibrated and is 'recording/outputting' data. When launched, this program will open up a terminal that prints out the data as it streams in from the EyeLink computer. In the background this data is converted into an LSL stream which should (duh) be part of the recording. If everything was done correctly, these numbers should be reasonable and should be changing continuously while the subjects gaze directed in the range of the projector screen. Verify that this is true, then minimize the terminal and any open folders on the screen. It should be mostly blank for the purposes of the experiment.</li>
+              <li>Make sure the eyelink LSL stream is visible on the network and selected on LabRecorder.</li>
+              <li>When the experiment is over, there should be a dialog about saving your EDF file that pops up. Again, as a precaution it is wise to include this file along with the XDF we get for the experiment</li> 
+            </ul>
+            <h3>Appendix: Ensuring correct network configurations for EyeLink and PRESENTING</h3>
+                <p>There shouldn't be any issues, but if the EyeLink isn't streaming data to PRESENTING (you can check by running 'eyelink.py - Shortcut' -- if it can't connect, there is a problem) you may need to fix the IP for either PRESENTING, the EyeLink computer or both. The first thing to do is to make sure that the grey ethernet cable is attached to both machines. If there is still no data flowing, read on.</p>
+                <p>First, you will need to switch users on PRESENTING from 'mobi' to 'developer' The passwords are 'mobisccn' and 'random3words' respectively. Once inside as developer, open Network and Sharing Center. Click on the 'Eyelink' link. This will pull a dialog window. Click on the Properties button. In here you will need to x2 click on the text of the item that says 'Internet Protocal Version 4 (TCP/IPv4)'. This will pull up another window. The correct configuration is shown below. Choose 'Use the following IP address' and set the 'IP address' to 100.1.1.2. The Subnet mask should be 255.255.255.0 and the Default gateway should be empty. Hit 'Ok', and test again.</p>
+                <p><img src="/sccn_site/labinfo/equipment/eyelink/ipv4.png"></p>
+                <p>If it still doesn't work, reset the EyeLink computer and this time choose 'Windows' rather than 'EyeLink' from the boot menu. Repeat the procedure above, except set the IP address to 100.1.1.1 and the Subnet mask to 255.255.255.0. Once this is done, you may need to redo the IP on PRESENTING again.</p></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

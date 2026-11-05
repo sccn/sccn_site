@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>MATLAB - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/">Home</a><a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>MATLAB</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/" aria-current="page">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><div class="drawer">
+                    <h2><a href="#">What can I do when I get a &quot;FLEXnet Licensing error&quot;?</a></h2>
+                    <div>
+          <p>The UCSD MATLAB license server may be having a problem.</p>
+          <p>Consult <a href="http://sdcc3.ucsd.edu/software/monitor-flexlm/index.php?selection=license.matlab" target="_blank">http://sdcc3.ucsd.edu/software/monitor-flexlm/index.php?selection=license.matlab</a>.</p>
+          <p>If the web page above indicates that there are no licenses available or offers some strange error message, chances are the problem was already reported, but if you want to make sure, send a friendly message to <a href="mailto:software@ucsd.edu?subject=MATLAB license server problems">software@ucsd.edu</a> telling them the MATLAB license server may be having problems. If possible, copy and paste text from the above page as evidence.</p>
+          <p>If the status on the above page seems to indicate the license server is functioning, this may be due to a local configuration problem. In this case, please <a href="/sccn_site/contact/" target="_blank">contact the SCCN system administrator</a>.</p>
+                  </div>
+                    <h2><a href="#">How do I add another directory to my MATLABPATH?</a></h2>
+                    <div>
+          <p>If you are using Linux or Macintosh, open a terminal and type the following command to determine your shell.</p>
+          <pre class="code">$ echo $SHELL</pre>
+          <h3>csh</h3>
+          <p>If your shell is <strong>csh</strong> (or <strong>tcsh</strong>), edit your <strong>.cshrc</strong> file and add this to the file, using your own paths to your  functions:</p>
+          <pre class="code">if ( $?MATLABPATH ) then<br>  if ( &quot;${MATLABPATH}&quot; !~ */path/to/functions* ) then<br>    setenv MATLABPATH ${MATLABPATH}:/path/to/functions<br>  endif<br>else<br>  setenv MATLABPATH /path/to/functions<br>endif      </pre>
+          <p>If you want your  functions to take priority over any other functions with the same name, list your path first, like this:</p>
+          <pre class="code">setenv MATLABPATH /path/to/functions:${MATLABPATH}</pre>
+          <h3>bash</h3>
+          <p>If your shell is <strong>bash</strong>, edit your <strong>.bashrc</strong> file (vi .bashrc or emacs .bashrc) and add this line at the end of the file:</p>
+          <pre class="code">export MATLABPATH=$MATLABPATH:/path/to/your/functions</pre>
+          <p>If you already have a MATLABPATH line in your .bashrc file, you can simply make changes to that line.</p>
+          <p>If you want your own functions to take priority over any other functions with the same name, put your path first, like this:</p>
+          <pre class="code">export MATLABPATH=/path/to/your/functions:$MATLABPATH
+</pre>
+                  </div>
+                    <h2><a href="#">How can I export vector graphics that I can edit in Illustrator or Canvas</a></h2>
+                    <div>
+          <p>You must export to EPS file format in order to import into a vector graphics program such as Illustrator or Canvas.</p>
+          <h3>Examples</h3>
+          <p>print -depsc2 -adobecset -painter filename.eps</p>
+          <p>set(gcf, 'renderer', 'painter');<br>
+            print -depsc2 filename.eps</p>
+          <p>For more information, see the EEGLAB page <a href="https://sccn.ucsd.edu/eeglab/printfig.html">https://sccn.ucsd.edu/eeglab/printfig.html</a> or The Mathworks page <a href="http://www.mathworks.com/help/techdoc/creating_plots/f3-103236.html" target="_blank">http://www.mathworks.com/help/techdoc/creating_plots/f3-103236.html</a>.</p>
+                    </div>
+                    <h2><a href="#">How do I compile MATLAB functions?</a></h2>
+                    <div>
+<p>This is how you can compile Matlab functions either to standalone functions or to mex-files (the latter are compiled functions which can be called from within MATLAB).</p>
+You need only two commands:
+<p>Make a C translation and a MEX-file for myfun.m:</p>
+<pre>% mcc -x myfun</pre>
+<p>Make a C translation and a stand-alone executable for myfun.m:</p>
+<pre>% mcc -m myfun</pre>
+<p>Appended is an example session for compiling the function bandfilt.m
+to 1) a mex-file bandfilt.mexglx, and 2) to a standalone function
+bandfilt.
+Compilation may not work for all m-functions, but
+you can try. On the particular function compiled below (which uses
+many loops), computation time was about 25% shorter.</p>
+<pre>>> ls
+ans =
+bandfilt.m
+>> mcc -x bandfilt.m
+>> ls
+ans =
+bandfilt.c  bandfilt.h  bandfilt.m  bandfilt_mex.c  bandfilt.mexglx  hanning.h
+>> mcc -m bandfilt.m
+>> ls
+ans =
+bandfilt    bandfilt.m       bandfilt.mexglx  signal_private_check_order.c
+bandfilt.c  bandfilt_main.c  hanning.c        signal_private_check_order.h
+bandfilt.h  bandfilt_mex.c   hanning.h</pre>
+                    </div>
+                  </div></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

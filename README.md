@@ -11,6 +11,7 @@ stubs, `search-index.json`), and `public/` is copied through verbatim
 npm run build      # python3 scripts/build_site.py  → dist/
 npm run preview    # python3 scripts/serve.py 8173  → http://127.0.0.1:8173/sccn_site2/
 npm run check-links 
+npm run labinfo    # re-crawl sccn.ucsd.edu/labinfo → src/data/labinfo.json + public/labinfo/
 ```
 
 Publish the contents of `dist/` — it is self-contained (redirects are

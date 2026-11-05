@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/people/images/sccn-2024.jpg",
+    "alt": "SCCN lab members gathered around a table in the center's meeting area",
+    "caption": "The SCCN team",
+    "url": "/people/"
+  },
+  {
+    "image": "/facilities/images/MoBI_510lo.jpg",
+    "alt": "MoBI laboratory with motion-capture cameras and a sensor suit on a stand",
+    "caption": "Mobile Brain/Body Imaging (MoBI) laboratory",
+    "url": "/facilities/mobi.php.html"
+  },
+  {
+    "image": "/facilities/images/MoBI_525lo.jpg",
+    "alt": "MoBI control room with monitors showing motion-capture camera feeds",
+    "caption": "MoBI control room",
+    "url": "/facilities/mobi.php.html"
+  },
+  {
+    "image": "/events/media/EEGOcean_hiperspace2.JPG",
+    "alt": "Person standing in front of a large tiled display wall showing EEG dynamics",
+    "caption": "Visualizing EEG dynamics at scale",
+    "url": "/projects/"
+  },
+  {
+    "image": "/facilities/images/meeting-1.jpg",
+    "alt": "SCCN meeting room with a conference table and library shelves",
+    "caption": "SCCN meeting room and library",
+    "url": "/facilities/meeting.php.html"
+  }
+]
