@@ -34,7 +34,7 @@
       <section class="hero">
         <div class="hero-grid container">
           <div>
-            <p class="eyebrow">Open EEG methods and infrastructure</p>
+            <p class="eyebrow">Open EEG methods and neuroinformatics</p>
             <h1>Swartz Center for Computational Neuroscience</h1>
             <p class="lead">SCCN develops open electrophysiological methods, interoperable data infrastructure, and computational neuroscience research linking neural dynamics to cognition, behavior, clinical state, and human experience.</p>
             <div class="button-row">
@@ -42,9 +42,18 @@
               <a class="button secondary" href="/sccn_site/projects/">Research themes</a>
             </div>
           </div>
-          <figure class="hero-media">
-            <img src="/sccn_site/people/images/sccn-2024.jpg" alt="SCCN group">
-          </figure>
+          
+          <div class="hero-media carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="SCCN highlights">
+            <div class="carousel-track" data-carousel-track aria-live="off">
+              <figure class="carousel-slide is-active" data-carousel-slide role="group" aria-roledescription="slide" aria-label="1 of 5" aria-hidden="false"><a class="carousel-link" href="/sccn_site/people/" tabindex="0"><img src="/sccn_site/people/images/sccn-2024.jpg" alt="SCCN lab members gathered around a table in the center&#x27;s meeting area" loading="eager"><span class="carousel-caption">The SCCN team</span></a></figure><figure class="carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="2 of 5" aria-hidden="true"><a class="carousel-link" href="/sccn_site/facilities/mobi.php.html" tabindex="-1"><img src="/sccn_site/facilities/images/MoBI_510lo.jpg" alt="MoBI laboratory with motion-capture cameras and a sensor suit on a stand" loading="lazy"><span class="carousel-caption">Mobile Brain/Body Imaging (MoBI) laboratory</span></a></figure><figure class="carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="3 of 5" aria-hidden="true"><a class="carousel-link" href="/sccn_site/facilities/mobi.php.html" tabindex="-1"><img src="/sccn_site/facilities/images/MoBI_525lo.jpg" alt="MoBI control room with monitors showing motion-capture camera feeds" loading="lazy"><span class="carousel-caption">MoBI control room</span></a></figure><figure class="carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="4 of 5" aria-hidden="true"><a class="carousel-link" href="/sccn_site/projects/" tabindex="-1"><img src="/sccn_site/events/media/EEGOcean_hiperspace2.JPG" alt="Person standing in front of a large tiled display wall showing EEG dynamics" loading="lazy"><span class="carousel-caption">Visualizing EEG dynamics at scale</span></a></figure><figure class="carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="5 of 5" aria-hidden="true"><a class="carousel-link" href="/sccn_site/facilities/meeting.php.html" tabindex="-1"><img src="/sccn_site/facilities/images/meeting-1.jpg" alt="SCCN meeting room with a conference table and library shelves" loading="lazy"><span class="carousel-caption">SCCN meeting room and library</span></a></figure>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 5-7 7 7 7"></path></svg></button>
+              <div class="carousel-dots"><button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide 1" aria-current="true"></button><button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide 2"></button><button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide 3"></button><button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide 4"></button><button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide 5"></button></div>
+              <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 5 7 7-7 7"></path></svg></button>
+              <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Stop automatic slide rotation"><svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg><svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -52,7 +61,7 @@
           <div>
             <p class="eyebrow">Computational neuroscience laboratory</p>
             <h2>A full stack for EEG science</h2>
-            <p>SCCN connects EEGLAB, NEMAR, HED, shared datasets, scalable computation, independent component analysis, source modeling, quality control, and reproducible workflows into infrastructure for mature data-intensive EEG research.</p>
+            <p>SCCN connects EEGLAB, NEMAR, HED, shared datasets, scalable computation, independent component analysis, source modeling, quality control, and reproducible workflows into infrastructure for mature data-intensive EEG research and engineering.</p>
             <div class="button-row">
               <a class="button" href="/sccn_site/publications/">Browse publications</a>
               <a class="button secondary" href="/sccn_site/people/">Meet the team</a>
@@ -103,33 +112,31 @@
           <div class="section-header">
             <div>
               <p class="eyebrow">Research</p>
-              <h2>Research directions</h2>
+              <h2>Research themes</h2>
             </div>
             <a class="button secondary" href="/sccn_site/projects/">Explore all research</a>
           </div>
-          <div class="research-grid">
-            
-      <article class="research-card">
-        <div class="body">
-          <h3>To take advantage of recent and ongoing advances in intensive and large-scale co</h3>
-          <p>To take advantage of recent and ongoing advances in intensive and large-scale computational methods, and to preserve the scientific data created by publicly funded research projects, data archives must be created as well as standards for specifying, identifyin</p>
-        </div>
-      </article>
-    
-      <article class="research-card">
-        <div class="body">
-          <h3>Modeling long-range brain interactions during affective processing</h3>
-          <p>Modeling long-range brain interactions during affective processing. We are using independent component analysis (ICA) and time/frequency analysis techniques to study a phenomenon we have detected in high-dimensional EEG data, theta band synchronization events </p>
-        </div>
-      </article>
-    
-      <article class="research-card">
-        <div class="body">
-          <h3>EEG dynamics of emotional processing</h3>
-          <p>EEG dynamics of emotional processing. We are studying EEG dynamics during 3-5 minute periods when the subject actively imagines a situation provoking a suggested emotion, attempting to recreate the bodily feelings associated with the emotion. First results on </p>
-        </div>
-      </article>
-    
+          
+          <div class="image-band theme-band">
+            <img src="/sccn_site/facilities/images/MoBI_510lo.jpg" alt="MoBI laboratory with motion-capture cameras and a sensor suit on a stand" loading="lazy">
+            <div>
+              <h3>Real-world and multimodal neuroimaging</h3>
+              <p>Simultaneously recording and modeling brain activity and body function, combining EEG, behavioral, and physiological measures such as ECG, EMG, eye-tracking, IMUs, and motion capture.</p>
+            </div>
+          </div>
+          <div class="image-band theme-band reverse">
+            <img src="/sccn_site/publications/images/AkalinAcar13icon.jpg" alt="Finite element head model meshes used for EEG source modeling" loading="lazy">
+            <div>
+              <h3>Computational modeling and EEG foundation models</h3>
+              <p>Applying independent component analysis, time-frequency analysis, statistical methods, and large brain foundation models to study the neural activity underlying cognition, perception, and awareness.</p>
+            </div>
+          </div>
+          <div class="image-band theme-band">
+            <img src="/sccn_site/publications/images/MoBIicon.jpg" alt="Participant wearing a high-density EEG cap and motion-capture suit in the MoBI lab" loading="lazy">
+            <div>
+              <h3>Next-generation, preventive brain-computer interfaces</h3>
+              <p>Developing and validating predictive and forecasting BCIs, with the long-term goal of preventive interfaces that improve the prevention, diagnosis, and treatment of neurological diseases and injuries.</p>
+            </div>
           </div>
         </div>
       </section>

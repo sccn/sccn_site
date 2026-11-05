@@ -67,18 +67,70 @@ function setupPublicationFilter() {
   const input = qs("[data-publication-search]");
   if (!input) return;
   const rows = qsa("[data-publication-row]");
+  const years = qsa("[data-publication-year]");
+  const yearLinks = qsa("[data-year-link]");
   const count = qs("[data-publication-count]");
+  const status = qs("[data-topic-status]");
+  const toggle = qs("[data-topic-toggle]");
+  const panel = qs("[data-topic-panel]");
+  const chips = panel ? qsa("[data-topic]", panel) : [];
+
+  // Text query and topic are kept in the URL (?q=…&topic=…) so a filtered view can be shared.
+  const params = new URLSearchParams(window.location.search);
+  let topic = params.get("topic") || "";
+  if (params.get("q")) input.value = params.get("q");
+
   const update = () => {
     const query = input.value.trim().toLowerCase();
     let visible = 0;
     rows.forEach((row) => {
-      const matches = !query || row.dataset.search.includes(query);
+      const topics = (row.dataset.topics || "").split(" ");
+      const matches = (!query || row.dataset.search.includes(query)) && (!topic || topics.includes(topic));
       row.hidden = !matches;
       if (matches) visible += 1;
     });
-    if (count) count.textContent = `${visible} references`;
+    years.forEach((section) => {
+      const shown = qsa("[data-publication-row]", section).filter((row) => !row.hidden).length;
+      section.hidden = shown === 0;
+      const link = yearLinks.find((item) => item.dataset.yearLink === section.dataset.publicationYear);
+      if (link) link.hidden = shown === 0;
+      const yearCount = qs("[data-year-count]", section);
+      if (yearCount) yearCount.textContent = `${shown} reference${shown === 1 ? "" : "s"}`;
+    });
+    if (count) count.textContent = `${visible} reference${visible === 1 ? "" : "s"}`;
+    let activeLabel = "";
+    chips.forEach((chip) => {
+      const active = chip.dataset.topic === topic;
+      chip.setAttribute("aria-pressed", active ? "true" : "false");
+      if (active && topic) activeLabel = chip.dataset.topicLabel || topic;
+    });
+    if (status) status.textContent = activeLabel ? ` · Topic: ${activeLabel}` : "";
+    const url = new URL(window.location.href);
+    if (query) url.searchParams.set("q", input.value.trim());
+    else url.searchParams.delete("q");
+    if (topic) url.searchParams.set("topic", topic);
+    else url.searchParams.delete("topic");
+    window.history.replaceState({}, "", url);
   };
+
   input.addEventListener("input", update);
+  if (toggle && panel) {
+    toggle.addEventListener("click", () => {
+      const open = panel.hidden;
+      panel.hidden = !open;
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    if (topic) {
+      panel.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+    }
+  }
+  chips.forEach((chip) =>
+    chip.addEventListener("click", () => {
+      topic = chip.dataset.topic === topic ? "" : chip.dataset.topic;
+      update();
+    })
+  );
   update();
 }
 
@@ -142,7 +194,110 @@ async function setupSearchPage() {
   render(initialQuery);
 }
 
+function setupCarousel() {
+  const carousel = qs("[data-carousel]");
+  if (!carousel) return;
+  const slides = qsa("[data-carousel-slide]", carousel);
+  if (slides.length < 2) return;
+  const track = qs("[data-carousel-track]", carousel);
+  const dots = qsa("[data-carousel-dot]", carousel);
+  const toggle = qs("[data-carousel-toggle]", carousel);
+  const ROTATE_MS = 6000;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  let current = Math.max(0, slides.findIndex((slide) => slide.classList.contains("is-active")));
+  let timer = null;
+  let stopped = reduceMotion; // user-controlled (pause button, or OS reduced-motion preference)
+  let hovering = false;
+  let focused = false;
+
+  const show = (index) => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", active ? "false" : "true");
+      qsa("a", slide).forEach((link) => link.setAttribute("tabindex", active ? "0" : "-1"));
+    });
+    dots.forEach((dot, i) => {
+      if (i === current) dot.setAttribute("aria-current", "true");
+      else dot.removeAttribute("aria-current");
+    });
+  };
+
+  const halt = () => {
+    if (timer) clearInterval(timer);
+    timer = null;
+  };
+  const schedule = () => {
+    halt();
+    if (stopped || hovering || focused || document.hidden) return;
+    timer = setInterval(() => show(current + 1), ROTATE_MS);
+  };
+  const syncToggle = () => {
+    carousel.classList.toggle("is-paused", stopped);
+    if (toggle) {
+      toggle.setAttribute("aria-label", stopped ? "Start automatic slide rotation" : "Stop automatic slide rotation");
+    }
+    // Announce slide changes only when the user is driving the carousel.
+    if (track) track.setAttribute("aria-live", stopped ? "polite" : "off");
+  };
+
+  qs("[data-carousel-prev]", carousel)?.addEventListener("click", () => {
+    show(current - 1);
+    schedule();
+  });
+  qs("[data-carousel-next]", carousel)?.addEventListener("click", () => {
+    show(current + 1);
+    schedule();
+  });
+  dots.forEach((dot, i) =>
+    dot.addEventListener("click", () => {
+      show(i);
+      schedule();
+    })
+  );
+  toggle?.addEventListener("click", () => {
+    stopped = !stopped;
+    syncToggle();
+    schedule();
+  });
+  carousel.addEventListener("mouseenter", () => {
+    hovering = true;
+    halt();
+  });
+  carousel.addEventListener("mouseleave", () => {
+    hovering = false;
+    schedule();
+  });
+  carousel.addEventListener("focusin", () => {
+    focused = true;
+    halt();
+  });
+  carousel.addEventListener("focusout", (event) => {
+    if (carousel.contains(event.relatedTarget)) return;
+    focused = false;
+    schedule();
+  });
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      show(current - 1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      show(current + 1);
+    }
+  });
+  document.addEventListener("visibilitychange", schedule);
+
+  carousel.classList.add("is-ready");
+  show(current);
+  syncToggle();
+  schedule();
+}
+
 setupNavigation();
 setupPeopleFilter();
 setupPublicationFilter();
 setupSearchPage();
+setupCarousel();

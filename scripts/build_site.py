@@ -180,10 +180,63 @@ def render_page(title: str, content: str, active: str = "", description: str = "
 """
 
 
+def render_carousel() -> str:
+    """Home hero media: a crossfade carousel driven by src/data/carousel.json.
+
+    Server-side markup marks the first slide active so the page works without
+    JavaScript; site.js adds controls, rotation, and keyboard handling.
+    """
+    slides = load_json("carousel.json", []) or []
+    if not slides:
+        return """
+          <figure class="hero-media">
+            <img src="/people/images/sccn-2024.jpg" alt="SCCN group">
+          </figure>"""
+    total = len(slides)
+    items = []
+    dots = []
+    for index, slide in enumerate(slides):
+        first = index == 0
+        image = html_escape(slide.get("image", ""))
+        alt = html_escape(slide.get("alt", ""))
+        caption = html_escape(slide.get("caption", ""))
+        url = html_escape(slide.get("url", ""))
+        picture = f'<img src="{image}" alt="{alt}" loading="{"eager" if first else "lazy"}">'
+        caption_html = f'<span class="carousel-caption">{caption}</span>' if caption else ""
+        if url:
+            body = f'<a class="carousel-link" href="{url}" tabindex="{0 if first else -1}">{picture}{caption_html}</a>'
+        else:
+            body = picture + caption_html
+        items.append(
+            f'<figure class="carousel-slide{" is-active" if first else ""}" data-carousel-slide role="group" '
+            f'aria-roledescription="slide" aria-label="{index + 1} of {total}" aria-hidden="{"false" if first else "true"}">'
+            f"{body}</figure>"
+        )
+        current_attr = ' aria-current="true"' if first else ""
+        dots.append(
+            f'<button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide {index + 1}"{current_attr}></button>'
+        )
+    chevron_left = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 5-7 7 7 7"></path></svg>'
+    chevron_right = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 5 7 7-7 7"></path></svg>'
+    pause_icon = '<svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg>'
+    play_icon = '<svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>'
+    return f"""
+          <div class="hero-media carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="SCCN highlights">
+            <div class="carousel-track" data-carousel-track aria-live="off">
+              {''.join(items)}
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous slide">{chevron_left}</button>
+              <div class="carousel-dots">{''.join(dots)}</div>
+              <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next slide">{chevron_right}</button>
+              <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Stop automatic slide rotation">{pause_icon}{play_icon}</button>
+            </div>
+          </div>"""
+
+
 def render_home() -> tuple[str, str]:
     people = load_json("people.json", [])
     methods = load_json("methods.json", [])
-    research = load_json("research.json", [])[:3]
     news = load_json("news.json", [])[:3]
     pub_count = len(load_json("publications.json", []) or [])
     people_count = sum(len(group["people"]) for group in people)
@@ -191,7 +244,7 @@ def render_home() -> tuple[str, str]:
       <section class="hero">
         <div class="hero-grid container">
           <div>
-            <p class="eyebrow">Open EEG methods and infrastructure</p>
+            <p class="eyebrow">Open EEG methods and neuroinformatics</p>
             <h1>Swartz Center for Computational Neuroscience</h1>
             <p class="lead">SCCN develops open electrophysiological methods, interoperable data infrastructure, and computational neuroscience research linking neural dynamics to cognition, behavior, clinical state, and human experience.</p>
             <div class="button-row">
@@ -199,9 +252,7 @@ def render_home() -> tuple[str, str]:
               <a class="button secondary" href="/projects/">Research themes</a>
             </div>
           </div>
-          <figure class="hero-media">
-            <img src="/people/images/sccn-2024.jpg" alt="SCCN group">
-          </figure>
+          {render_carousel()}
         </div>
       </section>
       <section class="section">
@@ -209,7 +260,7 @@ def render_home() -> tuple[str, str]:
           <div>
             <p class="eyebrow">Computational neuroscience laboratory</p>
             <h2>A full stack for EEG science</h2>
-            <p>SCCN connects EEGLAB, NEMAR, HED, shared datasets, scalable computation, independent component analysis, source modeling, quality control, and reproducible workflows into infrastructure for mature data-intensive EEG research.</p>
+            <p>SCCN connects EEGLAB, NEMAR, HED, shared datasets, scalable computation, independent component analysis, source modeling, quality control, and reproducible workflows into infrastructure for mature data-intensive EEG research and engineering.</p>
             <div class="button-row">
               <a class="button" href="/publications/">Browse publications</a>
               <a class="button secondary" href="/people/">Meet the team</a>
@@ -236,13 +287,11 @@ def render_home() -> tuple[str, str]:
           <div class="section-header">
             <div>
               <p class="eyebrow">Research</p>
-              <h2>Research directions</h2>
+              <h2>Research themes</h2>
             </div>
             <a class="button secondary" href="/projects/">Explore all research</a>
           </div>
-          <div class="research-grid">
-            {''.join(render_research_card(item) for item in research)}
-          </div>
+          {render_research_themes()}
         </div>
       </section>
       <section class="section band">
@@ -304,6 +353,36 @@ def render_method_card(item: dict, show_image: bool = True, show_icon: bool = Fa
         {f'<p><a href="{html_escape(url)}">Learn more</a></p>' if url else ''}
       </article>
     """
+
+
+def render_theme_band(item: dict, index: int) -> str:
+    image = html_escape(item.get("image", ""))
+    classes = "image-band theme-band"
+    if not image:
+        classes += " text-only"
+    elif index % 2:
+        classes += " reverse"
+    picture = f'<img src="{image}" alt="{html_escape(item.get("alt", ""))}" loading="lazy">' if image else ""
+    return f"""
+          <div class="{classes}">
+            {picture}
+            <div>
+              <h3>{html_escape(item.get("title", ""))}</h3>
+              <p>{html_escape(item.get("summary", ""))}</p>
+            </div>
+          </div>"""
+
+
+def render_research_themes() -> str:
+    """Homepage research bands from src/data/research_themes.json.
+
+    Falls back to the first three research.json cards when no themes exist.
+    """
+    themes = load_json("research_themes.json", []) or []
+    if not themes:
+        cards = "".join(render_research_card(item) for item in load_json("research.json", [])[:3])
+        return f'<div class="research-grid">{cards}</div>'
+    return "".join(render_theme_band(item, index) for index, item in enumerate(themes))
 
 
 def render_research_card(item: dict) -> str:
@@ -466,27 +545,78 @@ def render_methods() -> tuple[str, str]:
     return "/methods/", render_page("Methods", content, "/methods/")
 
 
+def load_publication_topics() -> list[dict]:
+    """Topics from src/data/publication_topics.json with compiled match patterns."""
+    topics = []
+    for topic in load_json("publication_topics.json", []) or []:
+        patterns = [re.compile(pattern, re.IGNORECASE) for pattern in topic.get("patterns", [])]
+        topics.append({"slug": topic["slug"], "label": topic["label"], "patterns": patterns})
+    return topics
+
+
+def publication_topic_slugs(pub: dict, topics: list[dict]) -> list[str]:
+    haystack = " ".join(str(pub.get(key, "")) for key in ["title", "abstract", "journal"])
+    return [topic["slug"] for topic in topics if any(pattern.search(haystack) for pattern in topic["patterns"])]
+
+
 def render_publications() -> tuple[str, str]:
     pubs = load_json("publications.json", []) or []
+    topics = load_publication_topics()
     generated = date.today().isoformat()
-    rows = []
+
+    # Group by year, newest first; entries without a year go last.
+    by_year: dict[str, list[str]] = {}
+    topic_counts: dict[str, int] = {topic["slug"]: 0 for topic in topics}
     for pub in pubs:
-        rows.append(render_publication_row(pub))
+        slugs = publication_topic_slugs(pub, topics)
+        for slug in slugs:
+            topic_counts[slug] += 1
+        year = str(pub.get("year") or "").strip()
+        by_year.setdefault(year if year.isdigit() else "", []).append(render_publication_row(pub, slugs))
+    ordered_years = sorted((year for year in by_year if year), key=int, reverse=True) + ([""] if "" in by_year else [])
+
+    year_links = []
+    sections = []
+    for year in ordered_years:
+        rows = by_year[year]
+        key = year or "undated"
+        label = year or "Undated"
+        year_links.append(f'<a href="#year-{key}" data-year-link="{key}">{label}</a>')
+        sections.append(
+            f'<section class="publication-year" id="year-{key}" data-publication-year="{key}">'
+            f'<h2 class="group-heading">{label} <span class="metadata" data-year-count>{len(rows)} reference{"s" if len(rows) != 1 else ""}</span></h2>'
+            f'<div class="publication-list">{"".join(rows)}</div></section>'
+        )
+
+    chips = ['<button class="topic-chip" type="button" data-topic="" data-topic-label="All topics" aria-pressed="true">All topics</button>']
+    for topic in topics:
+        chips.append(
+            f'<button class="topic-chip" type="button" data-topic="{html_escape(topic["slug"])}" data-topic-label="{html_escape(topic["label"])}" aria-pressed="false">'
+            f'{html_escape(topic["label"])} <span class="topic-count">{topic_counts[topic["slug"]]}</span></button>'
+        )
+
     content = f"""
-      <section class="hero"><div class="narrow"><p class="eyebrow">Publications</p><h1>Publications</h1><p class="lead">Search SCCN references generated from preserved publication content and reusable PubMed/BibTeX processing.</p></div></section>
+      <section class="hero"><div class="narrow"><p class="eyebrow">Publications</p><h1>Publications</h1><p class="lead">Search SCCN references generated from preserved publication content and reusable PubMed/BibTeX processing. Browse by year, or filter by topic.</p></div></section>
       <section class="section"><div class="container">
         <div class="publication-toolbar">
           <input class="filter-input" type="search" data-publication-search placeholder="Search by title, author, journal, year, DOI, or PMID" aria-label="Search publications">
+          <button class="button secondary" type="button" data-topic-toggle aria-expanded="false" aria-controls="publication-topics">Search by topic</button>
           <a class="button secondary" href="/data/publications/sccn_publications.bib">Download BibTeX</a>
         </div>
-        <p class="metadata"><span data-publication-count>{len(pubs)} references</span> &middot; Generated {generated}</p>
-        <div class="publication-list">{''.join(rows)}</div>
+        <div class="topic-panel" id="publication-topics" data-topic-panel hidden>
+          <p class="topic-panel-title">Choose a topic</p>
+          <div class="topic-list">{''.join(chips)}</div>
+          <p class="topic-panel-note">Topics are assigned automatically from titles and abstracts, so some references appear under several topics and some under none.</p>
+        </div>
+        <p class="metadata"><span data-publication-count>{len(pubs)} references</span><span data-topic-status></span> &middot; Generated {generated}</p>
+        <nav class="year-nav" aria-label="Jump to year">{''.join(year_links)}</nav>
+        {''.join(sections)}
       </div></section>
     """
     return "/publications/", render_page("Publications", content, "/publications/")
 
 
-def render_publication_row(pub: dict) -> str:
+def render_publication_row(pub: dict, topics: list[str] | None = None) -> str:
     search = slug_text(" ".join(str(pub.get(key, "")) for key in ["title", "authors", "journal", "year", "doi", "pmid", "abstract", "note"]))
     links = []
     if pub.get("pmid"):
@@ -497,8 +627,7 @@ def render_publication_row(pub: dict) -> str:
         links.append(f'<a href="{html_escape(pub["url"])}">Source</a>')
     source = " ".join(part for part in [pub.get("journal", ""), pub.get("year", "")] if part)
     return f"""
-      <article class="publication-row" data-publication-row data-search="{html_escape(search)}">
-        <span class="year-chip">{html_escape(pub.get('year') or 'Archive')}</span>
+      <article class="publication-row" data-publication-row data-search="{html_escape(search)}" data-topics="{html_escape(' '.join(topics or []))}">
         <p class="publication-title">{html_escape(pub.get('title', 'Untitled reference'))}</p>
         <p class="publication-authors">{html_escape(pub.get('authors', ''))}</p>
         <p class="publication-source">{html_escape(source)}</p>
