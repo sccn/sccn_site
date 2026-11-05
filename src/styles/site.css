@@ -602,6 +602,27 @@ h4 {
   background: transparent;
 }
 
+/* Homepage research theme bands (render_theme_band in scripts/build_site.py) */
+.theme-band + .theme-band {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.theme-band h3 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.theme-band p {
+  margin: 0;
+}
+
+.image-band.reverse {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.image-band.reverse img {
+  order: 2;
+}
+
 .person-toolbar,
 .publication-toolbar {
   display: grid;
@@ -881,6 +902,14 @@ h4 {
   .hero-grid,
   .image-band {
     grid-template-columns: 1fr;
+  }
+
+  .image-band.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .image-band.reverse img {
+    order: 0;
   }
 
   .feature-grid,
