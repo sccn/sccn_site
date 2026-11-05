@@ -116,7 +116,7 @@ def render_header(active: str = "") -> str:
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <div class="nav-shell">
-        <a class="brand" href="/" aria-label="SCCN home"><img src="/images/sccn.svg" alt="SCCN"></a>
+        <a class="brand" href="/" aria-label="SCCN home"><img src="/images/sccn-logo.png" alt=""><span class="brand-text"><strong>SCCN</strong><small>Swartz Center for Computational Neuroscience</small></span></a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
         <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
           {''.join(links)}
@@ -165,7 +165,7 @@ def render_page(title: str, content: str, active: str = "", description: str = "
     <meta name="ORGANIZATION" content="University of California, San Diego">
     <meta name="SITE" content="Swartz Center for Computational Neuroscience">
     <title>{html_escape(title)} - SCCN</title>
-    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="/assets-site.css">
   </head>
   <body>
@@ -334,7 +334,7 @@ def render_home() -> tuple[str, str]:
 def render_method_icon(item: dict) -> str:
     title = item.get("title", "Method")
     key = re.sub(r"[^a-z0-9]+", "", title.lower())
-    image = item.get("image", "/images/sccn.svg")
+    image = item.get("image", "/images/sccn-logo.png")
     return f'<span class="method-icon method-icon-{html_escape(key or "method")}" aria-hidden="true"><img src="{html_escape(image)}" alt=""></span>'
 
 
@@ -342,7 +342,7 @@ def render_method_card(item: dict, show_image: bool = True, show_icon: bool = Fa
     url = item.get("url") or "/methods/"
     image = ""
     if show_image:
-        image = f'<img src="{html_escape(item.get("image", "/images/sccn.svg"))}" alt="{html_escape(item.get("title", "Method"))}">'
+        image = f'<img src="{html_escape(item.get("image", "/images/sccn-logo.png"))}" alt="{html_escape(item.get("title", "Method"))}">'
     icon = render_method_icon(item) if show_icon else ""
     return f"""
       <article class="method-card">
