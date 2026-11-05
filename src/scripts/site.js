@@ -67,18 +67,70 @@ function setupPublicationFilter() {
   const input = qs("[data-publication-search]");
   if (!input) return;
   const rows = qsa("[data-publication-row]");
+  const years = qsa("[data-publication-year]");
+  const yearLinks = qsa("[data-year-link]");
   const count = qs("[data-publication-count]");
+  const status = qs("[data-topic-status]");
+  const toggle = qs("[data-topic-toggle]");
+  const panel = qs("[data-topic-panel]");
+  const chips = panel ? qsa("[data-topic]", panel) : [];
+
+  // Text query and topic are kept in the URL (?q=…&topic=…) so a filtered view can be shared.
+  const params = new URLSearchParams(window.location.search);
+  let topic = params.get("topic") || "";
+  if (params.get("q")) input.value = params.get("q");
+
   const update = () => {
     const query = input.value.trim().toLowerCase();
     let visible = 0;
     rows.forEach((row) => {
-      const matches = !query || row.dataset.search.includes(query);
+      const topics = (row.dataset.topics || "").split(" ");
+      const matches = (!query || row.dataset.search.includes(query)) && (!topic || topics.includes(topic));
       row.hidden = !matches;
       if (matches) visible += 1;
     });
-    if (count) count.textContent = `${visible} references`;
+    years.forEach((section) => {
+      const shown = qsa("[data-publication-row]", section).filter((row) => !row.hidden).length;
+      section.hidden = shown === 0;
+      const link = yearLinks.find((item) => item.dataset.yearLink === section.dataset.publicationYear);
+      if (link) link.hidden = shown === 0;
+      const yearCount = qs("[data-year-count]", section);
+      if (yearCount) yearCount.textContent = `${shown} reference${shown === 1 ? "" : "s"}`;
+    });
+    if (count) count.textContent = `${visible} reference${visible === 1 ? "" : "s"}`;
+    let activeLabel = "";
+    chips.forEach((chip) => {
+      const active = chip.dataset.topic === topic;
+      chip.setAttribute("aria-pressed", active ? "true" : "false");
+      if (active && topic) activeLabel = chip.dataset.topicLabel || topic;
+    });
+    if (status) status.textContent = activeLabel ? ` · Topic: ${activeLabel}` : "";
+    const url = new URL(window.location.href);
+    if (query) url.searchParams.set("q", input.value.trim());
+    else url.searchParams.delete("q");
+    if (topic) url.searchParams.set("topic", topic);
+    else url.searchParams.delete("topic");
+    window.history.replaceState({}, "", url);
   };
+
   input.addEventListener("input", update);
+  if (toggle && panel) {
+    toggle.addEventListener("click", () => {
+      const open = panel.hidden;
+      panel.hidden = !open;
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    if (topic) {
+      panel.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+    }
+  }
+  chips.forEach((chip) =>
+    chip.addEventListener("click", () => {
+      topic = chip.dataset.topic === topic ? "" : chip.dataset.topic;
+      update();
+    })
+  );
   update();
 }
 

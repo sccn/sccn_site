@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "ica",
+    "label": "Independent component analysis",
+    "patterns": ["\\bica\\b", "independent component", "blind source separation", "\\bamica\\b", "infomax"]
+  },
+  {
+    "slug": "source",
+    "label": "Source localization and head modeling",
+    "patterns": ["source localization", "source imaging", "source model", "source reconstruction", "dipole", "inverse problem", "inverse solution", "head model", "forward model", "\\bfem\\b", "\\bbem\\b", "electrical source"]
+  },
+  {
+    "slug": "bci",
+    "label": "Brain-computer interfaces",
+    "patterns": ["\\bbcis?\\b", "brain[- ]computer interface", "brain[- ]machine interface", "\\bssvep", "neurofeedback", "\\bp300 speller", "steady[- ]state visual"]
+  },
+  {
+    "slug": "mobi",
+    "label": "Mobile brain/body imaging",
+    "patterns": ["\\bmobi\\b", "mobile brain", "brain[/ -]body imaging", "motion capture", "\\bwalking\\b", "\\bgait\\b", "locomotion", "\\bwearable", "\\bmobile eeg"]
+  },
+  {
+    "slug": "software",
+    "label": "EEGLAB and open-source software",
+    "patterns": ["\\beeglab\\b", "\\btoolbox\\b", "open[- ]source", "\\bplug-?in", "\\bsoftware\\b", "\\bpipeline\\b", "\\bmatlab\\b", "\\bpython\\b", "lab streaming layer", "\\blsl\\b", "\\bsift\\b", "\\bbcilab\\b", "\\bmobilab\\b"]
+  },
+  {
+    "slug": "data",
+    "label": "Data standards and sharing",
+    "patterns": ["\\bbids\\b", "\\bhed\\b", "hierarchical event descriptor", "\\bnemar\\b", "openneuro", "data sharing", "shared data", "open data", "\\bmetadata\\b", "\\barchive\\b", "\\bdataset\\b", "\\bdatabase\\b", "reproducib"]
+  },
+  {
+    "slug": "ml",
+    "label": "Machine learning and deep learning",
+    "patterns": ["deep learning", "machine learning", "neural network", "convolutional", "\\btransformer", "foundation model", "\\bclassif", "\\bdecod", "representation learning", "self-supervised", "\\bsvm\\b", "\\blstm\\b"]
+  },
+  {
+    "slug": "preprocessing",
+    "label": "Artifact removal and preprocessing",
+    "patterns": ["\\bartifact", "\\bartefact", "preprocess", "pre-process", "\\bcleaning\\b", "\\basr\\b", "subspace reconstruction", "\\bnoise removal", "\\bdenois", "\\biclabel\\b", "bad channel", "\\bfilter(ing)?\\b"]
+  },
+  {
+    "slug": "oscillations",
+    "label": "Time-frequency and oscillations",
+    "patterns": ["time[- ]frequency", "oscillat", "\\btheta\\b", "\\balpha\\b", "\\bbeta\\b", "\\bgamma\\b", "\\bdelta\\b", "spectral", "\\bersp\\b", "\\bitc\\b", "power spectr", "event-related spectral", "phase[- ]locking", "\\bmu rhythm"]
+  },
+  {
+    "slug": "connectivity",
+    "label": "Connectivity and networks",
+    "patterns": ["connectivity", "\\bcoheren", "granger", "causality", "\\bnetwork dynamics", "brain network", "synchroniz", "information flow", "phase synchrony"]
+  },
+  {
+    "slug": "erp",
+    "label": "Event-related potentials",
+    "patterns": ["event-related potential", "event related potential", "\\berps?\\b", "\\bp300\\b", "\\bp3\\b", "\\bn400\\b", "\\bn170\\b", "\\bn2\\b", "mismatch negativity", "\\bmmn\\b", "error-related", "\\bern\\b", "readiness potential"]
+  },
+  {
+    "slug": "attention",
+    "label": "Attention, memory and cognition",
+    "patterns": ["\\battention", "\\bmemory\\b", "cognitive", "\\bcognition\\b", "\\bworking memory", "\\blearning\\b", "decision", "\\bperception\\b", "\\bawareness\\b", "\\bvisual search", "\\bmental workload", "\\bexecutive"]
+  },
+  {
+    "slug": "sleep",
+    "label": "Sleep, drowsiness and fatigue",
+    "patterns": ["\\bsleep", "drowsi", "\\bfatigue", "\\balertness", "\\bvigilance", "\\bdriving\\b", "\\bdriver", "\\bdrowsy"]
+  },
+  {
+    "slug": "emotion",
+    "label": "Emotion and affect",
+    "patterns": ["\\bemotion", "\\baffective", "\\bmood\\b", "\\bstress\\b", "\\banxiety", "\\bvalence", "\\barousal"]
+  },
+  {
+    "slug": "clinical",
+    "label": "Clinical and neurological disorders",
+    "patterns": ["\\bpatients?\\b", "\\bclinical", "disorder", "alzheimer", "parkinson", "epilep", "seizure", "schizophren", "\\bstroke\\b", "\\bautism", "\\bdepress", "\\badhd\\b", "dementia", "\\btinnitus", "\\bcoma\\b", "\\binjur", "\\bdiagnos", "\\btreatment", "\\btherap", "\\bdisease"]
+  },
+  {
+    "slug": "meditation",
+    "label": "Meditation and consciousness",
+    "patterns": ["meditat", "mindfulness", "\\bconsciousness", "\\bcontemplative", "\\byoga\\b", "\\bbreath", "\\bhypnos"]
+  },
+  {
+    "slug": "sensorimotor",
+    "label": "Motor control and sensorimotor",
+    "patterns": ["\\bmotor\\b", "sensorimotor", "\\bmovement", "\\breaching\\b", "\\bbalance\\b", "\\bposture", "\\bpostural", "\\bmuscle", "\\bemg\\b", "\\bjuggl", "\\bexoskeleton"]
+  },
+  {
+    "slug": "eye",
+    "label": "Eye tracking and gaze",
+    "patterns": ["eye[- ]tracking", "eye movement", "\\bgaze\\b", "\\bsaccad", "\\beog\\b", "\\bpupil", "\\bblink", "\\bfixation"]
+  },
+  {
+    "slug": "auditory",
+    "label": "Music, speech and audition",
+    "patterns": ["\\bmusic", "\\bauditory", "\\bspeech\\b", "\\brhythm", "\\blisten", "\\bsound\\b", "\\bbeat\\b", "\\bhearing", "\\bacoustic", "\\btone\\b"]
+  },
+  {
+    "slug": "multimodal",
+    "label": "fMRI, MEG and multimodal imaging",
+    "patterns": ["\\bfmri\\b", "\\bmeg\\b", "magnetoencephalograph", "functional magnetic", "\\bbold\\b", "\\bpet\\b", "\\bfnirs\\b", "\\bnirs\\b", "\\bmultimodal", "\\bieeg\\b", "intracranial", "\\becog\\b", "\\becg\\b", "\\bheart rate", "\\bphysiolog"]
+  }
+]

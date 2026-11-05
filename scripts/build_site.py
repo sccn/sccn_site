@@ -244,7 +244,7 @@ def render_home() -> tuple[str, str]:
       <section class="hero">
         <div class="hero-grid container">
           <div>
-            <p class="eyebrow">Open EEG methods and infrastructure</p>
+            <p class="eyebrow">Open EEG methods and neuroinformatics</p>
             <h1>Swartz Center for Computational Neuroscience</h1>
             <p class="lead">SCCN develops open electrophysiological methods, interoperable data infrastructure, and computational neuroscience research linking neural dynamics to cognition, behavior, clinical state, and human experience.</p>
             <div class="button-row">
@@ -260,7 +260,7 @@ def render_home() -> tuple[str, str]:
           <div>
             <p class="eyebrow">Computational neuroscience laboratory</p>
             <h2>A full stack for EEG science</h2>
-            <p>SCCN connects EEGLAB, NEMAR, HED, shared datasets, scalable computation, independent component analysis, source modeling, quality control, and reproducible workflows into infrastructure for mature data-intensive EEG research.</p>
+            <p>SCCN connects EEGLAB, NEMAR, HED, shared datasets, scalable computation, independent component analysis, source modeling, quality control, and reproducible workflows into infrastructure for mature data-intensive EEG research and engineering.</p>
             <div class="button-row">
               <a class="button" href="/publications/">Browse publications</a>
               <a class="button secondary" href="/people/">Meet the team</a>
@@ -517,27 +517,78 @@ def render_methods() -> tuple[str, str]:
     return "/methods/", render_page("Methods", content, "/methods/")
 
 
+def load_publication_topics() -> list[dict]:
+    """Topics from src/data/publication_topics.json with compiled match patterns."""
+    topics = []
+    for topic in load_json("publication_topics.json", []) or []:
+        patterns = [re.compile(pattern, re.IGNORECASE) for pattern in topic.get("patterns", [])]
+        topics.append({"slug": topic["slug"], "label": topic["label"], "patterns": patterns})
+    return topics
+
+
+def publication_topic_slugs(pub: dict, topics: list[dict]) -> list[str]:
+    haystack = " ".join(str(pub.get(key, "")) for key in ["title", "abstract", "journal"])
+    return [topic["slug"] for topic in topics if any(pattern.search(haystack) for pattern in topic["patterns"])]
+
+
 def render_publications() -> tuple[str, str]:
     pubs = load_json("publications.json", []) or []
+    topics = load_publication_topics()
     generated = date.today().isoformat()
-    rows = []
+
+    # Group by year, newest first; entries without a year go last.
+    by_year: dict[str, list[str]] = {}
+    topic_counts: dict[str, int] = {topic["slug"]: 0 for topic in topics}
     for pub in pubs:
-        rows.append(render_publication_row(pub))
+        slugs = publication_topic_slugs(pub, topics)
+        for slug in slugs:
+            topic_counts[slug] += 1
+        year = str(pub.get("year") or "").strip()
+        by_year.setdefault(year if year.isdigit() else "", []).append(render_publication_row(pub, slugs))
+    ordered_years = sorted((year for year in by_year if year), key=int, reverse=True) + ([""] if "" in by_year else [])
+
+    year_links = []
+    sections = []
+    for year in ordered_years:
+        rows = by_year[year]
+        key = year or "undated"
+        label = year or "Undated"
+        year_links.append(f'<a href="#year-{key}" data-year-link="{key}">{label}</a>')
+        sections.append(
+            f'<section class="publication-year" id="year-{key}" data-publication-year="{key}">'
+            f'<h2 class="group-heading">{label} <span class="metadata" data-year-count>{len(rows)} reference{"s" if len(rows) != 1 else ""}</span></h2>'
+            f'<div class="publication-list">{"".join(rows)}</div></section>'
+        )
+
+    chips = ['<button class="topic-chip" type="button" data-topic="" data-topic-label="All topics" aria-pressed="true">All topics</button>']
+    for topic in topics:
+        chips.append(
+            f'<button class="topic-chip" type="button" data-topic="{html_escape(topic["slug"])}" data-topic-label="{html_escape(topic["label"])}" aria-pressed="false">'
+            f'{html_escape(topic["label"])} <span class="topic-count">{topic_counts[topic["slug"]]}</span></button>'
+        )
+
     content = f"""
-      <section class="hero"><div class="narrow"><p class="eyebrow">Publications</p><h1>Publications</h1><p class="lead">Search SCCN references generated from preserved publication content and reusable PubMed/BibTeX processing.</p></div></section>
+      <section class="hero"><div class="narrow"><p class="eyebrow">Publications</p><h1>Publications</h1><p class="lead">Search SCCN references generated from preserved publication content and reusable PubMed/BibTeX processing. Browse by year, or filter by topic.</p></div></section>
       <section class="section"><div class="container">
         <div class="publication-toolbar">
           <input class="filter-input" type="search" data-publication-search placeholder="Search by title, author, journal, year, DOI, or PMID" aria-label="Search publications">
+          <button class="button secondary" type="button" data-topic-toggle aria-expanded="false" aria-controls="publication-topics">Search by topic</button>
           <a class="button secondary" href="/data/publications/sccn_publications.bib">Download BibTeX</a>
         </div>
-        <p class="metadata"><span data-publication-count>{len(pubs)} references</span> &middot; Generated {generated}</p>
-        <div class="publication-list">{''.join(rows)}</div>
+        <div class="topic-panel" id="publication-topics" data-topic-panel hidden>
+          <p class="topic-panel-title">Choose a topic</p>
+          <div class="topic-list">{''.join(chips)}</div>
+          <p class="topic-panel-note">Topics are assigned automatically from titles and abstracts, so some references appear under several topics and some under none.</p>
+        </div>
+        <p class="metadata"><span data-publication-count>{len(pubs)} references</span><span data-topic-status></span> &middot; Generated {generated}</p>
+        <nav class="year-nav" aria-label="Jump to year">{''.join(year_links)}</nav>
+        {''.join(sections)}
       </div></section>
     """
     return "/publications/", render_page("Publications", content, "/publications/")
 
 
-def render_publication_row(pub: dict) -> str:
+def render_publication_row(pub: dict, topics: list[str] | None = None) -> str:
     search = slug_text(" ".join(str(pub.get(key, "")) for key in ["title", "authors", "journal", "year", "doi", "pmid", "abstract", "note"]))
     links = []
     if pub.get("pmid"):
@@ -548,8 +599,7 @@ def render_publication_row(pub: dict) -> str:
         links.append(f'<a href="{html_escape(pub["url"])}">Source</a>')
     source = " ".join(part for part in [pub.get("journal", ""), pub.get("year", "")] if part)
     return f"""
-      <article class="publication-row" data-publication-row data-search="{html_escape(search)}">
-        <span class="year-chip">{html_escape(pub.get('year') or 'Archive')}</span>
+      <article class="publication-row" data-publication-row data-search="{html_escape(search)}" data-topics="{html_escape(' '.join(topics or []))}">
         <p class="publication-title">{html_escape(pub.get('title', 'Untitled reference'))}</p>
         <p class="publication-authors">{html_escape(pub.get('authors', ''))}</p>
         <p class="publication-source">{html_escape(source)}</p>
