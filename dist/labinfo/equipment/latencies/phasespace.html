@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>PhaseSpace - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>PhaseSpace</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><h2>Experimental Procedure</h2>
+The latency of the motion capture system PhaseSpace may be measured in the following way.
+<ul>
+<li>Attach a PhaseSpace led to the end of a drawer-runner so that it can be smoothly swept from side to side</li>
+<li>Capture this data stream with the PhaseSpace App in the Apps folder of LSL</li>
+<li>Set up a photo-transistor circuit whose output voltage is analogous to the proximity of the same LED. Here is an <a href="http://learn.parallax.com/node/258">example circuit</a> -- the one I used has a 1k resistor as well as a 4.7uf cap in series with the signal line (marked VA3 in the diagram) to smooth the signal some.</li>
+<li>Plug that voltage source into a BioSemi amplifier and capture the data stream with the LSL BioSemi App</li>
+</ul>
+<h2>Analysis</h2>
+The code used to analyze the collected data streams can be downloaded <a href="/sccn_site/labinfo/equipment/latencies/code/phasespace_latency_analysis.m">here</a>. The data streams were normalized, one was flipped so that the polarities of the signal match, and the stream was truncated so that only the part of the signal during which the LED was moving was analyzed.
+Note that a significantly long data stream must be captured in order that this analysis may be robust and reliable. The results presented here are for a data stream that was about 1/2 hour long.
+<h2>Results</h2>
+<h3>CES Lab figures</h3>
+<p>The overall cross correlation function is shown here. </p>
+<p><img src="/sccn_site/labinfo/equipment/latencies/figs/psCCbs.png"></p>
+<p>As you can see there is a total lag of 5.37 ms. The data was also broken up into 10 equally spaced windows and analyzed using the same method. The mean latency was shown to be 5.76. Thus we may conclude that 5.37-5.76ms is about right. Unfortunately, we may not be more precise than the estimated error of latency which was shown to be +/- 3.33ms. </p>
+<p><img src="/sccn_site/labinfo/equipment/latencies/figs/ps_lag_vs_time.png"></p>
+<p>The sampling rate of the PhaseSpace system is rather low at 480Hz, so we may not hold much hope of finding a more precise figure than this.</p>
+<h3>Mobi Lab figures</h3>
+Coming soon.
+<h2>Important Notes</h2>
+As of now, both the BioSemi and PhaseSpace data acquisition apps account for some latency in their time-stamping routines. The latency reported here is <i>on top of</i> this latency. It is of interest that the PhaseSpace manufacturers claim a latency of 8-10ms on their website. The lag here was measured to be (on average) about 5.5ms beyond the 8ms lag which the PhaseSpace acquisition App already accounts for.</div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

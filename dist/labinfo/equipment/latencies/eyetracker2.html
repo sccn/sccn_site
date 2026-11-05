@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>EyeTracker With Hotspots - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>EyeTracker With Hotspots</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><h2>Introduction</h2>
+<p>The SCCN eyetracker can operate on its own (in which case it gives data according to where a pupil is looking in the screen camera's viewing frame) or it can be co-registered with PhaseSpace so that the pupil direction and scene camera location form a vector. By using Hotspots, this vector can be used to locate where a subject is supposedly gazing within some fixed predefined plane inside the lab. The latency of the eyetracker by itself was calculated <a href="/sccn_site/labinfo/equipment/latencies/eyetracker.html">here</a>. This experiment took into account the output of Hotspots, which (configured properly) outputs the XY position of a subjects gaze in along a fixed, predefined plane in real space.</p>
+<h2>Experimental Procedure</h2>
+<p>In order to determine the entire latency of the SCCN eyetracker, I calibrated they system then recored eyetracking data (which comes out of Hotspots) as well as EMG with external electrodes placed around my eyes. The task was to oscillate my gaze between two points on a screen that were roughly the same height but some significant distance apart. Using EEG lab and ICA as well as some code courtesy of Makoto Mayakoshi, an IC was extracted from the EMG giving the actions of my eye movements. The usual 7.72ms was subtracted from the timestamps of the BioSemi acquisition and 28.9 was taken from the eyetracker. This signal resembled a square wave and correlated extremely well to the horizontal movement reported by the eyetracking system.</p>
+<p>These signals (after filtering and normalization) were analyzed and the moments of significant zero crossings were found. This is probably a reasonable choice to compare.</p> 
+<p><img src="/sccn_site/labinfo/equipment/latencies/figs/eeget28.png"></p>
+<p>In this figure the upper signal is the eyetracker and the lower signal is the IC corresponding to eye muscles moving the eyes. The red lines mark the zero crossings of interest in the former, the green, the latter. The code I used can be found <a href="/sccn_site/labinfo/equipment/latencies/code/eyeTrackerEEGLatency.m">here</a>.</p> 
+<h2>Results</h2>
+One issue here is that the sampling rate of the eyetracker is an order of magnitude lower than that of the BioSemi. Although Hotspots outputs at the sampling rate of PhaseSpace (400Hz), the cameras in the eyetracker output at a framerate of 33.33Hz. But Hotspots is also correcting for the location of the viewer. Furthermore, camera frames may be dropped, in which case Hotspots assumes the previous gaze position as its input. For these reasons I do not downsample the output of Hotspots to 33.33Hz as is often done. Also, when I did introduce downsampling, the results obtained had nearly the same mean and median values, but far greater jitter. This suggests that the higher sampling rate is an appropriate choice here.</p>
+<p>Below is a histogram of the eyetracker latencies as well as a plot of the latencies against time.</p>
+<p><img src="/sccn_site/labinfo/equipment/latencies/figs/eeget28_hist.png"><img src="/sccn_site/labinfo/equipment/latencies/figs/eeget_lates.png"></p>
+<h2>Conclusions</h2>
+<p>The latency of the eyetracking system, with Hotspots is 60.16ms (we take the median to be the midpoint due to the rather large outlier in the analysis) with a standard deviation of 4.89.</p>
+<p>One note is that this value is significantly larger than the measured latency of the eyetracker without Hotspots. This either means that the eyetracker latency pre-hotspots is greater than previously measured or that for whatever reason Hotspots is getting input from Gazestream that is one camera frame late (the extra latency is conspicuously near to 33.33ms).
+<p>The data for this experiment were gathered on 12/12/2014.</p></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

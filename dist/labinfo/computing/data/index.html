@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>Data Storage - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>Data Storage</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/" aria-current="page">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><p>If you are a new SCCN member and have just gotten an account to access our data, you may be sitting in front of a workstation with an empty desktop. Where do you start? This guide will help you on that journey.</p>
+            <h2>How do I get started on analyzing data?</h2>
+            <p>If you brought your own data, you can load that onto our shared disk system. You can also begin to work on existing data sets that are available from various sources. This is a brief summary of some of those locations.</p>
+            <pre class="code badge-light">/data/projects</pre>
+            <p>This is primarily where you will work. Create a folder for yourself in this location and then  copy your own data or other data sets  into that folder. All users in SCCN have access to this space, so others can assist you from their own accounts if you need assistance with loading or processing your own data. Because this is shared space, we ask that you do not use more than <strong>1 TB</strong> of space. If our available space gets too low, it may be necessary to remove someone else's project data (or your own).</p>
+            <p>Linux: /data/projects<br>
+            Windows: \\sccn.ucsd.edu\projects<br>
+            Macintosh: smb://sccn.ucsd.edu/projects</p>
+            <pre class="code badge-light">/data/temp</pre>
+            <p>For temporary items you only need for a short period of time, you may stash items in here for others to grab. Files and folders in here may be deleted at any time without warning, so use with caution. This data share is aptly named!</p>
+            <p>Linux: /data/<span class="code">temp</span><br>
+            Windows: \\sccn.ucsd.edu\<span class="code">temp</span><br>
+            Macintosh: smb://sccn.ucsd.edu/<span class="code">temp</span></p>
+            <pre class="code badge-light">/home/<em>username</em></pre>
+            <p>This is  your own private space. If you have data that only you are going to be working on without collaboration with other lab members, you may use this space. Note that there is a hard limit of <strong>500 GB</strong> in your /home.</p>
+            <p>Linux: /home/<em>username</em><br>
+            Windows: \\sccn.ucsd.edu\<em>username</em><br>
+            Macintosh: smb://sccn.ucsd.edu/<em>username</em></p>
+            <p>For access to other data storage locations, ask one of our Principal Investigators or our Lab Manager.</p>
+            <h2>How do I access those data locations?</h2>
+            <h3>Linux MATE or Gnome Desktop</h3>
+            <p>Double-click your <strong>Home</strong> icon (MATE) or run <strong>Files</strong> (Gnome).</p>
+            <p>Type <strong>Ctrl-L</strong> to reveal the address bar if it is hidden.</p>
+            <p>In the address bar, enter the path to the data. In some cases, you cannot browse to these locations. you must type this in directly to the address bar. For example,</p>
+            <pre class="code">/data/projects</pre>
+            <h3> Terminal</h3>
+            <p>In a terminal, including Terminal apps on Linux, Macintosh, and Windows (PuTTY), use the <em>cd</em> command to change to that directory, for example,</p>
+            <pre class="code badge-light">$ cd /data/projects</pre>
+            <h3>Windows</h3>
+            <p>Make sure you are on a UCSD network. If off-campus, use the <a href="https://blink.ucsd.edu/technology/network/connections/off-campus/VPN/index.html">UCSD VPN</a>. Open a <b>File Explorer</b> window, such as Documents. Click in the white space of the address bar so you can type in a location, such as            </p>
+            <pre>
+\\sccn.ucsd.edu\projects</pre>
+            <p>Enter your  SCCN username and password.</p>
+            <p><img src="/sccn_site/labinfo/computing/data/images/win-login.png" width="328" height="206" alt="Windows Login"></p>
+            <p>To create a shortcut to one of these locations after you get access to the shared folder, drag the yellow folder icon in the  left of the address bar to your desktop or another folder window.</p>
+            <h3>Macintosh</h3>
+            <p>Make sure you are on a UCSD network. If off-campus, use the <a href="https://blink.ucsd.edu/technology/network/connections/off-campus/VPN/index.html">UCSD VPN</a>.</p>
+            <p>In your <strong>Finder</strong> app, select the <strong>Go...</strong> menu, choose <strong>Connect to Server...</strong> Enter one of the data shares by typing it in this format:            </p>
+            <pre>
+smb://sccn.ucsd.edu/projects</pre>
+            <p>Enter your SCCN username and password.</p>
+            <p>To create a bookmark to one of these locations, click the + to add it to the list.</p></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>

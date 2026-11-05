@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practical information for SCCN members and visitors: computing, experiments, and equipment.">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Swartz Center for Computational Neuroscience">
+    <title>Computing Clusters - SCCN</title>
+    <link rel="icon" href="/sccn_site/images/favicon.ico">
+    <link rel="stylesheet" href="/sccn_site/assets-site.css">
+  </head>
+  <body>
+    
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="/sccn_site/" aria-label="SCCN home"><img src="/sccn_site/images/sccn.svg" alt="SCCN"></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false"><span></span><span class="sr-only">Menu</span></button>
+        <nav class="primary-nav" id="primary-nav" data-primary-nav aria-label="Primary navigation">
+          <a href="/sccn_site/people/">People</a><a href="/sccn_site/projects/">Research</a><a href="/sccn_site/methods/">Methods</a><a href="/sccn_site/publications/">Publications</a><a href="/sccn_site/news-events/">News</a><a href="/sccn_site/visit/">Visit</a>
+        </nav>
+        <form class="header-search" action="/sccn_site/search/" method="get" data-header-search>
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </button>
+          <input class="search-input" data-search-input name="q" type="search" autocomplete="off" aria-label="Search SCCN">
+        </form>
+      </div>
+    </header>
+    
+    <main id="main" class="main">
+      
+      <section class="hero"><div class="narrow"><p class="eyebrow">Lab information</p><h1>Computing Clusters</h1><p class="lead">Practical information for SCCN members and visitors: computing, experiments, and equipment.</p></div></section>
+      <section class="section"><div class="container legacy-content labinfo-content"><nav class="subnav" aria-label="Lab information sections"><div class="subnav-group"><a href="/sccn_site/labinfo/">Overview</a></div><div class="subnav-group"><span class="subnav-label">Computing</span><a href="/sccn_site/labinfo/computing/account/">Computer Account</a><a href="/sccn_site/labinfo/computing/data/">Data Storage</a><a href="/sccn_site/labinfo/computing/email/">Email</a><a href="/sccn_site/labinfo/computing/matlab/">MATLAB</a><a href="/sccn_site/labinfo/computing/remote-desktop/">Remote Access</a><a href="/sccn_site/labinfo/computing/pc/">Personal Computer</a><a href="/sccn_site/labinfo/computing/printing/">Printing</a><a href="/sccn_site/labinfo/computing/workstations/">Workstations</a></div><div class="subnav-group"><a href="/sccn_site/labinfo/experiments/">Experiments</a></div><div class="subnav-group"><span class="subnav-label">Equipment</span><a href="https://www.neurobs.com/manager/content/docs/labstreamer/index.html">LabStreamer &#8599;</a><a href="/sccn_site/labinfo/equipment/eyetracker/">MoBIGaze eye-tracking system</a><a href="/sccn_site/labinfo/equipment/latencies/">Equipment Latencies</a><a href="/sccn_site/labinfo/equipment/eyelink/">EyeLink</a></div></nav><p>Members of the SCCN lab have access to  a <strong>Rocks Clusters</strong> cluster for analyzing data so you don't have to overload your local workstation with large datasets:</p>
+                      <p>The cluster will accept ssh connections from a terminal, but only within the UCSD network, including UCSD-PROTECTED wireless or <a href="http://blink.ucsd.edu/go/vpn/">UCSD VPN</a>.</p>
+                  <div class="section">
+                    <h2>computing</h2>
+                    <h3>for both interactive and parallel processing, including <strong>amica</strong></h3>
+                    <p><img src="/sccn_site/labinfo/computing/cluster/images/computing.png" alt="computing" width="184" height="143" class="float-right" />&quot;computing&quot; is the name of our Rocks 7.0 computing cluster. It is composed of a login node, seven interactive nodes that allow running MATLAB in an interactive session and four dedicated parallel nodes that accept qsub jobs, ideal for running <a href="https://sccn.ucsd.edu/~jason/amica_web.html">AMICA</a>. Each compute node is equipped with</p>
+                    <ul>
+                      <li>Quad/4-way AMD Opteron 6136,8 Cores x 2.40GHz, Socket G34</li>
+                      <li>256GB DDR3 Registered ECC/REG 1333 SDRAM</li>
+                    </ul>
+                    <p>Queues are available for 32- and 64-processor parallel computing.</p>
+              </div>
+                    <h2>Common Commands</h2>
+                    <div>
+                      <h3>qstat</h3>
+                      <p>Use <strong>qstat</strong> regularly to keep track of any queued jobs that you have running.</p>
+                            <pre class="code">[user@computing ~]$ <strong>qstat</strong>
+job-ID  prior   name       user         state submit/start at     queue                          slots ja-task-ID 
+-----------------------------------------------------------------------------------------------------------------
+2371 0.50500 QLOGIN     user         r     05/12/2010 16:47:26 all.q@computing-0-3.local            1 
+2372 0.50500 QLOGIN     user         r     05/12/2010 16:47:35 all.q@computing-0-2.local            1 
+2373 0.50500 QLOGIN     user         r     05/12/2010 16:47:41 all.q@computing-0-4.local            1 </pre>
+                      <p>In this example, if you are user &quot;user&quot;, you have  three running QLOGINs, which means there are probably three MATLAB interactive sessions running on compute nodes compute-0-3, compute-0-2 and compute-0-4.</p>
+                            <p>It is your responsibility to run this command regularly to track your cluster usage so you do not restrict access to  users, including yourself..</p>
+                      <p>To see the global picture of all users on all nodes and queues, use</p>
+                            <pre class="code">[user@computing ~]$ <strong>qstat -f -u '*'</strong>
+queuename                      qtype resv/used/tot. load_avg arch          states<br>---------------------------------------------------------------------------------<br>all.q@computing-0-0.local        BIP   0/5/12         12.03    lx26-amd64    <br>  15798 0.55500 QLOGIN     fred         r     09/09/2011 11:42:57     1        <br>  15803 0.55500 QLOGIN     barney       r     09/09/2011 14:07:15     1        <br>  15867 0.55500 QLOGIN     wilma        r     09/12/2011 15:18:34     1        <br>  15874 0.55500 QLOGIN     betty        r     09/14/2011 09:46:18     1        <br>  15875 0.55500 QLOGIN     pebbles      r     09/15/2011 06:27:41     1        <br>...    </pre>
+                      <h3>qdel</h3>
+                      <p>Use <strong>qdel</strong> to delete hung or QLOGIN sessions that you cannot locate. The fewer simultaneous interactive sessions you run, the easier it will be to track these down.</p>
+                      <pre class="code">[user@computing ~]$ <strong>qdel 2371 2373</strong>
+user has registered the job 2371 for deletion
+user has registered the job 2371 for deletion</pre>
+                      <p>In this case, using the results from the previous <strong>qstat</strong> command, if you determine that jobs 2371 and 2373 running on compute nodes compute-0-6 and compute-0-9 are no longer needed, or known to have crashed, use qdel with the job-ID number(s) to delete those QLOGINs.</p>
+                      <p>Note: <strong>qdel</strong> can only be run on head node (computing). This command will not work on a compute node.</p>
+                      <h3>qlogin</h3>
+                      <p>Use <strong>qlogin</strong> to if you want to connect to an available compute node to run an interactive shell. Most commonly, this is used to run <strong>matlab</strong> from the<a href="https://sccn.ucsd.edu/flexslider">flexslider</a> command line. When you successfully log into a compute node, your prompt  will show the name of the node you are connected to, eg., compute-0-5. Please keep track of all of your interactive sessions so that you do not use up multiple queue slots. See <strong>qstat</strong> for more information.</p>
+                            <pre class="code">[user@computing ~]$ <strong>qlogin</strong>
+Your job 2371 (&quot;QLOGIN&quot;) has been submitted
+             waiting for interactive job to be scheduled ...
+             Your interactive job 2371 has been successfully scheduled.
+             Establishing /opt/gridengine/bin/rocks-qlogin.sh session to host computing-0-1.local ...
+[user@computing-0-1 ~]$ <strong>matlab</strong></pre>
+                      <p>When finished running MATLAB, be sure to &quot;exit&quot;  out of the compute node to release that slot so others can use it. If you no  longer need access to the cluster, &quot;exit&quot; from computing as well.</p>
+                      <p>Note: <strong>qlogin</strong> can only be run on the head node (computing). This command will not work on a compute node.</p>
+                            <h2>Cluster Status</h2>
+                            <p>Our cluster status is available in a graphical view by accessing <a href="http://computing.ucsd.edu/ganglia/">http://computing.ucsd.edu/ganglia/</a>. Access to this web site is available only from within the UCSD network.</p>
+          <h3>Using MATLAB interactively with no parallelization</h3>
+          <p>Log onto computing.ucsd.edu:</p>
+          <pre class="code">[user@workstation ~]$<strong> ssh computing</strong></pre>
+          <p>If you are logging in from a system that does not have X11 forwarding enabled by default (as are all the SCCN workstations), you may need to use a modified ssh command so you can view graphics:</p>
+          <pre class="code">[user@workstation ~]$<strong> ssh -X computing</strong></pre>
+          <p>Log onto a compute node:</p>
+          <pre class="code">[user@computing ~]$ <strong>qlogin</strong>
+Your job 2371 (&quot;QLOGIN&quot;) has been submitted
+             waiting for interactive job to be scheduled ...
+             Your interactive job 2371 has been successfully scheduled.
+             Establishing /opt/gridengine/bin/rocks-qlogin.sh session to host compute-0-x.local ...</pre>
+          <p>Run MATLAB:</p>
+          <pre class="code">[user@computing-0-x ~]$ <strong>matlab</strong></pre>
+          <p>For the benefit of others using the cluster, please exit from the compute node when you are finished.</p>
+          <pre class="code">[user@computing-0-x ~]$ <strong>exit</strong></pre>
+          <p>Then, log off of the cluster.</p>
+          <pre class="code">[user@computing ~]$ <strong>exit</strong></pre>
+<h3>Using computing for submitting a parallel job, such as amica</h3>
+      <p>Log onto computing.ucsd.edu</p>
+      <pre class="code">[user@workstation ~]$ <strong>ssh computing</strong></pre>
+      <p>Determine the number of processors you need for your job: 32, or 64 or 128. This determines the queue that you will use.</p>
+      <p>The queues are defined as the following:</p>
+      <h3>32-proc queues</h3>
+      <p>queue name and the associated compute node(s):</p>
+      <ul>
+        <li>q1 - computing-0-7</li>
+        <li>q2 - computing-0-8</li>
+        <li>q3 - computing-0-9</li>
+        <li>q4 - computing-0-10</li>
+      </ul>
+      <h3>64-proc queues</h3>
+      <p>queue name and the associated compute node(s):</p>
+      <ul>
+        <li>qa1 - computing-0-7, computing-0-8</li>
+        <li>qa2 - computing-0-9, computing-0-10</li>
+      </ul>
+      <p>Determine which queue to use by viewing which compute nodes are available:</p>
+      <pre class="code">[user@computing ~]$ <strong>qstat -g c</strong>
+CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE  <br>--------------------------------------------------------------------------------<br>all.q                             0.00     12      0     84     96      0      0 <br>q1                                0.54      0      0     32     32      0      0 <br>q2                                1.90     32      0      0     32     32      0 <br>q3                                1.88     32      0      0     32     32      0 <br>q4                                1.89     32      0      0     32     32      0 <br>qa1                               1.89      0      0      0     64     64      0 <br>qa2                               1.89      0      0      0     64     64      0 <br></pre>
+      <p>To interpret this table, look at the AVAIL column.</p>
+      <h3>32-proc jobs</h3>
+      <p>if you are going to run a 32-proc job, which means you will use one of the q<em>x</em> queues, you can see that there is currently one available: q1. You can be reasonably assured that if you submit your 32-proc job to one or both of those queues, they will be processed immediately.</p>
+      <p>For the benefit of others using the cluster, use <em>no more than two</em> available q<em>x</em> queues at a time. You can submit as many as you want. They will be processed serially.</p>
+<h3>64-proc jobs</h3>
+      <p>if you are going to run a 64-proc job, which means you will use one of the qa<em>x</em> queues, you can see that there are currently none available. You can submit the job, but it will only be processed when all of the previously scheduled jobs using those nodes have completed.</p>
+      <p>For the benefit of others using the cluster, use <em>no more than one</em> available qa<em>x</em> queue at a time. You can submit as many as you want. They will be processed serially.</p>
+<h3>amica</h3>
+<p>In most cases, you will be using amica to analyze your data in our parallel queues. Log onto one of the interactive nodes and start up MATLAB.</p>
+<pre class="code">
+[user@computing ~]$ <strong>qlogin</strong>
+[user@computing-0-0 ~]$ <strong>matlab</strong></pre>
+<p>Run EEGLAB in MATLAB.</p>
+      <p>Load your data.</p>
+      <p>Select <strong>runamica</strong>.</p>
+      <p>Enter your queue and the number of processors and the script will handle the rest.</p></div></section>
+    
+    </main>
+    
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Swartz Center for Computational Neuroscience</strong><br>
+          Institute for Neural Computation, UC San Diego<br>
+          9500 Gilman Drive # 0559, La Jolla, CA 92093-0559
+        </div>
+        <div>
+          Office: 858-822-7534 &middot; Fax: 858-822-7556<br>
+          <a href="/sccn_site/methods/">Methods</a> &middot;
+          <a href="/sccn_site/news-events/">News</a> &middot;
+          <a href="/sccn_site/visit/">Visit</a> &middot;
+          <a href="/sccn_site/labinfo/">Lab info</a> &middot;
+          <a href="/sccn_site/login/">Internal</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="/sccn_site/assets-site.js" defer></script>
+  </body>
+</html>
