@@ -179,6 +179,60 @@ def render_page(title: str, content: str, active: str = "", description: str = "
 """
 
 
+def render_carousel() -> str:
+    """Home hero media: a crossfade carousel driven by src/data/carousel.json.
+
+    Server-side markup marks the first slide active so the page works without
+    JavaScript; site.js adds controls, rotation, and keyboard handling.
+    """
+    slides = load_json("carousel.json", []) or []
+    if not slides:
+        return """
+          <figure class="hero-media">
+            <img src="/people/images/sccn-2024.jpg" alt="SCCN group">
+          </figure>"""
+    total = len(slides)
+    items = []
+    dots = []
+    for index, slide in enumerate(slides):
+        first = index == 0
+        image = html_escape(slide.get("image", ""))
+        alt = html_escape(slide.get("alt", ""))
+        caption = html_escape(slide.get("caption", ""))
+        url = html_escape(slide.get("url", ""))
+        picture = f'<img src="{image}" alt="{alt}" loading="{"eager" if first else "lazy"}">'
+        caption_html = f'<span class="carousel-caption">{caption}</span>' if caption else ""
+        if url:
+            body = f'<a class="carousel-link" href="{url}" tabindex="{0 if first else -1}">{picture}{caption_html}</a>'
+        else:
+            body = picture + caption_html
+        items.append(
+            f'<figure class="carousel-slide{" is-active" if first else ""}" data-carousel-slide role="group" '
+            f'aria-roledescription="slide" aria-label="{index + 1} of {total}" aria-hidden="{"false" if first else "true"}">'
+            f"{body}</figure>"
+        )
+        current_attr = ' aria-current="true"' if first else ""
+        dots.append(
+            f'<button class="carousel-dot" type="button" data-carousel-dot aria-label="Go to slide {index + 1}"{current_attr}></button>'
+        )
+    chevron_left = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 5-7 7 7 7"></path></svg>'
+    chevron_right = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 5 7 7-7 7"></path></svg>'
+    pause_icon = '<svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg>'
+    play_icon = '<svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>'
+    return f"""
+          <div class="hero-media carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="SCCN highlights">
+            <div class="carousel-track" data-carousel-track aria-live="off">
+              {''.join(items)}
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous slide">{chevron_left}</button>
+              <div class="carousel-dots">{''.join(dots)}</div>
+              <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next slide">{chevron_right}</button>
+              <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Stop automatic slide rotation">{pause_icon}{play_icon}</button>
+            </div>
+          </div>"""
+
+
 def render_home() -> tuple[str, str]:
     people = load_json("people.json", [])
     methods = load_json("methods.json", [])
@@ -198,9 +252,7 @@ def render_home() -> tuple[str, str]:
               <a class="button secondary" href="/projects/">Research themes</a>
             </div>
           </div>
-          <figure class="hero-media">
-            <img src="/people/images/sccn-2024.jpg" alt="SCCN group">
-          </figure>
+          {render_carousel()}
         </div>
       </section>
       <section class="section">
